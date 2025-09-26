@@ -16,10 +16,12 @@ const Navbar = () => {
       hasDropdown: true,
       dropdownItems: [
         { name: 'All Products', href: '/products' },
-        { name: 'Spinning Machines', href: '/products?category=spinning' },
-        { name: 'Weaving Machines', href: '/products?category=weaving' },
-        { name: 'Finishing Equipment', href: '/products?category=finishing' },
-        { name: 'Dyeing Machines', href: '/products?category=dyeing' }
+        { name: 'SSM Schärer Schweiter Mettler AG', href: '/products?category=ssm' },
+        { name: 'BRÜCKNER', href: '/products?category=brueckner' },
+        { name: 'Lafer S.p.A.', href: '/products?category=lafer' },
+        { name: 'Zimmer Austria', href: '/products?category=zimmer' },
+        { name: 'Benninger AG', href: '/products?category=benninger' },
+        { name: 'Comatex Group', href: '/products?category=comatex' }
       ]
     },
     { name: 'Manufacturers', href: '/manufacturers' },

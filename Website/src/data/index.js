@@ -1,5 +1,63 @@
 // Textile machinery data for Chime Tex International
 
+// Supplier product catalog URLs for "View More Products" functionality
+export const supplierProductUrls = {
+  ssm: {
+    main: 'https://www.ssm.ch/products/',
+    categories: {
+      'Yarn Processing Solutions': 'https://www.ssm.ch/products/yarn-processing-solutions/',
+      'Winding Solutions': 'https://www.ssm.ch/products/winding-solutions/'
+    }
+  },
+  brueckner: {
+    main: 'https://www.brueckner-textile.com/en/products.html',
+    categories: {
+      'Stenters': 'https://www.brueckner-textile.com/en/products/details/power-frame-stenter.html',
+      'Relaxation Dryers': 'https://www.brueckner-textile.com/en/products/details/relaxiertrockner-power-relax-rx3.html',
+      'Padders': 'https://www.brueckner-textile.com/en/products/details/foulard-power-pad.html',
+      'Continuous Dyeing Ranges': 'https://www.brueckner-textile.com/en/products/details/power-colortherm-hotflue.html',
+      'Coating Lines': 'https://www.brueckner-textile.com/en/products/details/opti-coat-ka-kc-coating-unit.html'
+    }
+  },
+  lafer: {
+    main: 'https://www.laferspa.com/',
+    categories: {
+      'Opening Machines': 'https://www.laferspa.com/prodotti-eng.php#opening',
+      'Carding Solutions': 'https://www.laferspa.com/prodotti-eng.php#carding', 
+      'Preparation Equipment': 'https://www.laferspa.com/prodotti-eng.php#preparation'
+    }
+  },
+  zimmer: {
+    main: 'https://www.zimmer-austria.com/',
+    categories: {
+      'Rotary Screen Printing': 'https://www.zimmer-klagenfurt.com/machines/rotary-screen-printing',
+      'Flat Screen Printing': 'https://www.zimmer-klagenfurt.com/machines/flat-screen-printing',
+      'Coating Machines': 'https://www.zimmer-klagenfurt.com/machines/coating-machines',
+      'Dryers': 'https://www.zimmer-klagenfurt.com/machines/dryers',
+      'Coating Lines': 'https://www.zimmer-klagenfurt.com/machines/coating-lines'
+    }
+  },
+  benninger: {
+    main: 'https://benningergroup.com/en/',
+    categories: {
+      'Washing Solutions': 'https://benningergroup.com/en/textile-finishing/washing-solutions',
+      'Bleaching Solutions': 'https://benningergroup.com/en/textile-finishing/bleaching-solutions',
+      'Singeing Solutions': 'https://benningergroup.com/en/continuous-processing/singeing-solutions',
+      'Dyeing Solutions': 'https://benningergroup.com/en/textile-finishing/dyeing-solutions',
+      'Mercerizing Solutions': 'https://benningergroup.com/en/textile-finishing/mercerizing-solutions',
+      'Discontinuous Processing': 'https://benningergroup.com/en/discontinuous-dyeing/'
+    }
+  },
+  comatex: {
+    main: 'https://www.comatex.net/en/',
+    categories: {
+      'Slitting & Plaiting': 'https://www.comatex.net/en/slitting-plaiting.php',
+      'Inspection Machines': 'https://www.comatex.net/en/inspection-machine.php',
+      'Packing Roll/Plait': 'https://www.comatex.net/en/packing-rollplait.php'
+    }
+  }
+}
+
 export const manufacturers = [
   {
     id: 'ssm',
@@ -131,8 +189,15 @@ export const productCategories = [
   {
     id: 'comatex',
     name: 'Comatex Group',
-    description: 'Textile processing and finishing solutions',
-    icon: '🏭'
+    description: 'Italian textile machinery specialists for fabric inspection, slitting, plaiting and packing solutions',
+    icon: '�🇹',
+    subcategories: [
+      'Slitting & Plaiting',
+      'Inspection Machines',
+      'Packing Roll/Plait',
+      'Roll Packing Systems',
+      'Quality Control'
+    ]
   }
 ]
 
@@ -1277,66 +1342,99 @@ export const featuredProducts = [
   },
   {
     id: 3,
-    name: 'Benninger FabricMaster Pro',
+    name: 'Benninger FabricMaster',
     manufacturer: 'benninger',
     category: 'benninger',
-    category: 'brueckner',
-    image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&h=400&fit=crop',
+    image: 'https://benningergroup.com/fileadmin/_processed_/a/5/csm_FabricMaster_Headerbild_d0f35a0b0b.png',
     price: 'Contact for pricing',
     featured: true,
-    description: 'Advanced discontinuous processing machine for high-quality fabric dyeing with exceptional efficiency.',
+    description: 'The worlds fastest jet dyeing machine with unique fabric transport system for rope mark-free dyeing of delicate fabrics.',
     keyFeatures: [
-      'Energy efficient operation',
-      'Precise temperature control',
-      'Low water consumption',
-      'Easy operation interface',
-      'Consistent dyeing quality'
+      'Worlds fastest jet dyeing machine',
+      'Unique fabric transport system',
+      'Rope mark-free dyeing of delicate fabrics',
+      'Lowest liquor ratio in category',
+      'Energy-efficient operation',
+      'Smooth flow variable nozzle system'
     ],
     specifications: {
-      'Capacity': '50-500 kg',
-      'Liquor Ratio': '1:4 to 1:8',
-      'Working Temperature': 'Up to 130°C',
-      'Automation': 'Fully automated',
-      'Water Consumption': '30% reduction',
-      'Energy Efficiency': 'Class A+'
+      'Machine Type': 'Jet dyeing machine',
+      'Liquor Ratio': 'Lowest in category',
+      'Fabric Transport': 'Unique rope mark-free system',
+      'Speed': 'Worlds fastest jet dyeing',
+      'Applications': 'Delicate and sensitive fabrics',
+      'Nozzle System': 'Smooth flow variable'
     },
     applications: [
-      'Fabric dyeing',
-      'Continuous processing',
-      'Textile finishing',
-      'Industrial applications'
+      'Delicate fabric dyeing',
+      'Rope mark-free processing',
+      'High-speed jet dyeing',
+      'Energy-efficient dyeing'
     ]
   },
   {
     id: 4,
-    name: 'Comatex Precision Tubular Sewing',
-    manufacturer: 'comatex',
-    category: 'comatex',
-    category: 'brueckner',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
+    name: 'ZIMMER MAGNOROLL Multipurpose Coating',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld1_800x600_MagnorollKnife.jpg',
     price: 'Contact for pricing',
     featured: true,
-    description: 'Precision tubular sewing machine for knit, woven, and non-woven fabric processing applications.',
+    description: 'High-quality multipurpose coating machine with the world-famous ZIMMER MAGNET SYSTEM PLUS guaranteeing 100% uniform application.',
     keyFeatures: [
-      'High precision stitching',
-      'Versatile fabric handling',
-      'Easy maintenance',
-      'Reliable performance',
-      'Multi-fabric compatibility'
+      'ZIMMER MAGNET SYSTEM PLUS technology',
+      'Magnetic Low-Add-On or Direct Roll coating',
+      'Single or Double Screen Coating',
+      'MAGNOKNIFE Over-Roll or Over-Air coating',
+      'Working widths: 500-5600 mm',
+      '100% uniform application guarantee'
     ],
     specifications: {
-      'Stitch Length': '0.5-12 mm',
-      'Maximum Speed': '4000 rpm',
-      'Fabric Types': 'Knit/Woven/Non-woven',
-      'Automation': 'Semi-automatic',
-      'Thread Types': 'Various synthetic/natural',
-      'Control System': 'Digital interface'
+      'System Type': 'Multipurpose coating with MAGNET SYSTEM PLUS',
+      'Working Width': '500-5600 mm',
+      'Coating Technologies': 'Low-Add-On, Direct Roll, Screen, Knife, Jet',
+      'Application Types': 'Liquids, pastes, lacquers, foams',
+      'Precision': '100% uniform application guarantee',
+      'Technical Groups': 'All 12 technical textile groups'
     },
     applications: [
-      'Tubular sewing',
-      'Fabric inspection',
-      'Quality control',
-      'Industrial sewing'
+      'Technical textiles',
+      'Industrial coatings',
+      'Automotive applications',
+      'All technical textile groups'
+    ]
+  },
+  {
+    id: 5,
+    name: 'Comatex ISN 220 - Standard Fabric Inspection',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop',
+    price: 'Contact for pricing',
+    featured: true,
+    description: 'Standard fabric inspection machine for comprehensive quality control and defect detection in textile production.',
+    keyFeatures: [
+      'Comprehensive fabric inspection',
+      'Quality defect detection',
+      'Standard inspection protocols',
+      'User-friendly operation',
+      'Reliable performance',
+      'Efficient quality control'
+    ],
+    specifications: {
+      'Type': 'Standard fabric inspection machine',
+      'Working Width': '220 cm',
+      'Inspection Method': 'Visual quality control',
+      'Detection Capability': 'Comprehensive defect identification',
+      'Operation Mode': 'Standard inspection procedure',
+      'Control System': 'User-friendly interface'
+    },
+    applications: [
+      'Fabric quality inspection',
+      'Defect detection and analysis',
+      'Production quality control',
+      'Textile quality assurance',
+      'Manufacturing standards compliance'
     ]
   }
 ]
@@ -2154,83 +2252,1616 @@ export const laferProducts = [
   }
 ]
 
+// ZIMMER AUSTRIA Products - Complete Portfolio
+export const zimmerProducts = [
+  // Rotary Screen Printing Machines
+  {
+    id: 'zimmer-rotascreen-tg',
+    name: 'ROTASCREEN.TG Closed Bearing System',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Rotary Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/rotascreentg',
+    description: 'Advanced rotary screen printing machine with closed bearing system featuring compact construction and the famous ZIMMER MAGNET SYSTEM PLUS technology.',
+    keyFeatures: [
+      'Compact and solid construction',
+      'Closed bearing printhead type G with squeegee holder RH-ECO-G',
+      'Printing width: 165/185/225/250/285/330 cm',
+      'Up to 24 printing stations',
+      'Individual width adjustment of both printing heads',
+      'ACR-5-control system for easy handling and short set-up time',
+      'Automatic repeat adjustment from 64 to 102 cm',
+      'Digital synchronisation guarantees high printing accuracy up to 120 m/min'
+    ],
+    specifications: {
+      'System Type': 'Closed bearing rotary screen printing',
+      'Printing Width': '165-330 cm',
+      'Printing Stations': 'Up to 24 stations',
+      'Maximum Speed': '120 m/min',
+      'Repeat Range': '64-102 cm automatic adjustment',
+      'Control System': 'ACR-5 with design memory'
+    },
+    applications: [
+      'Home Textiles',
+      'Fashion',
+      'Technical Textiles',
+      'Wall Covering',
+      'Transfer Paper',
+      'Upholstery'
+    ]
+  },
+  {
+    id: 'zimmer-rotascreen-tu',
+    name: 'ROTASCREEN.TU Open Bearing System',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Rotary Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F2_800x600_ROTASCREEN_TU_2017_v1_0.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/rotascreentu',
+    description: 'High-performance rotary screen printing machine with open bearing system for fast, safe handling and set-up of screens during design changes.',
+    keyFeatures: [
+      'Fast, safe handling and set-up of screens with color pipes',
+      'Open bearing printhead type U with squeegee holder RH-ECO-U',
+      'Printing width: 165/185/225/250/285/330 cm',
+      'Up to 24 printing stations',
+      'Individual width adjustment of both printing heads',
+      'ACR-5-control system with automatic repeat setting',
+      'Design memory and quick reproduction of re-orders',
+      'Digital synchronisation up to 120 m/min printing speed'
+    ],
+    specifications: {
+      'System Type': 'Open bearing rotary screen printing',
+      'Printing Width': '165-330 cm',
+      'Printing Stations': 'Up to 24 stations',
+      'Maximum Speed': '120 m/min',
+      'Repeat Range': '64-102 cm automatic',
+      'Bearing Type': 'Open bearing printhead type U'
+    },
+    applications: [
+      'Home Textiles',
+      'Fashion',
+      'Technical Textiles',
+      'Glass Fibre',
+      'Transfer Paper',
+      'Industrial Printing'
+    ]
+  },
+  {
+    id: 'zimmer-rotascreen-rsdm-v',
+    name: 'ROTASCREEN.RSDM-V Advanced Open Bearing',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Rotary Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F3_800x600_ROTASCREEN_RSDM-V_2017_v1.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/rotascreenrsdm-v',
+    description: 'Most advanced rotary screen printing system with RSDM-V open screen bearing and digital operating panel for perfect repeat adjustment.',
+    keyFeatures: [
+      'RSDM-V open screen bearing printing head with digital panel',
+      'Repeat navigator for perfect pre- and fine-adjustment 64-120 cm',
+      'Touchscreen operating panel supports any language',
+      'Color pipe holder with pneumatic fixation',
+      'Fast and safe set-up of screen with color pipe',
+      'Printing width: 165/185/225/250/285/330 cm',
+      'Up to 24 printing stations',
+      'Digital synchronisation guarantees high accuracy up to 120 m/min'
+    ],
+    specifications: {
+      'System Type': 'RSDM-V open bearing with digital control',
+      'Printing Width': '165-330 cm',
+      'Repeat Range': '64-120 cm with navigator',
+      'Control Interface': 'Touchscreen multilingual',
+      'Pneumatic System': 'Color pipe holder fixation',
+      'Maximum Speed': '120 m/min'
+    },
+    applications: [
+      'High-precision printing',
+      'Technical Textiles',
+      'Home Textiles',
+      'Fashion',
+      'Industrial Applications'
+    ]
+  },
+  {
+    id: 'zimmer-magnoroll-rs',
+    name: 'MAGNOROLL.RS Rotary Screen Station',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Rotary Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F4_800x600_MagnorollScreenApplication.jpg',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/magnorollrs',
+    description: 'MAGNOROLL rotary screen station for paste or foam application featuring the famous ZIMMER MAGNET SYSTEM roll rods technology.',
+    keyFeatures: [
+      'MAGNOROLL coating and printing with ZIMMER MAGNET SYSTEM',
+      'Paste or foam application capabilities',
+      'Optional dual rotary screens for simultaneous application',
+      'Individual width adjustment of both print heads',
+      'Narrow printing capability on wider machines',
+      'Available working widths: 500-3200 mm',
+      'Repeat sizes: 640-914 mm'
+    ],
+    specifications: {
+      'System Type': 'MAGNOROLL rotary screen station',
+      'Working Width': '500-3200 mm',
+      'Repeat Size': '640-914 mm',
+      'Application Types': 'Paste and foam',
+      'Magnet System': 'ZIMMER MAGNET SYSTEM roll rods',
+      'Configuration': 'Single or dual rotary screens'
+    },
+    applications: [
+      'Coating applications',
+      'Foam application',
+      'Technical textiles',
+      'Industrial coatings'
+    ]
+  },
+  // Flat Screen Printing Machines
+  {
+    id: 'zimmer-magnoprint',
+    name: 'MAGNOPRINT Flat Screen Printing Machine',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Flat Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_Magnoprint_FlatScreen_2.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/magnoprint',
+    description: 'The most versatile flat screen printing machine with MAGNET SYSTEM PLUS for finest printing quality, especially for centre printing and geometrical designs.',
+    keyFeatures: [
+      'Original MAGNET SYSTEM PLUS technology',
+      'Finest printing quality for centre printing and geometrical designs',
+      'Repeat length, speed, and squeegee strokes individually adjustable',
+      'Magnetic power individually adjustable on each station',
+      'Available printing widths: 165/185/225/250/285/330 cm',
+      'Up to 24 printing stations',
+      'Standard magnet bars SMP 70/55 or extra strong SMP 70/95',
+      'Repeat sizes up to 600 cm for large designs'
+    ],
+    specifications: {
+      'System Type': 'Flat screen printing with MAGNET SYSTEM PLUS',
+      'Printing Width': '165-330 cm',
+      'Printing Stations': 'Up to 24 stations',
+      'Maximum Repeat': 'Up to 600 cm',
+      'Magnet Bars': 'SMP 70/55 standard, SMP 70/95 extra strong',
+      'Production Capacity': '100-10,000 m optimal range'
+    },
+    applications: [
+      'Towels',
+      'Blankets',
+      'Flags & Banners',
+      'Home Textiles',
+      'Upholstery',
+      'Nonwovens'
+    ]
+  },
+  {
+    id: 'zimmer-midi-ii-f',
+    name: 'MIDI-II-F Sample Printing Machine',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Flat Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F2_800x600_Midi-2-F.jpg',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/midi-2-f',
+    description: 'Most versatile flat screen sample printing machine suitable for all kinds of textile fabrics with production-equivalent printing widths.',
+    keyFeatures: [
+      'Most versatile flat screen sample printing machine',
+      'Suitable for all kinds of textile fabrics',
+      'Same printing width as production machines',
+      'Real-size sample printing capability',
+      'Printing width: 165/185/225/250/285/330 cm',
+      'Variable printing lengths: 9.5-32 meters',
+      'Production-equivalent results for accurate sampling'
+    ],
+    specifications: {
+      'Machine Type': 'Flat screen sample printing',
+      'Printing Width': '165-330 cm',
+      'Printing Length': '9.5-32 meters variable',
+      'Sample Quality': 'Production-equivalent',
+      'Fabric Compatibility': 'All textile fabrics'
+    },
+    applications: [
+      'Sample development',
+      'Design verification',
+      'Color matching',
+      'Production planning',
+      'Quality control'
+    ]
+  },
+  // Coating Machines
+  {
+    id: 'zimmer-magnoroll-coating',
+    name: 'MAGNOROLL Multipurpose Coating Machine',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Machines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld1_800x600_MagnorollKnife.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/magnoroll',
+    description: 'High-quality multipurpose coating machine with the world-famous ZIMMER MAGNET SYSTEM PLUS guaranteeing 100% uniform application across all technical textile groups.',
+    keyFeatures: [
+      'ZIMMER MAGNET SYSTEM PLUS for 100% uniform application',
+      'Magnetic Low-Add-On or Magnetic Direct Roll coating',
+      'Single or Double Screen Coating with magnet roll rods',
+      'MAGNOKNIFE Over-Roll or Over-Air coating',
+      'MAGNOJET closed system for paste or foam application',
+      'VARIOPRESS open system for stable foams',
+      'Working widths: 500-5600 mm',
+      'Reversible high precision knife holder with dual blades'
+    ],
+    specifications: {
+      'System Type': 'Multipurpose coating with MAGNET SYSTEM PLUS',
+      'Working Width': '500-5600 mm',
+      'Coating Technologies': 'Low-Add-On, Direct Roll, Screen, Knife, Jet',
+      'Application Types': 'Liquids, pastes, lacquers, foams',
+      'Precision': '100% uniform application guarantee'
+    },
+    applications: [
+      'All 12 technical textile groups',
+      'Agrotech, Buildtech, Clothtech',
+      'Medtech, Mobiltech, Oekotech',
+      'Geotech, Hometech, Indutech',
+      'Packtech, Protech, Sporttech'
+    ]
+  },
+  {
+    id: 'zimmer-triplexcoat',
+    name: 'TRIPLEXCOAT Coating Machine',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Machines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld2_800x600_T-CoatMachine.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/triplexcoat',
+    description: 'Cost-effective multipurpose coating machine with universal system for KNIFE coating, MAGNOJET foam coating, and ROTARY.SCREEN printing/coating.',
+    keyFeatures: [
+      'Cost-effective multipurpose coating solution',
+      'Universal take-up system for multiple technologies',
+      'KNIFE coating capabilities',
+      'MAGNOJET foam coating system',
+      'ROTARY.SCREEN printing/coating integration',
+      'Optimal solution for standard applications',
+      'KNIFE and MAGNOJET working widths: 500-3400 mm',
+      'Screen Coating with blade squeegee: up to 2000 mm'
+    ],
+    specifications: {
+      'Machine Type': 'Multipurpose coating with universal system',
+      'KNIFE/MAGNOJET Width': '500-3400 mm',
+      'Screen Coating Width': 'Up to 2000 mm',
+      'Integration': 'Existing coating lines or custom solutions',
+      'Technology': 'KNIFE, MAGNOJET, ROTARY.SCREEN'
+    },
+    applications: [
+      'Standard coating applications',
+      'Foam coating',
+      'Screen printing/coating',
+      'Custom coating lines',
+      'Industrial applications'
+    ]
+  },
+  {
+    id: 'zimmer-magnojet',
+    name: 'MAGNOJET Foam Coating System',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Machines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld3_800x600_MagnojetFoamCoating.jpg',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/magnojet',
+    description: 'Closed coating system with controlled application for paste and foam, featuring advanced mixing and measuring systems for precise application.',
+    keyFeatures: [
+      'Closed coating system with controlled application',
+      'Constant substance feeding pump with inline flow meter',
+      'Foam mixing unit with software controlled weight measuring',
+      'Avoids evaporation of liquids and pollution',
+      'No foam creation during paste application',
+      'Hassle-free processing of instable foams',
+      'No extra amounts of application media necessary',
+      'Precise control and consistent results'
+    ],
+    specifications: {
+      'System Type': 'Closed foam coating with controlled application',
+      'Feed System': 'Constant substance pump with flow meter',
+      'Mixing System': 'Software controlled weight measuring',
+      'Application Types': 'Paste and foam (including instable foams)',
+      'Control': 'Precise automated application'
+    },
+    applications: [
+      'Foam coating applications',
+      'Paste applications',
+      'Instable foam processing',
+      'Precision coating',
+      'Clean room applications'
+    ]
+  },
+  {
+    id: 'zimmer-twincoat',
+    name: 'TWINCOAT Double-Side Coating',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Machines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld5_TwinCoat_800x600_1.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/twincoat',
+    description: 'Advanced TWINCOAT system for simultaneous coating on both sides of the substrate in vertical and horizontal execution.',
+    keyFeatures: [
+      'Simultaneous coating on both sides of substrate',
+      'Available in vertical and horizontal execution',
+      'Application widths: 1100-5400 mm',
+      'Efficient double-side processing',
+      'Uniform coating on both sides',
+      'Space-saving design options',
+      'High productivity with dual application'
+    ],
+    specifications: {
+      'System Type': 'Double-side simultaneous coating',
+      'Application Width': '1100-5400 mm',
+      'Execution Options': 'Vertical and horizontal',
+      'Coating Sides': 'Both sides simultaneously',
+      'Efficiency': 'High productivity dual application'
+    },
+    applications: [
+      'Double-side coating applications',
+      'Technical textiles',
+      'Industrial fabrics',
+      'Automotive textiles',
+      'High-performance materials'
+    ]
+  },
+  // Dryers
+  {
+    id: 'zimmer-compact-hc-l1',
+    name: 'COMPACT.HC Layout 1 Hot Air Dryer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Dryers',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_CompactHC_L1.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/compacthc',
+    description: 'Universal all-purpose hot air dryer with horizontal fabric entry, designed for high efficiency drying of printed and wet textiles on ground floor level.',
+    keyFeatures: [
+      'Universal all-purpose layout with horizontal fabric entry',
+      'Dryer on ground floor level for easy access',
+      'High quality modular design for individual adaptation',
+      'Optimized interior geometry for high energy efficiency',
+      'Uniform chamber temperature distribution',
+      'Nozzle arrangement adaptable to various drying methods',
+      'Available working width: 1000-3400 mm',
+      'Operating temperature: 90°C to 200°C',
+      'Drying capacity: 200-1500 kg of water/h'
+    ],
+    specifications: {
+      'Dryer Type': 'High capacity hot air nozzle dryer',
+      'Working Width': '1000-3400 mm',
+      'Operating Temperature': '90-200°C',
+      'Drying Capacity': '200-1500 kg water/h',
+      'Installation': 'Ground floor level',
+      'Fabric Entry': 'Horizontal'
+    },
+    applications: [
+      'Fashion and apparel',
+      'Home textiles',
+      'Decorative fabrics',
+      'Nonwovens',
+      'Printed textiles',
+      'Pigment, reactive, acid, dispersion dyes'
+    ]
+  },
+  {
+    id: 'zimmer-compact-hc-l4',
+    name: 'COMPACT.HC Layout 4 Digital Printing Dryer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Dryers',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F4_800x600_CompactHC_L4.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/dryer-digital-printing-0',
+    description: 'Optimum dryer specifically designed for digital printing machines with hot-air-flow through substrate technology for tremendous water evaporation capacity.',
+    keyFeatures: [
+      'Optimum dryer for digital printing machines',
+      'Horizontal fabric entry with modular construction',
+      'Hot-air-flow through substrate drying technique',
+      'Designed for thick permeable substrates',
+      'Tremendous water evaporation capacity increase',
+      'Much shorter dryer design due to enhanced efficiency',
+      'Suitable for printed and wet textiles or nonwovens',
+      'Advanced air flow technology'
+    ],
+    specifications: {
+      'Dryer Type': 'Digital printing specialized hot air dryer',
+      'Drying Technique': 'Hot-air-flow through substrate',
+      'Substrate Types': 'Thick permeable materials',
+      'Efficiency': 'Tremendous evaporation capacity',
+      'Design': 'Compact due to enhanced efficiency'
+    },
+    applications: [
+      'Digital printing applications',
+      'Thick permeable substrates',
+      'Printed textiles',
+      'Nonwovens',
+      'Technical textiles',
+      'High-volume water removal'
+    ]
+  },
+  {
+    id: 'zimmer-compact-hc-poly',
+    name: 'COMPACT.HC POLY Polymerizing Dryer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Dryers',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F7_800x600_CompactHC_POLY.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/compacthc-poly',
+    description: 'Advanced dryer with integrated polymerizing unit for hot-air fixation of pigments, combining drying and fixation in one working process.',
+    keyFeatures: [
+      'Dryer with integrated polymerizing unit',
+      'Designed as curing area with 3 minutes dwelling time',
+      'Suitable for hot-air fixation of pigments',
+      'Drying and fixation in single working process',
+      'Simultaneously controlled fabric temperature',
+      'Visual and acoustic deviation signals',
+      'Horizontal or vertical fabric entry options',
+      'Complete pigment processing solution'
+    ],
+    specifications: {
+      'System Type': 'Dryer with polymerizing unit',
+      'Dwelling Time': 'Approximately 3 minutes',
+      'Process': 'Combined drying and pigment fixation',
+      'Temperature Control': 'Simultaneous fabric temperature monitoring',
+      'Entry Options': 'Horizontal or vertical fabric entry'
+    },
+    applications: [
+      'Pigment fixation',
+      'Hot-air curing',
+      'Combined drying and fixation',
+      'Textile finishing',
+      'Industrial processing',
+      'Quality-controlled temperature treatment'
+    ]
+  },
+  // Coating Lines
+  {
+    id: 'zimmer-nonwoven-coating-line',
+    name: 'Nonwoven Coating and Printing Line',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Lines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/styles/slide_image/public/Machines%20Klagenfurt/1_1120x350_96dpi_Nonwoven%20Coating%20and%20Printing%20Line.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/coating-lines-0',
+    description: 'Complete coating and printing line designed for all kinds of coating, printing, and laminating processes in the nonwoven industry, especially for automotive and filter applications.',
+    keyFeatures: [
+      'Designed for all coating, printing, and laminating processes',
+      'Dedicated for nonwoven industry applications',
+      'Specialized for high-end automotive products',
+      'Optimized for filter industry requirements',
+      'ZIMMER MAGNET SYSTEM PLUS technology',
+      '100% uniform application guarantee',
+      'Complete processing line solution',
+      'High-quality results for demanding applications'
+    ],
+    specifications: {
+      'Line Type': 'Complete nonwoven coating and printing',
+      'Industry Focus': 'Automotive and filter industry',
+      'Processes': 'Coating, printing, laminating',
+      'Technology': 'ZIMMER MAGNET SYSTEM PLUS',
+      'Quality': 'High-end product specifications'
+    },
+    applications: [
+      'Automotive industry',
+      'Filter industry',
+      'High-end nonwoven products',
+      'Industrial filtration',
+      'Technical nonwovens',
+      'Specialized coatings'
+    ]
+  },
+  {
+    id: 'zimmer-denim-coating-line',
+    name: 'Denim Coating Line',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Lines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/styles/slide_image/public/Machines%20Klagenfurt/2_1120x350_96dpi_Denim%20Coating%20Line.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/coating-lines-0',
+    description: 'Specialized coating line designed for heavy weight denim fabrics and high-elastic fashion jeans with optional touch-free sensor and optical weft-straightener.',
+    keyFeatures: [
+      'Designed for heavy weight denim fabrics',
+      'Suitable for high-elastic fashion jeans',
+      'Optional touch-free sensor for weight control',
+      'Optical weft-straightener unit for fabric distortion correction',
+      'Handles various denim substrates',
+      'Advanced fabric handling systems',
+      'Quality control integration',
+      'Precision processing for fashion industry'
+    ],
+    specifications: {
+      'Line Type': 'Specialized denim coating',
+      'Fabric Types': 'Heavy weight denim, high-elastic jeans',
+      'Sensors': 'Touch-free weight control (optional)',
+      'Correction': 'Optical weft-straightener (optional)',
+      'Applications': 'Fashion denim processing'
+    },
+    applications: [
+      'Heavy weight denim',
+      'High-elastic fashion jeans',
+      'Denim finishing',
+      'Fashion industry',
+      'Apparel manufacturing',
+      'Specialized denim treatments'
+    ]
+  },
+  {
+    id: 'zimmer-pvc-coating-line',
+    name: '3-Step PVC Coating Line',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Lines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/styles/slide_image/public/Machines%20Klagenfurt/5_1120x350_96dpi_3-Step-PVC%20Coating%20Line.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/coating-lines-0',
+    description: 'Complete 3-step PVC coating line for high-quality, heavy-duty PVC fabrics with single-pass processing including base-coating, top-coating, and lacquering.',
+    keyFeatures: [
+      'Complete finishing in single-pass processing',
+      '3-step process: base-coating, top-coating, lacquering',
+      'Designed for high-quality, heavy-duty PVC fabrics',
+      'Suitable for tarpaulins and billboards',
+      'Complete processing in one pass',
+      'High-efficiency production',
+      'Industrial-grade quality output',
+      'Versatile PVC applications'
+    ],
+    specifications: {
+      'Line Type': '3-step PVC coating with single-pass processing',
+      'Process Steps': 'Base-coating, top-coating, lacquering',
+      'Fabric Types': 'High-quality heavy-duty PVC',
+      'Efficiency': 'Complete finishing in single pass',
+      'Output Quality': 'Industrial-grade heavy-duty'
+    },
+    applications: [
+      'Tarpaulins',
+      'Billboards',
+      'Heavy-duty PVC fabrics',
+      'Industrial applications',
+      'Outdoor signage',
+      'Weather-resistant materials'
+    ]
+  }
+]
+
+// Additional ZIMMER AUSTRIA products
+const additionalZimmerProducts = [
+  {
+    id: 'zimmer-midi-ii-r',
+    name: 'MIDI-II-R Sample Printing Machine',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Rotary Screen Printing',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F5_800x600_Midi-2-R.jpg',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/midi-ii-r-1',
+    description: 'Rotascreen sample printing machine accessory with same printing width as production machines for real-size sample printing.',
+    keyFeatures: [
+      'Same printing width as production machines',
+      'Real-size sample printing capability',
+      'Compatible with closed or open bearing systems',
+      'Printing width: 165/185/225/250/285/330 cm',
+      'Variable printing lengths: 9.5-32 meters',
+      'Production-equivalent sampling'
+    ],
+    specifications: {
+      'Machine Type': 'Rotary screen sample printing',
+      'Printing Width': '165-330 cm',
+      'Printing Length': '9.5-32 meters variable',
+      'Compatibility': 'Closed or open bearing systems'
+    },
+    applications: [
+      'Sample development',
+      'Design verification',
+      'Color matching',
+      'Production planning'
+    ]
+  },
+  {
+    id: 'zimmer-variopress',
+    name: 'VARIOPRESS Foam Coating System',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Coating Machines',
+    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld4_800x600_VariopressAppMachine.jpg',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/variopress',
+    description: '100% control foam application system independent of line speed, web tension, and absorbance characteristics with Over-Air or Over-Roll application.',
+    keyFeatures: [
+      '100% control of foam application amount',
+      'Independent of line speed and web tension',
+      'Independent of absorbance characteristics',
+      'Over-Air or Over-Roll application options',
+      'Tooth gears with step-less adjustable speed',
+      'Installation at entry of any dryer or coating line'
+    ],
+    specifications: {
+      'System Type': 'Controlled foam application',
+      'Control': '100% application amount control',
+      'Application Methods': 'Over-Air or Over-Roll',
+      'Speed Control': 'Step-less adjustable',
+      'Installation': 'Any dryer or coating line entry'
+    },
+    applications: [
+      'Foam coating',
+      'Stable foam applications',
+      'Metastable foam processing',
+      'Controlled application systems'
+    ]
+  }
+]
+
+// Complete Benninger Products - Leader in Wet Textile Finishing
+export const benningerProducts = [
+  // Discontinuous Processing
+  {
+    id: 'benninger-fabricmaster',
+    name: 'FabricMaster Jet Dyeing Machine',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Discontinuous Processing',
+    image: 'https://benningergroup.com/fileadmin/user_upload/FM-NEU.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/discontinuous-dyeing/fabricmaster',
+    description: 'The fastest and most versatile jet dyeing machine in the industry, ensuring dramatically shorter process times with the highest fabric running speed.',
+    keyFeatures: [
+      'Highest fabric running speed in the industry',
+      'Drastically reduced cycle times',
+      'Large main reel wrapping angle minimizes fabric tension',
+      'Gentle, low-stress handling for modern jet dyeing',
+      'State-of-the-art exhaust dyeing capability',
+      'Integrated self-cleaning filter',
+      'Low liquor ratio for resource efficiency',
+      'Suitable for demanding fiber blends including Lycra'
+    ],
+    specifications: {
+      'Process Type': 'Discontinuous jet dyeing',
+      'Fabric Types': 'Heavy and lightweight knitted and woven fabrics',
+      'Fiber Compatibility': 'Cotton, synthetics, Lycra blends',
+      'Liquor Ratio': 'Lowest in industry',
+      'Tension Control': 'Gentle, low-stress handling',
+      'Maintenance': 'Self-cleaning filter system'
+    },
+    applications: [
+      'Exhaust dyeing',
+      'Soft flow processes',
+      'Cotton dyeing',
+      'Synthetic fiber dyeing',
+      'Lycra blend processing',
+      'Modern jet dyeing'
+    ]
+  },
+  {
+    id: 'benninger-jigmaster',
+    name: 'JigMaster Discontinuous Fabric Dyeing',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Discontinuous Processing',
+    image: 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/discontinuous-dyeing/jigmaster',
+    description: 'Revolutionary discontinuous fabric dyeing machine with performance that beats everything seen before. Features TwinJig technology for maximum efficiency.',
+    keyFeatures: [
+      'BEN-CONTROL Software for constant fabric tension and speed control',
+      'TwinJig technology with 2 troughs for water and energy saving',
+      'Counterflow rinsing and higher mechanical washing effect',
+      'Reduced processing time',
+      'Accurate measuring of lot length including shrinkage',
+      'Precise detection of sampling point',
+      'Fast heating gradients with dual high capacity heat exchangers',
+      'Fully automatic add tank with mixing and dosing function',
+      'Fast and tensionless unloading with frequency controlled winder'
+    ],
+    specifications: {
+      'Technology': 'TwinJig with 2 independent troughs',
+      'Control System': 'BEN-CONTROL Software',
+      'Fabric Handling': 'Even and low-tension dyeing',
+      'Heat Exchangers': 'Two high capacity units',
+      'Automation': 'Fully automatic with Plug and Play',
+      'Fabric Detection': 'Precise sampling point detection'
+    },
+    applications: [
+      'Discontinuous fabric dyeing',
+      'Delicate woven fabric processing',
+      'Crease-free dyeing',
+      'Edge mark prevention',
+      'Resource-efficient processing'
+    ]
+  },
+  {
+    id: 'benninger-synthmaster',
+    name: 'SynthMaster Hydrodynamic Dyeing Machine',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Discontinuous Processing',
+    image: 'https://benningergroup.com/fileadmin/_processed_/e/f/csm_SynthMaster_headerbild-2_2b79a18542.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/discontinuous-dyeing/synthmaster',
+    description: 'Advanced dyeing machine capable of dyeing fabrics where other machines fail. Specializes in non-preheat-setted polyester and Lycra blends without rope marks.',
+    keyFeatures: [
+      'Lowest liquor ratio of any hydrodynamic driven long tube dyeing machine',
+      'Internal winch with low rope lifting',
+      'Smooth flow variable nozzle',
+      'Frequency controlled circulation pump for closed loop nozzle pressure',
+      'Master Filter internal self-cleaning filter (100% main circulation)',
+      'Plaiting device over full width of chamber',
+      'Teflonized chamber for enhanced performance',
+      'Shortest horizontal dyeing machine - autoclave length only 4600 mm'
+    ],
+    specifications: {
+      'Machine Type': 'Hydrodynamic driven long tube dyeing',
+      'Liquor Ratio': 'Lowest in category',
+      'Chamber Length': '4600 mm autoclave',
+      'Nozzle System': 'Smooth flow variable',
+      'Filter System': 'Master Filter self-cleaning (100% circulation)',
+      'Chamber Coating': 'Teflonized'
+    },
+    applications: [
+      'Non-preheat-setted polyester fabrics',
+      'Lycra blends of cotton, Rayon, Nylon, Modal',
+      'Open-width fabric dyeing',
+      'Rope mark-free processing',
+      'Edge curl prevention',
+      'Compression-free dyeing'
+    ]
+  },
+  {
+    id: 'benninger-dyemaster',
+    name: 'DyeMaster Central Dyehouse Supply System',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Discontinuous Processing',
+    image: 'https://benningergroup.com/fileadmin/_processed_/b/f/csm_DyeMaster_Headerbild_43a924a379.png',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://benningergroup.com/en/discontinuous-dyeing/dyemaster',
+    description: 'Comprehensive central dyehouse supply system including chemical dispensing, dyestuff dissolving & dosing, and water supply systems.',
+    keyFeatures: [
+      'No dyestuff dust contamination outside dyestuff kitchen',
+      'Centralized chemicals store in protected environment',
+      'IBC or original chemical suppliers container compatibility',
+      'Just in Time supply with no waiting time at machine',
+      'Human error elimination',
+      'Permanent hot water availability for shorter heating time',
+      'High degree of heat recovery with 40% heating energy saving',
+      'HOST System manages complete dyehouse equipment'
+    ],
+    specifications: {
+      'System Components': 'Chemical Dispensing, Dyestuff Dissolving & Dosing, Powder Dissolving, Water Supply',
+      'Container Compatibility': 'IBC or original supplier containers',
+      'Heat Recovery': '40% energy saving',
+      'Automation': 'HOST System complete management',
+      'Safety': 'Protected chemical storage environment'
+    },
+    applications: [
+      'Central dyehouse management',
+      'Chemical dispensing automation',
+      'Dyestuff preparation',
+      'Water supply management',
+      'Energy recovery systems',
+      'Process optimization'
+    ]
+  },
+  // Continuous Processing
+  {
+    id: 'benninger-ben-wash',
+    name: 'BEN-Wash Continuous Washing Range',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Washing Solutions',
+    image: 'https://benningergroup.com/fileadmin/_processed_/d/7/csm_Ben-Wash_Headerbild_176f3bf1f1.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/textile-finishing/washing-solutions',
+    description: 'Complete washing range for all processes featuring globally renowned washing compartments EXTRACTA, TRIKOFLEX, and INJECTA.',
+    keyFeatures: [
+      'High washing performance',
+      'High level of uniformity and reproducibility',
+      'Minimum water consumption',
+      'High energy efficiency',
+      'Up to 50% water and steam savings compared to extension processes',
+      'Modular concept covers all textile washing requirements',
+      'EXTRACTA, TRIKOFLEX, and INJECTA compartments',
+      'Variety of available models'
+    ],
+    specifications: {
+      'Washing Systems': 'EXTRACTA, TRIKOFLEX, INJECTA',
+      'Water Savings': 'Up to 50% compared to extension processes',
+      'Steam Savings': 'Up to 50% reduction',
+      'Design': 'Modular concept',
+      'Performance': 'High uniformity and reproducibility'
+    },
+    applications: [
+      'Textile finishing systems',
+      'Continuous washing processes',
+      'Water-efficient washing',
+      'Energy-efficient processing',
+      'Industrial textile washing',
+      'High-volume production'
+    ]
+  },
+  {
+    id: 'benninger-ben-bleach',
+    name: 'BEN-BLEACH Bleaching Solutions',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Bleaching Solutions',
+    image: 'https://benningergroup.com/fileadmin/_processed_/6/5/csm_Hero_Ben_Bleach_4473b7e27a.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/textile-finishing/bleaching-solutions',
+    description: 'Fully modular system for continuous pretreatment of woven fabrics, combining desizing, impregnation, steaming, washing, and bleaching in one system.',
+    keyFeatures: [
+      'INJECTA enables chemical-free desizing at over 100°C',
+      'IMPACTA ensures controlled liquor application with minimal chemical use',
+      'REACTA provides adjustable steaming for uniform reaction times',
+      'EXTRACTA and TRIKOFLEX offer intensive washing with low tension',
+      'Reduced water consumption',
+      'Flexible configurations for fabric types and production speeds',
+      'Ideal for sensitive fabrics and demanding blends',
+      'Tension-free fabric transport'
+    ],
+    specifications: {
+      'System Type': 'Fully modular continuous pretreatment',
+      'Modules': 'INJECTA, IMPACTA, REACTA, EXTRACTA, TRIKOFLEX',
+      'Desizing Temperature': 'Over 100°C chemical-free',
+      'Fabric Handling': 'Tension-free transport',
+      'Applications': 'Full White or Print White'
+    },
+    applications: [
+      'Woven fabric pretreatment',
+      'Cotton processing',
+      'Synthetic fabric bleaching',
+      'Lycra blend processing',
+      'Bi-elastic fiber blends',
+      'Continuous desizing and bleaching'
+    ]
+  },
+  {
+    id: 'benninger-singeray',
+    name: 'SingeRay Singeing Solutions',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Singeing Solutions',
+    image: 'https://benningergroup.com/fileadmin/_processed_/f/f/csm_Singeing_Solutions_Headerbild-2_8d9ad7cc48.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/continuous-processing/singeing-solutions',
+    description: 'The all new SingeRay comes in a 21st century design with features that will satisfy your requirements. One of the top features are the high velocity nozzles for beyond comparison singeing effects.',
+    keyFeatures: [
+      '4 singeing positions with reproducible adjustments of singeing intensity',
+      '2 high-efficiency special aluminium burners with ceramic flame guiding bricks',
+      'Flame width adjustment and water cooling with temperature regulation',
+      'Distance between fabric and burner adjustable',
+      'Automatic setting of process parameters',
+      'High velocity nozzles for superior singeing effects',
+      'Flame with high energy density over complete burner width',
+      'Significant energy savings through unique flame width setting'
+    ],
+    specifications: {
+      'Singeing Positions': '4 positions with reproducible adjustments',
+      'Burners': '2 high-efficiency special aluminium burners',
+      'Flame Control': 'Ceramic flame guiding bricks with width adjustment',
+      'Cooling System': 'Water cooling with temperature regulation',
+      'Automation': 'Automatic process parameter setting',
+      'Energy Efficiency': 'Significant energy savings'
+    },
+    applications: [
+      'Fabric surface preparation',
+      'Cotton singeing',
+      'Synthetic fabric processing',
+      'Blend fabric singeing',
+      'Pre-dyeing preparation',
+      'Quality fabric finishing'
+    ]
+  },
+  {
+    id: 'benninger-ben-colour',
+    name: 'BEN-Colour Dyeing Solutions',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Dyeing Solutions',
+    image: 'https://benningergroup.com/fileadmin/_processed_/a/8/csm_dyeing_solutions_ben-color_headerbild-2_2dd01b88c7.png',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/textile-finishing/dyeing-solutions',
+    description: 'The complete range for continuous and Küsters CPB dyeing. Flexibility, high reproducibility and easy handling are the main arguments for the cold dwelling process.',
+    keyFeatures: [
+      'High reproducibility in dyeing results',
+      'Even dyeing results across fabric width',
+      'Low energy and water consumption (CPB)',
+      'High wear-fastness of dyed fabrics',
+      'Salt free dyeing process',
+      'Complete spectrum of open-width dyeing coverage',
+      'Küsters DyePad with two swimming rollers',
+      'Low investment cost solution'
+    ],
+    specifications: {
+      'Process Type': 'Continuous and Küsters CPB dyeing',
+      'Dyestuffs': 'Reactive dyestuffs compatibility',
+      'Energy Consumption': 'Low energy and water usage',
+      'Fastness': 'High wear-fastness results',
+      'Environmental': 'Salt-free dyeing capability',
+      'Equipment': 'Küsters DyePad with swimming rollers'
+    },
+    applications: [
+      'Open-width continuous dyeing',
+      'Reactive dyestuff processing',
+      'Piece dyeing operations',
+      'Cold dwelling process dyeing',
+      'High-volume fabric dyeing',
+      'Eco-friendly dyeing processes'
+    ]
+  },
+  {
+    id: 'benninger-ben-dimensa',
+    name: 'BEN-DIMENSA Mercerizing Solutions',
+    manufacturer: 'benninger',
+    category: 'benninger',
+    subcategory: 'Mercerizing Solutions',
+    image: 'https://benningergroup.com/fileadmin/_processed_/3/9/csm_01_Dimensa_Getzner_03_e2dc1f9a77.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://benningergroup.com/en/textile-finishing/mercerizing-solutions',
+    description: 'The BEN-DIMENSA mercerizing systems represent cutting-edge technology, redefining precision and efficiency in textile finishing with patented chainless fabric guidance.',
+    keyFeatures: [
+      'Patented combination of chain-based and chainless systems',
+      'Permanently bound fabric guidance technology',
+      'Faster and more even lye penetration',
+      'Improved dimensional stability',
+      'Smoother fabric appearance',
+      'Automated lye concentration, temperature, and fabric tension control',
+      'Quick production adjustments with minimal interruptions',
+      'Reduced resource consumption and efficient recycling systems'
+    ],
+    specifications: {
+      'Technology': 'Chain-based and chainless system combination',
+      'Fabric Guidance': 'Permanently bound chainless guidance',
+      'Process Control': 'Automated lye concentration, temperature, tension',
+      'Dimensional Control': 'Precise width and length control',
+      'Energy Efficiency': 'Reduced lye, water, and energy consumption',
+      'Sustainability': 'Efficient recycling systems'
+    },
+    applications: [
+      'Cotton fabric mercerization',
+      'Dimensional stability improvement',
+      'Fabric appearance enhancement',
+      'Sustainable textile finishing',
+      'Light and heavy textile processing',
+      'High-quality textile production'
+    ]
+  }
+]
+
+// Complete Comatex Product Portfolio with Official Links
+export const comatexProducts = [
+  // Slitting & Plaiting Machines
+  {
+    id: 'comatex-at240s',
+    name: 'AT 240 S - Semi-Automatic Slitting Machine for Tubular',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Slitting & Plaiting',
+    image: 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/rope-opener/at-240-s-semi-automatic-slitting-machine-for-tubular.php',
+    description: 'Fast speed slitting machine with opening triangle for tubular fabric, featuring fabric twisting system and manual needle drop control for preparation of fabric to dyeing in open width.',
+    keyFeatures: [
+      'Speed of cut and plait up to 120mt/min',
+      'For knit tubular fabric in roll or plait',
+      'Exit in free plait with roller continuous movement forward backward',
+      'Low noise machine with transmission by belts',
+      'Fabric twisting basket to adjust cutting point',
+      'Fabric slitting with big electric cutting blade',
+      'Stainless steel opening triangle',
+      'American plaiting type exit for improved fabric quantity and relaxing'
+    ],
+    specifications: {
+      'Type': 'Semi-automatic slitting machine for tubular fabric',
+      'Speed': 'Up to 120 mt/min',
+      'Fabric Types': 'Knit tubular fabric in roll or plait',
+      'Frame': 'Painted carbon steel or stainless steel',
+      'Cutting System': 'Big electric cutting blade',
+      'Opening Triangle': 'Stainless steel',
+      'Transmission': 'Belt drive for low noise',
+      'Exit Type': 'Free plait with continuous roller movement'
+    },
+    applications: [
+      'Tubular fabric slitting',
+      'Fabric preparation for dyeing in open width',
+      'Knit tubular fabric processing',
+      'American plaiting type processing',
+      'Industrial fabric cutting operations'
+    ]
+  },
+  {
+    id: 'comatex-at280',
+    name: 'AT 280 - Automatic Slitting Machine for Tubular',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Slitting & Plaiting',
+    image: 'https://www.comatex.net/immagini/grande_AT-280-Automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/rope-opener/at-280-automatic-slitting-machine-for-tubular.php',
+    description: 'Automatic slitting machine with opening triangle for tubular fabric, featuring fabric rotating system and automatic needle drop control, complete with J-box for sewing and unwinding of rolls.',
+    keyFeatures: [
+      'Automatic slitting with opening triangle',
+      'Fabric rotating system for precise positioning',
+      'Automatic needle drop control',
+      'Complete J-box for sewing and unwinding rolls',
+      'Fully automated operation',
+      'Advanced control systems for consistent quality'
+    ],
+    specifications: {
+      'Type': 'Automatic slitting machine for tubular fabric',
+      'Working Width': '280 cm',
+      'Operation Mode': 'Fully automatic',
+      'Control System': 'Automatic needle drop control',
+      'Additional Equipment': 'J-box for sewing and unwinding',
+      'Fabric System': 'Rotating system for positioning',
+      'Opening Triangle': 'Integrated for tubular processing'
+    },
+    applications: [
+      'Automatic tubular fabric slitting',
+      'High-volume tubular processing',
+      'Automated fabric preparation',
+      'Industrial sewing operations',
+      'Continuous production lines'
+    ]
+  },
+  {
+    id: 'comatex-sfh240',
+    name: 'SFH 240 - Roll Plaiting Machine',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Slitting & Plaiting',
+    image: 'https://www.comatex.net/immagini/grande_SFH-240-Roll-plaiting-machine-for-knit-and-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/plaiting-machine/sfh-240-roll-plaiting-machine.php',
+    description: 'Roll plaiting machine with roll unwinder up to 80mt/min, suitable for integration with sewing rail or sewing trolley systems.',
+    keyFeatures: [
+      'Roll unwinder up to 80mt/min',
+      'Suitable with sewing rail or sewing trolley',
+      'Designed for knit and woven fabrics',
+      'Integrated unwinding and plaiting system',
+      'Compatible with various sewing systems',
+      'Reliable mechanical construction'
+    ],
+    specifications: {
+      'Type': 'Roll plaiting machine with unwinder',
+      'Speed': 'Up to 80 mt/min',
+      'Working Width': '240 cm',
+      'Fabric Types': 'Knit and woven fabrics',
+      'Integration': 'Compatible with sewing rail or trolley',
+      'Unwinding System': 'Integrated roll unwinder',
+      'Operation': 'Continuous plaiting process'
+    },
+    applications: [
+      'Roll plaiting operations',
+      'Fabric preparation with unwinding',
+      'Integration with sewing systems',
+      'Knit and woven fabric processing',
+      'Production line automation'
+    ]
+  },
+  {
+    id: 'comatex-sf240',
+    name: 'SF 240 - Roll Plaiting Machine Tensionless',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Slitting & Plaiting',
+    image: 'https://www.comatex.net/immagini/grande_SF-240-Roll-plaiting-machine-tensionless-for-knit-and-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/plaiting-machine/sf-240-roll-plaiting-machine-tensionless.php',
+    description: 'Tensionless roll plaiting machine with unwinding rollers up to 100 mt/min, featuring tensionless fabric transport ideal for knit and elastomeric fabrics.',
+    keyFeatures: [
+      'Unwinding rollers up to 100 mt/min',
+      'Tensionless fabric transport system',
+      'Ideal for knit and elastomeric fabrics',
+      'Structure with integral protection of mechanical and electronic organs',
+      'Elevated silence by belt transmission even at maximum speeds',
+      'Cradles for unwinding rolls up to ø 800 mm',
+      'Carpet with 14 covered cylinders',
+      'High speed operation up to 100 Mt/min'
+    ],
+    specifications: {
+      'Type': 'Tensionless roll plaiting machine',
+      'Speed': 'Up to 100 mt/min',
+      'Working Width': '240 cm',
+      'Roll Diameter': 'Up to ø 800 mm',
+      'Fabric Types': 'Knit and elastomeric fabrics',
+      'Cylinders': '14 covered cylinders',
+      'Transmission': 'Belt drive for silent operation',
+      'Protection': 'Integral mechanical and electronic protection'
+    },
+    applications: [
+      'Knit fabric plaiting',
+      'Elastomeric fabric processing',
+      'Tensionless fabric handling',
+      'Preparation for dyeing processes',
+      'High-speed plaiting operations'
+    ]
+  },
+  {
+    id: 'comatex-sfl240',
+    name: 'SFL 240 - Roll Plaiting Machine Tensionless with Fabric Relax',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Slitting & Plaiting',
+    image: 'https://www.comatex.net/immagini/grande_SFL-240-Roll-plaiting-machine-tensionless-with-fabric-relax-for-knit-and-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/plaiting-machine/sfl-240-roll-plaiting-machine-tensionless-with-fabric-relax.php',
+    description: 'Advanced tensionless plaiting machine with unwinding rollers up to 130 mt/min, featuring tensionless fabric transport and special "relax" plaiting type, ideal for knit and elastomeric fabrics.',
+    keyFeatures: [
+      'Unwinding rollers up to 130 mt/min',
+      'Tensionless fabric transport system',
+      'Special "relax" plaiting type',
+      'Ideal for knit and elastomeric fabrics',
+      'Structure with integral protection of mechanical and electronic organs',
+      'Elevated silence by belt transmission at maximum speeds',
+      'Advanced fabric relaxation technology',
+      'Optimized for wear and cotton fabrics'
+    ],
+    specifications: {
+      'Type': 'Tensionless roll plaiting machine with fabric relax',
+      'Speed': 'Up to 130 mt/min',
+      'Working Width': '240 cm',
+      'Plaiting Type': 'Relax plaiting',
+      'Fabric Types': 'Knit, elastomeric, wear, and cotton fabrics',
+      'Transport': 'Tensionless fabric transport',
+      'Protection': 'Integral mechanical and electronic protection',
+      'Transmission': 'Belt drive for silent operation'
+    },
+    applications: [
+      'Fabric preparation for dyeing',
+      'Knit and elastomeric fabric processing',
+      'Cotton and wear fabric handling',
+      'Tensionless fabric relaxation',
+      'High-speed plaiting with relax function'
+    ]
+  },
+  // Inspection Machines
+  {
+    id: 'comatex-isn220',
+    name: 'ISN 220 - Standard Inspection Machine',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection Machines',
+    image: 'https://www.comatex.net/immagini/grande_ISN-220-Standard-inspection-machine-for-knit-woven-and-non-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.comatex.net/en/inspection-machine/open-fabric/isn-220-standard-inspection-machine.php',
+    description: 'Inspection and winding machine for any type of fabric with wide lighted inspection table, automatic edge alignment, adjustable roll hardness and fabric tension. Can be interfaced with exit of stenter or other machines without stopping.',
+    keyFeatures: [
+      'Wide lighted inspection table for quality check',
+      'Automatic edge alignment system',
+      'Adjustable roll hardness and fabric tension',
+      'Can interface with stenter exit without stopping',
+      'Linear geometry drawing with sensitive synchronization system',
+      'Motorization of all fabric delay rolls',
+      'Excellent for elastic fabrics verification',
+      'PLC management interfaced to inverter for real-time adjustments'
+    ],
+    specifications: {
+      'Type': 'Standard inspection and winding machine',
+      'Working Width': '220 cm',
+      'Fabric Types': 'Any type of fabric including elastic knit and shuttle fabrics',
+      'Control System': 'PLC interfaced to inverter',
+      'Edge Alignment': 'Automatic system',
+      'Roll Adjustment': 'Adjustable hardness and fabric tension',
+      'Integration': 'Can interface with stenter or other machines',
+      'Operation': 'Real-time tension and hardness modification'
+    },
+    applications: [
+      'Fabric quality inspection and winding',
+      'Integration with stenter exit',
+      'Elastic fabric verification',
+      'Real-time quality control',
+      'Production line integration without stopping'
+    ]
+  },
+  {
+    id: 'comatex-isp220',
+    name: 'ISP 220 - Inspection Machine with Rolling Back',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection Machines',
+    image: 'https://www.comatex.net/immagini/grande_ISP-220-Inspection-machine-with-rolling-back-for-knit-woven-and-non-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/inspection-machine/open-fabric/isp-220-inspection-machine-with-rolling-back.php',
+    description: 'Advanced inspection machine for any type of fabric with winding backside to operator, featuring wide lighted inspection table, automatic edge alignment, adjustable roll hardness and fabric tension.',
+    keyFeatures: [
+      'Inspection for any type of fabric',
+      'Winding backside to operator for easy access',
+      'Wide lighted inspection table',
+      'Automatic edge alignment system',
+      'Adjustable roll hardness and fabric tension',
+      'Rolling back capability for thorough inspection',
+      'Enhanced operator ergonomics',
+      'Superior quality control features'
+    ],
+    specifications: {
+      'Type': 'Inspection machine with rolling back',
+      'Working Width': '220 cm',
+      'Fabric Types': 'Any type of fabric',
+      'Winding Position': 'Backside to operator',
+      'Inspection Table': 'Wide lighted table',
+      'Edge Alignment': 'Automatic system',
+      'Roll Adjustment': 'Adjustable hardness and tension',
+      'Special Feature': 'Rolling back capability'
+    },
+    applications: [
+      'Comprehensive fabric inspection',
+      'Quality control with rolling back',
+      'Any fabric type processing',
+      'Operator-friendly inspection',
+      'Advanced defect detection'
+    ]
+  },
+  {
+    id: 'comatex-ist240',
+    name: 'IST 240 - Tensionless Inspection Machine',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection Machines',
+    image: 'https://www.comatex.net/immagini/grande_IST-240-Tensionless-inspection-machine--for-knit-and-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/inspection-machine/tensionless/ist-240-tensionless-inspection-machine-.php',
+    description: 'Specialized inspection machine for delicate fabrics with tensionless fabric transport system and precision fabric tension sensor for gentle handling without stress.',
+    keyFeatures: [
+      'Designed specifically for delicate fabrics',
+      'Tensionless fabric transport system',
+      'Precision fabric tension sensor',
+      'Gentle handling without fabric stress',
+      'Maintains fabric integrity during inspection',
+      'Advanced tensionless technology',
+      'Suitable for sensitive materials',
+      'Precise quality control without distortion'
+    ],
+    specifications: {
+      'Type': 'Tensionless inspection machine',
+      'Working Width': '240 cm',
+      'Fabric Types': 'Delicate and sensitive fabrics',
+      'Transport System': 'Tensionless fabric transport',
+      'Sensor': 'Precision fabric tension sensor',
+      'Technology': 'Advanced tensionless processing',
+      'Handling': 'Gentle without stress application',
+      'Quality Control': 'Distortion-free inspection'
+    },
+    applications: [
+      'Delicate fabric inspection',
+      'Sensitive material processing',
+      'Tensionless quality control',
+      'Premium fabric handling',
+      'Stress-free inspection operations'
+    ]
+  },
+
+  {
+    id: 'comatex-ism120',
+    name: 'ISM 120 - Tubular Inspection Machine with Mirrors',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection Machines',
+    image: 'https://www.comatex.net/immagini/grande_ISM-120-Tubular-inspection-machine-with-mirrors-for-knit_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/inspection-machine/tubular-fabric/ism-120-tubular-inspection-machine-with-mirrors.php',
+    description: 'Specialized inspection machine for tubular fabrics, supplied with 3 tube lamps of different widths for internal fabric lighting, spreading and alignment. Features 2 lateral mirrors at 45° for complete fabric quality inspection all around.',
+    keyFeatures: [
+      'Designed specifically for tubular fabrics',
+      '3 tube lamps of different widths for internal lighting',
+      'Fabric spreading and alignment system',
+      '2 lateral mirrors positioned at 45°',
+      'Complete fabric quality inspection all around',
+      'Enhanced visibility for tubular inspection',
+      'Comprehensive defect detection system',
+      'Specialized lighting and mirror configuration'
+    ],
+    specifications: {
+      'Type': 'Tubular inspection machine with mirrors',
+      'Working Width': '120 cm',
+      'Fabric Types': 'Tubular fabrics',
+      'Lighting System': '3 tube lamps of different widths',
+      'Mirror System': '2 lateral mirrors at 45°',
+      'Inspection Coverage': 'Complete all-around inspection',
+      'Features': 'Internal lighting, spreading, and alignment',
+      'Detection': 'Mirror-assisted defect identification'
+    },
+    applications: [
+      'Tubular fabric quality inspection',
+      'Complete all-around fabric assessment',
+      'Knit tubular fabric processing',
+      'Enhanced visibility inspection',
+      'Specialized tubular defect detection'
+    ]
+  },
+
+  // Packing Systems
+  {
+    id: 'comatex-imba',
+    name: 'IMB A - Roll Packing Machine "Wrapping System"',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Packing Roll/Plait',
+    image: 'https://www.comatex.net/immagini/grande_IMB-A-Roll-packing-machine-wrapping-system-for-knit-woven-and-non-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.comatex.net/en/packing-rollplait/packing-for-rolls/imb-a-roll-packing-machine-wrapping-system.php',
+    description: 'Advanced packing machine for rolls, pushing the roll on vertical plastic foil. Suggested for middle-high production volumes, can be supplied with conveyor line up to 12 inspection machines.',
+    keyFeatures: [
+      'Packing machine for rolls with vertical plastic foil',
+      'Suggested for middle-high production volumes',
+      'Can be supplied with conveyor line up to 12 inspection machines',
+      'Structure with integral protection of mechanical and electronic parts',
+      'Ample range for rolls up to ø500 mm',
+      'Film cutting with hidden electric blade',
+      'Compatible with any type of polyethylene (transparent or coloured)',
+      'Control microprocessor with trouble-shooting feature',
+      'Output capacity up to 150 rolls/h',
+      'Longitudinal welding by thermo-fusion',
+      'Edge-closing by thermo-retraction with hot-air or ultrasound system',
+      'Possibility to wind more turns of polyethylene on the roll'
+    ],
+    specifications: {
+      'Type': 'Roll packing machine with wrapping system',
+      'Roll Diameter': 'Up to ø500 mm',
+      'Production Capacity': 'Up to 150 rolls/h',
+      'Film Types': 'Any polyethylene (transparent or coloured)',
+      'Control System': 'Microprocessor with trouble-shooting',
+      'Welding': 'Longitudinal thermo-fusion',
+      'Edge Closing': 'Thermo-retraction with hot-air or ultrasound',
+      'Integration': 'Conveyor line up to 12 inspection machines'
+    },
+    applications: [
+      'Middle-high production roll packing',
+      'Integration with inspection machine lines',
+      'Industrial roll packaging',
+      'Automated packaging systems',
+      'High-volume roll processing'
+    ]
+  },
+  {
+    id: 'comatex-imbsa',
+    name: 'IMB SA - Roll Packing "Winding System"',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Packing Roll/Plait',
+    image: 'https://www.comatex.net/immagini/grande_IMB-SA-Roll-packing-winding-system-for-knit-woven-and-non-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/packing-rollplait/packing-for-rolls/imb-sa-roll-packing-winding-system.php',
+    description: 'Very tight shrink packing by plastic winding system with possibility to increase roll protection by wrapping multiple times. Suggested for medium productions or with automatic roll cut after inspection machine.',
+    keyFeatures: [
+      'Very tight shrink packing by plastic winding system',
+      'Possibility to increase roll protection wrapping multiple times',
+      'Suggested for medium productions',
+      'Compatible with automatic roll cut after inspection machine',
+      'Versatile machine for various roll feeding typologies',
+      'Can be set in direct exit to checker or fed by accumulation tables',
+      'PLC management for automatic introduction and clearing of rolls',
+      'Structure with integral protection of mechanical and electronic parts',
+      'Ample range for rolls up to ø500 mm',
+      'Output capacity up to 150 rolls/h',
+      'Longitudinal welding by thermo-fusion',
+      'Edge-closing by thermo-retraction with hot-air or ultrasound system'
+    ],
+    specifications: {
+      'Type': 'Roll packing with winding system',
+      'Packing Method': 'Very tight shrink packing',
+      'Roll Diameter': 'Up to ø500 mm',
+      'Production Capacity': 'Up to 150 rolls/h',
+      'Control System': 'PLC managed',
+      'Protection': 'Multiple wrapping capability',
+      'Welding': 'Longitudinal thermo-fusion',
+      'Edge Closing': 'Thermo-retraction with hot-air or ultrasound'
+    },
+    applications: [
+      'Medium production roll packing',
+      'Enhanced roll protection',
+      'Integration with inspection machines',
+      'Automatic roll processing',
+      'Shrink packaging operations'
+    ]
+  },
+  {
+    id: 'comatex-imbpk',
+    name: 'IMB PK - Packing Machine for Plaited Fabric, Box and Packs',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Packing Roll/Plait',
+    image: 'https://www.comatex.net/immagini/grande_IMB-PK-Packing-machine-for-plaited-fabric-box-and-packs-for-knit-and-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/packing-rollplait/packing-for-plaited-fabric/imb-pk-packing-machine-for-plaited-fabric-box-and-packs.php',
+    description: 'Specialized packing machine for plaited fabrics, packs, boxes and mattresses. Features packing by pushing the pack on vertical plastic foil with pressure of plaited fabric before packing. Can be supplied with conveyor line up to 12 inspection machines.',
+    keyFeatures: [
+      'Packing machine for plaited fabrics, packs, box and mattress',
+      'Packing by pushing pack on vertical plastic foil',
+      'Pressure of plaited fabric before packing',
+      'Can be supplied with conveyor line up to 12 inspection machines',
+      'Specialized design for various pack types',
+      'Compression system for optimal packing',
+      'Integration capability with inspection lines',
+      'Versatile packaging solution'
+    ],
+    specifications: {
+      'Type': 'Packing machine for plaited fabric, box and packs',
+      'Packing Method': 'Pushing pack on vertical plastic foil',
+      'Special Feature': 'Pressure of plaited fabric before packing',
+      'Applications': 'Plaited fabrics, packs, boxes, mattress',
+      'Integration': 'Conveyor line up to 12 inspection machines',
+      'System': 'Compression and vertical foil packaging',
+      'Fabric Types': 'Knit and woven plaited fabrics'
+    },
+    applications: [
+      'Plaited fabric packaging',
+      'Box and pack processing',
+      'Mattress packaging operations',
+      'Integration with inspection machine lines',
+      'Industrial packaging systems'
+    ]
+  },
+  {
+    id: 'comatex-inspack-compact',
+    name: 'INSPACK COMPACT - Inspection with Packing Compact',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection with Packing',
+    image: 'https://www.comatex.net/immagini/grande_INSPACK-COMPACT-Inspection-with-packing-compact-for-knit-woven-and-non-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.comatex.net/en/packing-rollplait/inspection-with-roll-packing/inspack-compact-inspection-with-packing-compact.php',
+    description: 'Compact inspection machine with packing and rolling in front to the operator. Features automatic roll cut, wrapping with plastic, weight measurement and full packing in only 53cm! Possible to apply label by hand before and after packing, saving auto-labeller costs.',
+    keyFeatures: [
+      'Inspection machine with packing and rolling in front to operator',
+      'Automatic roll cut, wrapping with plastic, weight and full packing',
+      'Incredible compact design - only 53cm total width',
+      'Possible to apply label by hand before and after packing',
+      'Saves cost of auto-labeller',
+      'Complete processing solution in minimal space',
+      'ISN + IMB SA combination',
+      'Space-saving integrated system'
+    ],
+    specifications: {
+      'Type': 'Compact inspection with packing machine',
+      'Space Requirement': 'Only 53cm total width',
+      'System': 'ISN + IMB SA combination',
+      'Functions': 'Inspection, packing, rolling, weight, wrapping',
+      'Automation': 'Automatic roll cut and wrapping',
+      'Labelling': 'Manual application before/after packing',
+      'Position': 'Rolling in front to operator'
+    },
+    applications: [
+      'Space-limited production facilities',
+      'Compact inspection and packing operations',
+      'Cost-effective processing without auto-labeller',
+      'Integrated quality control and packaging',
+      'Small-scale manufacturing operations'
+    ]
+  },
+  {
+    id: 'comatex-inspack-line',
+    name: 'INSPACK LINE - Inspection Packing and Labelling Line',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection with Packing',
+    image: 'https://www.comatex.net/immagini/grande_INSPACK-LINE-Inspection-packing-and-labelling-line-for-knit-woven-and-non-woven_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/packing-rollplait/inspection-with-roll-packing/inspack-line-inspection-packing-and-labelling-line.php',
+    description: 'Complete inspection line with fabric winding and packaging backside to the operator. Features automatic roll cut, weight measurement, wrapping by plastic and labelling. Suggested for high production volumes.',
+    keyFeatures: [
+      'Inspection with fabric winding and packaging backside to operator',
+      'Automatic roll cut functionality',
+      'Weight measurement system',
+      'Wrapping by plastic',
+      'Integrated labelling system',
+      'Suggested for high production volumes',
+      'ISP + IMB SA combination',
+      'Complete processing line solution'
+    ],
+    specifications: {
+      'Type': 'Complete inspection packing and labelling line',
+      'System': 'ISP + IMB SA combination',
+      'Configuration': 'Fabric winding and packaging backside to operator',
+      'Automation': 'Automatic roll cut, weight, wrapping, labelling',
+      'Production Level': 'High production volumes',
+      'Integration': 'Complete line solution',
+      'Efficiency': 'Optimized for high-volume operations'
+    },
+    applications: [
+      'High-volume textile production',
+      'Complete inspection and packaging lines',
+      'Automated quality control and packaging',
+      'Industrial textile manufacturing',
+      'Integrated production systems'
+    ]
+  },
+  {
+    id: 'comatex-inspack-line-zero',
+    name: 'INSPACK LINE ZERO - Tensionless Inspection Packing and Labelling',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Inspection with Packing',
+    image: 'https://www.comatex.net/immagini/grande_INSPACK-LINE-ZERO-Tensionless-inspection-packing-and-labellingfor-knit_1280x640.jpg',
+    price: 'Contact for pricing',
+    officialUrl: 'https://www.comatex.net/en/packing-rollplait/inspection-with-roll-packing/inspack-line-zero-tensionless-inspection-packing-and-labelling.php',
+    description: 'Advanced tensionless + relax inspection machine with fabric winding and packaging backside to the operator. Features automatic roll cut, weight, wrapping by plastic and labelling. Suggested for high productions of elastomeric fabrics.',
+    keyFeatures: [
+      'Tensionless + relax inspection machine',
+      'Fabric winding and packaging backside to operator',
+      'Automatic roll cut functionality',
+      'Weight measurement system',
+      'Wrapping by plastic',
+      'Integrated labelling system',
+      'Suggested for high productions of elastomeric fabrics',
+      'ISR + IMB SA combination',
+      'Advanced tensionless and relax technology'
+    ],
+    specifications: {
+      'Type': 'Tensionless inspection packing and labelling',
+      'System': 'ISR + IMB SA combination',
+      'Technology': 'Tensionless + relax system',
+      'Target Materials': 'Elastomeric fabrics',
+      'Configuration': 'Fabric winding and packaging backside to operator',
+      'Automation': 'Automatic roll cut, weight, wrapping, labelling',
+      'Production Level': 'High production volumes'
+    },
+    applications: [
+      'High-production elastomeric fabric processing',
+      'Tensionless fabric inspection and packaging',
+      'Elastomeric material manufacturing',
+      'Advanced textile processing with relax function',
+      'Specialized elastomeric fabric handling'
+    ]
+  }
+]
+
 // Combine all products for easy access
 export const allProducts = [
   ...ssmProducts,
   ...bruecknerProducts,
   ...laferProducts,
-  // Add other manufacturer products here
-  {
-    id: 'benninger-fabricmaster',
-    name: 'Benninger FabricMaster Pro',
-    manufacturer: 'benninger',
-    category: 'benninger',
-    category: 'brueckner',
-    image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&h=400&fit=crop',
-    price: 'Contact for pricing',
-    featured: true,
-    description: 'Advanced discontinuous processing machine for high-quality fabric dyeing with exceptional efficiency.',
-    keyFeatures: [
-      'Energy efficient operation',
-      'Precise temperature control',
-      'Low water consumption',
-      'Easy operation interface',
-      'Consistent dyeing quality'
-    ],
-    specifications: {
-      'Capacity': '50-500 kg',
-      'Liquor Ratio': '1:4 to 1:8',
-      'Working Temperature': 'Up to 130°C',
-      'Automation': 'Fully automated',
-      'Water Consumption': '30% reduction',
-      'Energy Efficiency': 'Class A+'
-    },
-    applications: [
-      'Fabric dyeing',
-      'Continuous processing',
-      'Textile finishing',
-      'Industrial applications'
-    ]
-  },
-  {
-    id: 'comatex-tubular',
-    name: 'Comatex Precision Tubular Sewing',
-    manufacturer: 'comatex',
-    category: 'comatex',
-    category: 'brueckner',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop',
-    price: 'Contact for pricing',
-    featured: true,
-    description: 'Precision tubular sewing machine for knit, woven, and non-woven fabric processing applications.',
-    keyFeatures: [
-      'High precision stitching',
-      'Versatile fabric handling',
-      'Easy maintenance',
-      'Reliable performance',
-      'Multi-fabric compatibility'
-    ],
-    specifications: {
-      'Stitch Length': '0.5-12 mm',
-      'Maximum Speed': '4000 rpm',
-      'Fabric Types': 'Knit/Woven/Non-woven',
-      'Automation': 'Semi-automatic',
-      'Thread Types': 'Various synthetic/natural',
-      'Control System': 'Digital interface'
-    },
-    applications: [
-      'Tubular sewing',
-      'Fabric inspection',
-      'Quality control',
-      'Industrial sewing'
-    ]
-  }
+  ...zimmerProducts,
+  ...additionalZimmerProducts,
+  ...benningerProducts,
+  ...comatexProducts
 ]
 
 export const companyStats = {
   yearsExperience: 25,
   machinesInstalled: 500,
   happyClients: 100,
-  partnerManufacturers: 6,
+  partnerManufacturers: 8, // Updated to include ZIMMER AUSTRIA and Benninger
   technicalExperts: 15,
   countries: 1
 }
@@ -2273,3 +3904,19 @@ export const services = [
     icon: '🚀'
   }
 ]
+
+// Utility functions for supplier information
+export const getManufacturerByCode = (code) => {
+  return manufacturers.find(m => m.id === code)
+}
+
+export const getSupplierUrl = (supplierCode, subcategory = null) => {
+  const supplier = supplierProductUrls[supplierCode]
+  if (!supplier) return null
+  
+  if (subcategory && supplier.categories && supplier.categories[subcategory]) {
+    return supplier.categories[subcategory]
+  }
+  
+  return supplier.main
+}

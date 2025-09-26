@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { Filter, Search, ArrowRight, ExternalLink } from 'lucide-react'
 import { allProducts, productCategories, ssmProducts, bruecknerProducts } from '../data/index.js'
+import ViewMoreProducts from '../components/ViewMoreProducts.jsx'
 
 // Products page with consistent button layouts
 
@@ -258,7 +259,8 @@ const Products = () => {
             </div>
 
             {filteredProducts.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              <>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {filteredProducts.map((product, index) => (
                   <div
                     key={product.id}
@@ -354,6 +356,18 @@ const Products = () => {
                   </div>
                 ))}
               </div>
+
+              {/* View More Products Section - Show when filtering by specific supplier */}
+              {selectedCategory !== 'all' && (
+                <div className="mt-12">
+                  <ViewMoreProducts 
+                    supplierCode={selectedCategory} 
+                    subcategory={selectedSubcategory}
+                    className="animate-fade-in-up"
+                  />
+                </div>
+              )}
+              </>
             ) : (
               <div className="text-center py-12">
                 <div className="text-industrial-400 mb-4">

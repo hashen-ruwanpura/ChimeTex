@@ -1,6 +1,7 @@
 import React from 'react'
 import { ExternalLink, MapPin, Calendar, Award, ArrowRight } from 'lucide-react'
 import { manufacturers } from '../data/index.js'
+import ViewMoreProducts from '../components/ViewMoreProducts.jsx'
 
 const Manufacturers = () => {
   // Enhanced manufacturer data with additional details for the page
@@ -176,7 +177,7 @@ const Manufacturers = () => {
                   </div>
 
                   {/* Actions */}
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col sm:flex-row gap-4 mb-6">
                     <a
                       href={manufacturer.website}
                       target="_blank"
@@ -194,6 +195,12 @@ const Manufacturers = () => {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
                   </div>
+
+                  {/* View More Products Section */}
+                  <ViewMoreProducts 
+                    supplierCode={manufacturer.id}
+                    className="mt-6"
+                  />
                 </div>
 
                 {/* Image */}
