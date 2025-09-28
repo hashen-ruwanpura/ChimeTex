@@ -65,71 +65,71 @@ export const manufacturers = [
     shortName: 'SSM',
     country: 'Switzerland',
     established: 1920,
-    logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop',
+    logo: 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
     website: 'https://www.ssm.ch/',
     specialties: ['Precision Winding', 'Assembly Winding', 'Embroidery Threading'],
     description: 'World leader in precision winding technology with over 100 years of innovation in textile machinery.',
-    partnership: 'Authorized Agent since 2005'
+    partnership: 'Authorized Agent since 2017'
   },
   {
     id: 'brueckner',
-    name: 'Brückner Maschinenbau',
+    name: 'Brückner GmbH',
     shortName: 'Brückner',
     country: 'Germany',
     established: 1949,
-    logo: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=200&h=100&fit=crop',
+    logo: 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
     website: 'https://www.brueckner-textile.com/en/',
     specialties: ['Stenter Technology', 'Coating Lines', 'Film Processing'],
-    description: 'Leading manufacturer of high-performance stenter frames and coating systems for textile and film industries.',
-    partnership: 'Authorized Partner since 2010'
+    description: 'Leading German manufacturer of high-performance stenter frames and coating systems for textile and film industries.',
+    partnership: 'Exclusive Partner since 2019'
   },
   {
     id: 'lafer',
-    name: 'Lafer S.p.A.',
+    name: 'Lafer SpA',
     shortName: 'Lafer',
     country: 'Italy',
     established: 1974,
-    logo: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=100&fit=crop',
+    logo: 'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/efadac9b-2bef-4aaa-935a-7845952fd2a3/Lafer+Ultrasoft-L+brush+sueding+machine+0GSX04024.png',
     website: 'https://www.laferspa.com/',
     specialties: ['Sueding Machines', 'Raising Machines', 'Shearing', 'Compacting', 'Liquid Ammonia Mercerizing'],
     description: 'Italian excellence in textile finishing technology, providing innovative solutions for fabric surface effects, compacting, and chemical processing.',
-    partnership: 'Exclusive Representative since 2012'
+    partnership: 'Exclusive Representative since 2019'
   },
   {
     id: 'zimmer',
-    name: 'Zimmer Austria GmbH',
+    name: 'Zimmer Austria',
     shortName: 'Zimmer Austria',
     country: 'Austria',
     established: 1960,
-    logo: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=100&fit=crop',
+    logo: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
     website: 'https://www.zimmer-austria.com/',
     specialties: ['Carpet Manufacturing', 'Technical Textiles', 'Nonwovens'],
-    description: 'Pioneer in carpet tufting technology and complete solutions for technical textile production.',
-    partnership: 'Strategic Partner since 2015'
+    description: 'Austrian pioneer in carpet tufting technology and complete solutions for technical textile production.',
+    partnership: 'Strategic Partner since 2021'
   },
   {
     id: 'benninger',
     name: 'Benninger AG',
-    shortName: 'Benninger Group',
+    shortName: 'Benninger',
     country: 'Switzerland',
     established: 1859,
-    logo: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=200&h=100&fit=crop',
+    logo: 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
     website: 'https://benningergroup.com/en/',
     specialties: ['Textile Finishing', 'Continuous Processing', 'Discontinuous Processing', 'Tire Cord'],
     description: 'Swiss company with 160+ years of experience as the world\'s leading partner in textile finishing and tire cord production.',
-    partnership: 'Authorized Representative since 2018'
+    partnership: 'Authorized Representative since 2021'
   },
   {
     id: 'comatex',
-    name: 'Comatex Textile Machinery S.r.L',
+    name: 'Comatex Italy',
     shortName: 'Comatex',
     country: 'Italy',
     established: 1994,
-    logo: 'https://images.unsplash.com/photo-1565008447919-c4ef2e9ad56f?w=200&h=100&fit=crop',
+    logo: 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
     website: 'https://www.comatex.net/en/',
     specialties: ['Knit Fabric Processing', 'Woven Fabric Processing', 'Non-woven Fabric Processing'],
     description: 'Leading Italian manufacturer specializing in precision mechanical and textile machinery with 30+ years of experience.',
-    partnership: 'Technical Partner since 2020'
+    partnership: 'Technical Partner since 2023'
   }
 ]
 
@@ -3858,10 +3858,10 @@ export const allProducts = [
 ]
 
 export const companyStats = {
-  yearsExperience: 25,
-  machinesInstalled: 500,
-  happyClients: 100,
-  partnerManufacturers: 8, // Updated to include ZIMMER AUSTRIA and Benninger
+  yearsExperience: 9, // Founded in 2016, so 9 years as of 2025
+  machinesInstalled: 100, // "more than 100 machines" from About page
+  happyClients: 100, // "all the leading satisfied clients" - keeping conservative number
+  partnerManufacturers: 6, // SSM AG, Brückner GmbH, Benninger AG, Lafer SpA, Zimmer Austria, Comatex Italy
   technicalExperts: 15,
   countries: 1
 }

@@ -34,34 +34,34 @@ const About = () => {
 
   const milestones = [
     {
-      year: '1999',
+      year: '2016',
       title: 'Company Founded',
-      description: 'Started as a textile machinery consultancy in Colombo'
+      description: 'Started as a textile machinery consultancy with a vision to transform Sri Lanka\'s textile industry'
     },
     {
-      year: '2005',
+      year: '2017',
       title: 'First Major Partnership',
-      description: 'Became authorized agents for SSM precision winding technology'
+      description: 'Became authorized agents for SSM AG, Switzerland precision winding technology'
     },
     {
-      year: '2010',
+      year: '2019',
       title: 'Expanded Operations',
-      description: 'Added Brückner and Lafer to our manufacturer portfolio'
+      description: 'Added Brückner GmbH, Germany and Lafer SpA, Italy to our manufacturer portfolio'
     },
     {
-      year: '2015',
-      title: 'Technical Excellence',
-      description: 'Established dedicated technical support and training center'
+      year: '2021',
+      title: 'European Excellence',
+      description: 'Established partnerships with Benninger AG, Switzerland and Zimmer Austria'
     },
     {
-      year: '2020',
-      title: 'Digital Transformation',
-      description: 'Launched comprehensive digital solutions and remote support'
+      year: '2023',
+      title: 'Italian Innovation',
+      description: 'Added Comatex Italy to complete our world-class manufacturer network'
     },
     {
       year: '2025',
       title: 'Industry Leadership',
-      description: 'Leading textile machinery solutions provider in Sri Lanka'
+      description: 'Leading textile machinery solutions provider with 100+ machines installed across Sri Lanka'
     }
   ]
 
@@ -76,15 +76,13 @@ const About = () => {
                 About Chime Tex International
               </h1>
               <p className="text-xl text-industrial-200 leading-relaxed">
-                With over 25 years of excellence in textile machinery solutions, 
-                we are Sri Lanka's trusted partner for world-class industrial equipment 
-                and comprehensive technical support.
+                With close to one decade of excellence in textile machinery solutions, we are one of the leading and most trusted partners for world-class machinery and comprehensive technical support in Sri Lanka.
               </p>
             </div>
             <div className="animate-fade-in-up lg:animate-delay-300">
               <img
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop"
-                alt="Our team and facility"
+                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&h=400&fit=crop"
+                alt="Modern textile machinery and facility"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
             </div>
@@ -102,20 +100,19 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-industrial-600 leading-relaxed">
                 <p>
-                  Founded in 1999, Chime Tex International (Pvt) Ltd. began with a vision to transform 
-                  Sri Lanka's textile industry by providing access to world-class machinery and technology. 
-                  What started as a small consultancy has grown into the country's leading textile 
+                  Founded in 2016, Chime Tex International (Pvt) Ltd. began with a vision to transform 
+                  Sri Lanka's textile industry by providing access to world-class machinery and technology through worlds leading machinery manufactures to our customers.
+                  What started as a small consultancy has grown into one of the country's leading textile 
                   machinery solutions provider.
                 </p>
                 <p>
-                  Under the leadership of our Director, Charuka Ruwanpura, we have built strong 
-                  partnerships with renowned manufacturers like SSM, Brückner, Lafer, and Zimmer Austria. 
-                  These relationships enable us to offer cutting-edge solutions that drive efficiency, 
-                  quality, and profitability for our clients.
+                  Under the leadership of our Director, Mr. Charuka Ruwanpura, we have built strong and exclusive
+                  partnerships with high end worlds renowned manufacturers like SSM AG, Switzerland, Brückner GmbH, Germany, Benninger AG, Switzerland, Lafer SpA, Italy, and Zimmer Austria, Comatex Italy etc 
+                  These relationships enable us to offer latest technology, cutting-edge solutions that drive efficiency, quality, and profitability for our clients.
                 </p>
                 <p>
-                  Today, we serve over 100 satisfied clients across Sri Lanka, having successfully 
-                  installed more than 500 machines. Our commitment to excellence, technical expertise, 
+                  Today, we serve all the leading satisfied clients across Sri Lanka, having successfully 
+                  installed and serving more than 100 machines. Our commitment to excellence, technical expertise, introducing latest technology to the industry
                   and customer-centric approach continues to set us apart in the industry.
                 </p>
               </div>
@@ -123,23 +120,23 @@ const About = () => {
             <div className="animate-fade-in-up lg:animate-delay-300">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=300&h=250&fit=crop"
-                  alt="Textile machinery"
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=250&fit=crop"
+                  alt="Swiss precision textile machinery"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=300&h=250&fit=crop"
-                  alt="Industrial equipment"
+                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=300&h=250&fit=crop"
+                  alt="German industrial equipment"
                   className="w-full h-48 object-cover rounded-lg shadow-lg mt-8"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1541746972996-4e0b0f93e586?w=300&h=250&fit=crop"
-                  alt="Manufacturing process"
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=250&fit=crop"
+                  alt="Italian spinning solutions"
                   className="w-full h-48 object-cover rounded-lg shadow-lg -mt-8"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1532617414043-0e2da9fc6ef9?w=300&h=250&fit=crop"
-                  alt="Quality control"
+                  src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=300&h=250&fit=crop"
+                  alt="Austrian quality machinery"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -269,7 +266,7 @@ const About = () => {
             Partner With Industry Leaders
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join over 100 satisfied clients who trust us for their textile machinery needs.
+            Join all the leading textile manufacturers in Sri Lanka who trust us for their machinery needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

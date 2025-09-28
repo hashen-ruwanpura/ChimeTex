@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { 
   MapPin, 
   Phone, 
   Mail, 
-  Clock, 
   Send,
   CheckCircle,
   User,
@@ -43,9 +43,28 @@ const Contact = () => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
+    try {
+      // EmailJS configuration from environment variables
+      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID  
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        company: formData.company || 'Not provided',
+        phone: formData.phone || 'Not provided',
+        inquiry_type: formData.inquiryType,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'charuka.chimetex@gmail.com',
+        reply_to: formData.email
+      }
+
+      // Send email via EmailJS
+      await emailjs.send(serviceID, templateID, templateParams, publicKey)
+      
       setIsSubmitted(true)
       setFormData({
         name: '',
@@ -56,7 +75,13 @@ const Contact = () => {
         message: '',
         inquiryType: 'general'
       })
-    }, 2000)
+      
+    } catch (error) {
+      console.error('Email sending error:', error)
+      alert('An error occurred while sending your message. Please try again or contact us directly at charuka.chimetex@gmail.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -70,7 +95,7 @@ const Contact = () => {
             Message Sent Successfully!
           </h2>
           <p className="text-industrial-600 mb-6">
-            Thank you for contacting Chime Tex International. Our team will get back to you within 24 hours.
+            Thank you for contacting Chime Tex International. We will get back to you at our earliest.
           </p>
           <button
             onClick={() => setIsSubmitted(false)}
@@ -120,8 +145,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-industrial-800 mb-1">Address</h4>
                     <p className="text-industrial-600">
-                      123 Business District,<br />
-                      Colombo 03, Sri Lanka
+                      183/3, De Soyza Road,<br />
+                      Panadura, Sri Lanka
                     </p>
                   </div>
                 </div>
@@ -132,8 +157,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-industrial-800 mb-1">Phone</h4>
-                    <p className="text-industrial-600">+94 11 234 5678</p>
-                    <p className="text-industrial-600">+94 77 123 4567</p>
+                    <p className="text-industrial-600">+94 777 241 451</p>
+                    <p className="text-industrial-600">038 224 9499</p>
                   </div>
                 </div>
 
@@ -143,22 +168,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-industrial-800 mb-1">Email</h4>
-                    <p className="text-industrial-600">info@chimetex.lk</p>
-                    <p className="text-industrial-600">sales@chimetex.lk</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <Clock className="h-6 w-6 text-primary-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-industrial-800 mb-1">Business Hours</h4>
-                    <p className="text-industrial-600">
-                      Monday - Friday: 8:00 AM - 6:00 PM<br />
-                      Saturday: 8:00 AM - 2:00 PM<br />
-                      Sunday: Closed
-                    </p>
+                    <p className="text-industrial-600">charuka.chimetex@gmail.com</p>
+                    <p className="text-industrial-600">info.chimetex@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -330,7 +341,7 @@ const Contact = () => {
               Visit Our Office
             </h2>
             <p className="text-xl text-industrial-600">
-              Located in the heart of Colombo's business district, our office is easily accessible.
+              Located in Panadura, our office is easily accessible and ready to serve your textile machinery needs.
             </p>
           </div>
           
@@ -349,7 +360,7 @@ const Contact = () => {
       {/* Quick Actions */}
       <section className="py-16 bg-primary-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-8 w-8" />
@@ -358,12 +369,20 @@ const Contact = () => {
               <p className="text-blue-100 mb-4">
                 Speak directly with our experts for immediate assistance.
               </p>
-              <a
-                href="tel:+94112345678"
-                className="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
-              >
-                +94 11 234 5678
-              </a>
+              <div className="space-y-2">
+                <a
+                  href="tel:+94777241451"
+                  className="block px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+                >
+                  +94 777 241 451
+                </a>
+                <a
+                  href="tel:0382249499"
+                  className="block px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+                >
+                  038 224 9499
+                </a>
+              </div>
             </div>
 
             <div className="text-center">
@@ -374,25 +393,20 @@ const Contact = () => {
               <p className="text-blue-100 mb-4">
                 Send us your detailed requirements and get a comprehensive response.
               </p>
-              <a
-                href="mailto:info@chimetex.lk"
-                className="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
-              >
-                info@chimetex.lk
-              </a>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="h-8 w-8" />
+              <div className="space-y-2">
+                <a
+                  href="mailto:charuka.chimetex@gmail.com"
+                  className="block px-4 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 text-sm"
+                >
+                  charuka.chimetex@gmail.com
+                </a>
+                <a
+                  href="mailto:info.chimetex@gmail.com"
+                  className="block px-4 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 text-sm"
+                >
+                  info.chimetex@gmail.com
+                </a>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Live Chat</h3>
-              <p className="text-blue-100 mb-4">
-                Chat with our support team during business hours.
-              </p>
-              <button className="inline-flex items-center px-6 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200">
-                Start Chat
-              </button>
             </div>
           </div>
         </div>

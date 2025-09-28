@@ -15,40 +15,40 @@ import { companyStats } from '../data/index.js'
 const Home = () => {
   const manufacturers = [
     {
-      name: 'SSM',
-      logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=100&fit=crop',
-      speciality: 'Precision Winding & Yarn Processing',
-      description: 'World leader in precision winding and yarn processing technology'
+      name: 'SSM AG, Switzerland',
+      logo: 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
+      speciality: 'Precision Winding & Assembly Solutions',
+      description: 'Swiss precision in winding technology with over 100 years of innovation. World leader in yarn processing solutions.'
     },
     {
-      name: 'Brückner',
-      logo: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=200&h=100&fit=crop',
-      speciality: 'Film & Textile Finishing',
-      description: 'Advanced finishing and coating technologies'
+      name: 'Brückner GmbH, Germany',
+      logo: 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
+      speciality: 'Stenter & Coating Technology',
+      description: 'German engineering excellence in high-performance stenter frames and advanced coating systems for textile finishing.'
     },
     {
-      name: 'Lafer',
-      logo: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=100&fit=crop',
-      speciality: 'Spinning Solutions',
-      description: 'Innovative spinning and texturing machines'
+      name: 'Benninger AG, Switzerland',
+      logo: 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
+      speciality: 'Dyeing & Finishing Excellence',
+      description: 'Swiss company with 160+ years of experience. World\'s leading partner in textile finishing and tire cord production.'
+    },
+    {
+      name: 'Lafer SpA, Italy',
+      logo: 'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/efadac9b-2bef-4aaa-935a-7845952fd2a3/Lafer+Ultrasoft-L+brush+sueding+machine+0GSX04024.png',
+      speciality: 'Textile Finishing Solutions',
+      description: 'Italian excellence in sueding, raising, shearing, compacting, and liquid ammonia mercerizing technologies.'
     },
     {
       name: 'Zimmer Austria',
-      logo: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=200&h=100&fit=crop',
-      speciality: 'Carpet Manufacturing',
-      description: 'Complete carpet and technical textile solutions'
+      logo: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+      speciality: 'Screen Printing & Coating Technology',
+      description: 'Austrian pioneer in rotary screen printing, flat screen printing, and coating solutions for textile production.'
     },
     {
-      name: 'Benninger',
-      logo: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=200&h=100&fit=crop',
-      speciality: 'Textile Finishing',
-      description: 'Swiss excellence in continuous and discontinuous processing'
-    },
-    {
-      name: 'Comatex',
-      logo: 'https://images.unsplash.com/photo-1565008447919-c4ef2e9ad56f?w=200&h=100&fit=crop',
-      speciality: 'Precision Machinery',
-      description: 'Italian precision mechanical and textile machinery'
+      name: 'Comatex Italy',
+      logo: 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
+      speciality: 'Quality Control & Inspection',
+      description: 'Italian specialists in fabric inspection, slitting, plaiting and packing solutions with 30+ years of experience.'
     }
   ]
 
@@ -76,9 +76,8 @@ const Home = () => {
   ]
 
   const stats = [
-    { number: `${companyStats.yearsExperience}+`, label: 'Years Experience' },
+    { number: '15+ Years', label: 'Experience' },
     { number: `${companyStats.machinesInstalled}+`, label: 'Machines Installed' },
-    { number: `${companyStats.happyClients}+`, label: 'Happy Clients' },
     { number: `${companyStats.partnerManufacturers}`, label: 'Partner Manufacturers' }
   ]
 
@@ -137,7 +136,7 @@ const Home = () => {
       {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center animate-fade-in-up" style={{animationDelay: `${index * 100}ms`}}>
                 <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
@@ -191,10 +190,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-industrial-800 mb-4">
-              Our Trusted Manufacturing Partners
+              Our Exclusive Manufacturing Partners
             </h2>
             <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
-              We collaborate with the world's leading textile machinery manufacturers to bring you the best solutions.
+              We are exclusive representatives and authorized agents for Europe's most prestigious textile machinery manufacturers.
             </p>
           </div>
 
@@ -202,20 +201,20 @@ const Home = () => {
             {manufacturers.map((manufacturer, index) => (
               <div
                 key={index}
-                className="bg-white border border-industrial-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up"
+                className="bg-white border border-industrial-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up group"
                 style={{animationDelay: `${index * 100}ms`}}
               >
-                <div className="h-20 bg-industrial-100 rounded-lg mb-4 flex items-center justify-center">
+                <div className="h-24 bg-gradient-to-br from-industrial-50 to-industrial-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
                   <img
                     src={manufacturer.logo}
-                    alt={`${manufacturer.name} logo`}
-                    className="h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    alt={`${manufacturer.name} machinery`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-industrial-800 mb-2">
+                <h3 className="text-lg font-semibold text-industrial-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">
                   {manufacturer.name}
                 </h3>
-                <p className="text-primary-600 text-sm font-medium mb-2">
+                <p className="text-primary-600 text-sm font-medium mb-3 uppercase tracking-wide">
                   {manufacturer.speciality}
                 </p>
                 <p className="text-industrial-600 text-sm leading-relaxed">
@@ -226,13 +225,29 @@ const Home = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link
-              to="/manufacturers"
-              className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 transform hover:scale-105"
-            >
-              View All Manufacturers
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+            <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-8 mb-8">
+              <h3 className="text-2xl font-bold text-industrial-800 mb-3">
+                Ready to Upgrade Your Production?
+              </h3>
+              <p className="text-industrial-600 mb-6 max-w-2xl mx-auto">
+                Partner with industry leaders. Our exclusive manufacturer relationships ensure you get the best technology, support, and value for your investment.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  to="/manufacturers"
+                  className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 transform hover:scale-105"
+                >
+                  Explore Our Partners
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+                <Link
+                  to="/products"
+                  className="inline-flex items-center px-8 py-4 border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-all duration-300"
+                >
+                  View All Products
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

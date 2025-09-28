@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const helmet = require('helmet')
 const rateLimit = require('express-rate-limit')
+const nodemailer = require('nodemailer')
 require('dotenv').config()
 
 const app = express()
@@ -27,6 +28,15 @@ app.use(cors({
 // Body parsing middleware
 app.use(express.json({ limit: '10mb' }))
 app.use(express.urlencoded({ extended: true }))
+
+// Email configuration
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USER || 'your-email@gmail.com',
+    pass: process.env.EMAIL_PASS || 'your-app-password'
+  }
+})
 
 // API Routes
 app.get('/api/health', (req, res) => {
@@ -59,10 +69,45 @@ app.post('/api/contact', async (req, res) => {
       })
     }
 
-    // Here you would typically:
-    // 1. Save to database
-    // 2. Send email notification
-    // 3. Send auto-response to user
+    // Prepare email content
+    const emailSubject = `New Website Inquiry - ${inquiryType.charAt(0).toUpperCase() + inquiryType.slice(1)}`
+    const emailBody = `
+      <h2>New Contact Form Submission from Chime Tex Website</h2>
+      
+      <h3>Contact Information:</h3>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Company:</strong> ${company || 'Not provided'}</p>
+      <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+      
+      <h3>Inquiry Details:</h3>
+      <p><strong>Type:</strong> ${inquiryType.charAt(0).toUpperCase() + inquiryType.slice(1)}</p>
+      <p><strong>Subject:</strong> ${subject}</p>
+      
+      <h3>Message:</h3>
+      <p>${message.replace(/\n/g, '<br>')}</p>
+      
+      <hr>
+      <p><small>Submitted on: ${new Date().toLocaleString('en-US', { timeZone: 'Asia/Colombo' })} (Sri Lanka Time)</small></p>
+    `
+
+    // Send email to Chime Tex
+    const mailOptions = {
+      from: process.env.EMAIL_USER || 'your-email@gmail.com',
+      to: 'charuka.chimetex@gmail.com',
+      subject: emailSubject,
+      html: emailBody,
+      replyTo: email
+    }
+
+    try {
+      await transporter.sendMail(mailOptions)
+      console.log('Email sent successfully to charuka.chimetex@gmail.com')
+
+    } catch (emailError) {
+      console.error('Email sending failed:', emailError)
+      // Don't fail the request if email fails, just log it
+    }
 
     console.log('Contact form submission:', {
       name,

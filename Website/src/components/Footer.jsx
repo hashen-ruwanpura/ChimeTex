@@ -4,7 +4,6 @@ import {
   MapPin, 
   Phone, 
   Mail, 
-  Clock, 
   Facebook, 
   Twitter, 
   Linkedin, 
@@ -29,8 +28,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-industrial-300 text-sm leading-relaxed mb-4">
-              Leading agents in bringing world-class textile machinery to Sri Lanka. 
-              Partnering with top manufacturers to deliver cutting-edge solutions for the textile industry.
+              With 15+ years of excellence, we are exclusive agents for world-renowned manufacturers like SSM AG, Brückner GmbH, Benninger AG, Lafer SpA, Zimmer Austria, and Comatex Italy.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-industrial-400 hover:text-primary-400 transition-colors duration-200">
@@ -85,32 +83,44 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Product Categories */}
+          {/* Our Partners */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Product Categories</h4>
+            <h4 className="text-lg font-semibold mb-4">Our Partners</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/products?category=spinning" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
+                <Link to="/manufacturers" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
                   <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-200">Spinning Machines</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">SSM AG, Switzerland</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products?category=weaving" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
+                <Link to="/manufacturers" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
                   <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-200">Weaving Machines</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Brückner GmbH, Germany</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products?category=finishing" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
+                <Link to="/manufacturers" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
                   <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-200">Finishing Equipment</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Benninger AG, Switzerland</span>
                 </Link>
               </li>
               <li>
-                <Link to="/products?category=dyeing" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
+                <Link to="/manufacturers" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
                   <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                  <span className="group-hover:translate-x-1 transition-transform duration-200">Dyeing Machines</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Lafer SpA, Italy</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/manufacturers" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
+                  <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Zimmer Austria</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/manufacturers" className="text-industrial-300 hover:text-white transition-colors duration-200 flex items-center group">
+                  <ArrowRight className="h-4 w-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  <span className="group-hover:translate-x-1 transition-transform duration-200">Comatex Italy</span>
                 </Link>
               </li>
             </ul>
@@ -124,30 +134,29 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-primary-400 mr-3 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-industrial-300 text-sm">
-                    123 Business District, Colombo 03,<br />
+                    Colombo,<br />
                     Sri Lanka
                   </p>
                 </div>
               </div>
               
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <p className="text-industrial-300 text-sm">+94 11 234 5678</p>
+              <div className="flex items-start">
+                <Phone className="h-5 w-5 text-primary-400 mr-3 mt-0.5 flex-shrink-0" />
+                <div className="space-y-1">
+                  <a href="tel:+94777241451" className="block text-industrial-300 text-sm hover:text-white transition-colors duration-200">
+                    +94 777 241 451
+                  </a>
+                  <a href="tel:0382249499" className="block text-industrial-300 text-sm hover:text-white transition-colors duration-200">
+                    038 224 9499
+                  </a>
+                </div>
               </div>
               
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <p className="text-industrial-300 text-sm">info@chimetex.lk</p>
-              </div>
-              
-              <div className="flex items-start">
-                <Clock className="h-5 w-5 text-primary-400 mr-3 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-industrial-300 text-sm">
-                    Mon - Fri: 8:00 AM - 6:00 PM<br />
-                    Sat: 8:00 AM - 2:00 PM
-                  </p>
-                </div>
+                <a href="mailto:charuka.chimetex@gmail.com" className="text-industrial-300 text-sm hover:text-white transition-colors duration-200">
+                  charuka.chimetex@gmail.com
+                </a>
               </div>
             </div>
           </div>
@@ -160,14 +169,8 @@ const Footer = () => {
               <p>&copy; 2025 Chime Tex International (Pvt) Ltd. All rights reserved.</p>
             </div>
             <div className="flex space-x-6 text-sm text-industrial-400">
-              <Link to="/privacy" className="hover:text-white transition-colors duration-200">
-                Privacy Policy
-              </Link>
               <Link to="/terms" className="hover:text-white transition-colors duration-200">
-                Terms of Service
-              </Link>
-              <Link to="/sitemap" className="hover:text-white transition-colors duration-200">
-                Sitemap
+                Terms and Conditions
               </Link>
             </div>
           </div>
