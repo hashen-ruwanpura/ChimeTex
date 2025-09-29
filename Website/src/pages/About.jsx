@@ -32,38 +32,7 @@ const About = () => {
     }
   ]
 
-  const milestones = [
-    {
-      year: '2016',
-      title: 'Company Founded',
-      description: 'Started as a textile machinery consultancy with a vision to transform Sri Lanka\'s textile industry'
-    },
-    {
-      year: '2017',
-      title: 'First Major Partnership',
-      description: 'Became authorized agents for SSM AG, Switzerland precision winding technology'
-    },
-    {
-      year: '2019',
-      title: 'Expanded Operations',
-      description: 'Added Brückner GmbH, Germany and Lafer SpA, Italy to our manufacturer portfolio'
-    },
-    {
-      year: '2021',
-      title: 'European Excellence',
-      description: 'Established partnerships with Benninger AG, Switzerland and Zimmer Austria'
-    },
-    {
-      year: '2023',
-      title: 'Italian Innovation',
-      description: 'Added Comatex Italy to complete our world-class manufacturer network'
-    },
-    {
-      year: '2025',
-      title: 'Industry Leadership',
-      description: 'Leading textile machinery solutions provider with 100+ machines installed across Sri Lanka'
-    }
-  ]
+
 
   return (
     <div className="min-h-screen">
@@ -81,8 +50,8 @@ const About = () => {
             </div>
             <div className="animate-fade-in-up lg:animate-delay-300">
               <img
-                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&h=400&fit=crop"
-                alt="Modern textile machinery and facility"
+                src="https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg"
+                alt="SSM XENO Air Covering Machine - Swiss precision winding technology"
                 className="w-full h-80 object-cover rounded-xl shadow-2xl"
               />
             </div>
@@ -120,23 +89,23 @@ const About = () => {
             <div className="animate-fade-in-up lg:animate-delay-300">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300&h=250&fit=crop"
-                  alt="Swiss precision textile machinery"
+                  src="https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg"
+                  alt="Brückner POWER-FRAME SFP-4 Stenter - German finishing technology"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=300&h=250&fit=crop"
-                  alt="German industrial equipment"
+                  src="https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png"
+                  alt="Benninger JigMaster Dyeing System - Swiss precision dyeing"
                   className="w-full h-48 object-cover rounded-lg shadow-lg mt-8"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=250&fit=crop"
-                  alt="Italian spinning solutions"
+                  src="https://www.ssm.ch/fileadmin/_processed_/0/8/csm_ssm-draw-winding_993cb665a5.jpg"
+                  alt="SSM Draw Winding System - Advanced yarn processing technology"
                   className="w-full h-48 object-cover rounded-lg shadow-lg -mt-8"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=300&h=250&fit=crop"
-                  alt="Austrian quality machinery"
+                  src="https://www.comatex.net/immagini/grande_ISN-220-Verificatrice-standard-per-tessuto-a-maglia-navetta-o-tessuto-non-tessuto_1280x640.jpg"
+                  alt="Comatex ISN-220 Inspection System - Italian quality control technology"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -179,53 +148,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-industrial-800 mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-industrial-600 max-w-3xl mx-auto">
-              Key milestones that shaped our growth and success in the textile machinery industry.
-            </p>
-          </div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-primary-200"></div>
-
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <div
-                  key={index}
-                  className={`relative flex items-center animate-fade-in-up ${
-                    index % 2 === 0 ? 'justify-start' : 'justify-end'
-                  }`}
-                  style={{animationDelay: `${index * 200}ms`}}
-                >
-                  <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="bg-white p-6 rounded-xl card-shadow">
-                      <div className="text-2xl font-bold text-primary-600 mb-2">
-                        {milestone.year}
-                      </div>
-                      <h3 className="text-xl font-semibold text-industrial-800 mb-3">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-industrial-600">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>
-                  
-                  {/* Timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-600 rounded-full border-4 border-white shadow-lg"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Leadership Section */}
       <section className="py-20 bg-industrial-50">
@@ -239,10 +162,22 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-            <div className="bg-white rounded-xl p-8 card-shadow text-center animate-fade-in-up max-w-sm mx-auto">
-              <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-primary-600 text-4xl font-bold">CR</span>
+          <div className="flex justify-center">
+            <div className="bg-white rounded-xl p-8 card-shadow text-center animate-fade-in-up max-w-sm">
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-lg bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center">
+                <img
+                  src="/images/Charuka.png"
+                  alt="Charuka Ruwanpura - Director, Chime Tex International"
+                  className="w-full h-full object-cover"
+                  onLoad={(e) => {
+                    e.target.parentElement.style.background = 'none';
+                  }}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextElementSibling.style.display = 'flex';
+                  }}
+                />
+                <span className="text-primary-600 text-4xl font-bold" style={{display: 'none'}}>CR</span>
               </div>
               <h3 className="text-xl font-semibold text-industrial-800 mb-2">
                 Charuka Ruwanpura

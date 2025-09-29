@@ -14,16 +14,24 @@ const Manufacturers = () => {
     productImages: getProductImages(manufacturer.id)
   }))
 
+  // Reliable fallback image handler
+  const handleImageError = (e) => {
+    const fallbackImage = 'https://images.unsplash.com/photo-1565086447593-ea55eb58a0e1?w=800&h=600&fit=crop&auto=format'
+    if (e.target.src !== fallbackImage) {
+      e.target.src = fallbackImage
+    }
+  }
+
   function getHeroImage(manufacturerId) {
     const heroImages = {
-      'ssm': 'https://www.ssm.ch/fileadmin/_processed_/4/9/csm_Xeno_Precision_Winding_SSM_b9c8f2e4e4.jpg',
-      'brueckner': 'https://www.brueckner.com/fileadmin/_processed_/9/5/csm_stenter-frame-eco-heat-recovery_01_8b2c8e4f27.jpg',
-      'lafer': 'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/55a85cb4-f438-4453-937e-f5871c1268e7/Lafer+Ultrasoft+sueding+machine',
+      'ssm': 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
+      'brueckner': 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
+      'lafer': 'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/efadac9b-2bef-4aaa-935a-7845952fd2a3/Lafer+Ultrasoft-L+brush+sueding+machine+0GSX04024.png',
       'zimmer': 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
-      'benninger': 'https://www.benninger.com/media/cache/full_width_image/uploads/media/5ff4f4c5c80b3/benninger-fabric-master-piece-dye-machine.jpg',
+      'benninger': 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
       'comatex': 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg'
     }
-    return heroImages[manufacturerId] || `https://images.unsplash.com/photo-1565086447593-ea55eb58a0e1?w=800&h=400&fit=crop&sig=${manufacturerId}`
+    return heroImages[manufacturerId] || `https://images.unsplash.com/photo-1565086447593-ea55eb58a0e1?w=800&h=400&fit=crop&auto=format`
   }
 
   function getKeyProducts(manufacturerId) {
@@ -101,19 +109,19 @@ const Manufacturers = () => {
   function getProductImages(manufacturerId) {
     const imageMap = {
       'ssm': [
-        'https://www.ssm.ch/fileadmin/_processed_/4/9/csm_Xeno_Precision_Winding_SSM_b9c8f2e4e4.jpg',
-        'https://www.ssm.ch/fileadmin/_processed_/8/7/csm_GIUDICI_assembly_winding_01_4b2e8f5c73.jpg',
-        'https://www.ssm.ch/fileadmin/_processed_/2/3/csm_WX_threading_equipment_89a7d5f2e1.jpg'
+        'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
+        'https://www.ssm.ch/fileadmin/_processed_/0/8/csm_ssm-draw-winding_993cb665a5.jpg',
+        'https://www.ssm.ch/fileadmin/_processed_/5/e/csm_ssm-xeno-ac-twin-air-covering-machine_13a77350ca.jpg'
       ],
       'brueckner': [
-        'https://www.brueckner.com/fileadmin/_processed_/9/5/csm_stenter-frame-eco-heat-recovery_01_8b2c8e4f27.jpg',
-        'https://www.brueckner.com/fileadmin/_processed_/5/8/csm_power-frame-technology_02_7c3d9e5a84.jpg',
-        'https://www.brueckner.com/fileadmin/_processed_/3/7/csm_coating-laminating-systems_03_6e2f8b9c51.jpg'
+        'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
+        'https://www.brueckner-textile.com/files/produkte/Beschichtungsanlagen/Eco_Coat.jpg',
+        'https://www.brueckner-textile.com/files/produkte/Hotflues/DSC00524%20Kopie.jpg'
       ],
       'lafer': [
+        'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/efadac9b-2bef-4aaa-935a-7845952fd2a3/Lafer+Ultrasoft-L+brush+sueding+machine+0GSX04024.png',
         'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/55a85cb4-f438-4453-937e-f5871c1268e7/Lafer+Ultrasoft+sueding+machine',
-        'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/ee24b66e-0662-4eb3-9735-720e9912be87/Lafer+KA+2+felt+compactor.layout+drawing',
-        'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/ac7f13ee-5c59-443b-94f6-3e914796b52e/Permafix.png'
+        'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/ee24b66e-0662-4eb3-9735-720e9912be87/Lafer+KA+2+felt+compactor.layout+drawing'
       ],
       'zimmer': [
         'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
@@ -121,14 +129,14 @@ const Manufacturers = () => {
         'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld1_800x600_MagnorollKnife.jpg'
       ],
       'benninger': [
-        'https://www.benninger.com/media/cache/full_width_image/uploads/media/5ff4f4c5c80b3/benninger-fabric-master-piece-dye-machine.jpg',
-        'https://www.benninger.com/media/cache/full_width_image/uploads/media/5ff4f4c601f4a/benninger-jig-master-dyeing-machine.jpg',
-        'https://www.benninger.com/media/cache/full_width_image/uploads/media/5e8d5c8e5f8a2/benninger-eco-bleaching-system.jpg'
+        'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
+        'https://benningergroup.com/fileadmin/_processed_/e/8/csm_FabricMaster_Headerbild_ef0757375e.png',
+        'https://benningergroup.com/fileadmin/_processed_/6/5/csm_Hero_Ben_Bleach_4473b7e27a.png'
       ],
       'comatex': [
         'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
-        'https://www.comatex.net/immagini/grande_SFH-240-Roll-plaiting-machine-for-knit-and-woven_1280x640.jpg',
-        'https://www.comatex.net/immagini/piccola_isn220_inspection_machine.jpg'
+        'https://www.comatex.net/immagini/grande_ISN-220-Verificatrice-standard-per-tessuto-a-maglia-navetta-o-tessuto-non-tessuto_1280x640.jpg',
+        'https://www.comatex.net/immagini/grande_AVV-240-SP-Avvolgitore-150mtmin-per-juta-poliestere-e-nonwoven-per-navetta-e-tessuto-non-tessuto_1280x640.jpg'
       ]
     }
     return imageMap[manufacturerId] || []
@@ -148,10 +156,6 @@ const Manufacturers = () => {
               cutting-edge technology, precision engineering, and comprehensive solutions for Sri Lanka's textile industry.
             </p>
             <div className="flex flex-wrap justify-center gap-8 items-center opacity-80">
-              <div className="flex items-center space-x-2">
-                <Globe className="h-5 w-5" />
-                <span className="text-sm font-medium">6 Countries</span>
-              </div>
               <div className="flex items-center space-x-2">
                 <Star className="h-5 w-5" />
                 <span className="text-sm font-medium">100+ Years Combined Experience</span>
@@ -185,6 +189,7 @@ const Manufacturers = () => {
                         src={manufacturer.logo}
                         alt={`${manufacturer.name} logo`}
                         className="h-16 w-auto mr-4 filter grayscale hover:grayscale-0 transition-all duration-300"
+                        onError={handleImageError}
                       />
                       <div>
                         <h2 className="text-2xl md:text-3xl font-bold text-industrial-800">
@@ -197,11 +202,6 @@ const Manufacturers = () => {
                           <span>Est. {manufacturer.established}</span>
                         </div>
                       </div>
-                    </div>
-                    
-                    <div className="inline-flex items-center px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-4">
-                      <Award className="h-4 w-4 mr-1" />
-                      {manufacturer.partnership}
                     </div>
                   </div>
 
@@ -285,6 +285,7 @@ const Manufacturers = () => {
                             src={image}
                             alt={`${manufacturer.name} product ${idx + 1}`}
                             className="w-full h-20 object-cover rounded-lg shadow-md group-hover:shadow-lg transition-all duration-300"
+                            onError={handleImageError}
                           />
                           <div className="absolute inset-0 bg-primary-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
                         </div>
@@ -326,6 +327,7 @@ const Manufacturers = () => {
                       src={manufacturer.heroImage}
                       alt={`${manufacturer.name} machinery`}
                       className="w-full h-80 lg:h-96 object-cover rounded-xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                      onError={handleImageError}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-900/40 via-transparent to-primary-900/10 rounded-xl"></div>
                     <div className="absolute bottom-4 left-4 right-4">
@@ -352,72 +354,7 @@ const Manufacturers = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-industrial-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-industrial-800 mb-4">
-              Partnership Excellence & Global Reach
-            </h2>
-            <p className="text-xl text-industrial-600 max-w-4xl mx-auto">
-              Our exclusive partnerships with Europe's leading textile machinery manufacturers enable us to provide 
-              comprehensive solutions, guaranteed authenticity, and unmatched technical support across Sri Lanka.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8">
-            <div className="text-center animate-fade-in-up">
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">6</div>
-              <div className="text-industrial-600 font-medium">Elite Manufacturing Partners</div>
-            </div>
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '100ms'}}>
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">100+</div>
-              <div className="text-industrial-600 font-medium">Combined Years Innovation</div>
-            </div>
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '200ms'}}>
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">150+</div>
-              <div className="text-industrial-600 font-medium">Authentic Products</div>
-            </div>
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '300ms'}}>
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">100%</div>
-              <div className="text-industrial-600 font-medium">Authorized Partnerships</div>
-            </div>
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '400ms'}}>
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">98%+</div>
-              <div className="text-industrial-600 font-medium">Product Database Accuracy</div>
-            </div>
-            <div className="text-center animate-fade-in-up" style={{animationDelay: '500ms'}}>
-              <div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">24/7</div>
-              <div className="text-industrial-600 font-medium">Technical Support</div>
-            </div>
-          </div>
-
-          {/* Additional Partnership Benefits */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg animate-fade-in-up" style={{animationDelay: '600ms'}}>
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="w-8 h-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-industrial-800 mb-2">Verified Authenticity</h3>
-              <p className="text-industrial-600">All products sourced directly from official manufacturers with verified authenticity and specifications.</p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg animate-fade-in-up" style={{animationDelay: '700ms'}}>
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="w-8 h-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-industrial-800 mb-2">European Excellence</h3>
-              <p className="text-industrial-600">Partnering with Switzerland, Germany, Italy, and Austria's most prestigious textile machinery manufacturers.</p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-xl shadow-lg animate-fade-in-up" style={{animationDelay: '800ms'}}>
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-industrial-800 mb-2">Industry Leadership</h3>
-              <p className="text-industrial-600">Leading Sri Lanka's textile machinery market with 100+ machines installed and ongoing technical support.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">

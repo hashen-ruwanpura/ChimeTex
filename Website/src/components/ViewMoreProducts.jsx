@@ -31,25 +31,41 @@ const ViewMoreProducts = ({ supplierCode, subcategory = null, className = "" }) 
     : `View More Products from ${enhancedDisplayName}`
   
   return (
-    <div className={`bg-gradient-to-r from-primary-50 to-primary-100 rounded-lg p-6 border border-primary-200 ${className}`}>
-      <div className="flex flex-col sm:flex-row items-center justify-between">
-        <div className="text-center sm:text-left mb-4 sm:mb-0">
-          <h3 className="text-lg font-semibold text-primary-900 mb-2">
-            Explore Complete {enhancedDisplayName} Portfolio
-          </h3>
-          <p className="text-primary-700 text-sm">
-            {subcategory 
-              ? `Discover our full range of ${subcategory.toLowerCase()} and specialized equipment.`
-              : `Discover our full range of ${enhancedDisplayName} machinery and specialized equipment.`
-            }
-          </p>
+    <div className={`bg-gradient-to-br from-primary-50 via-white to-primary-100 rounded-lg p-4 border border-primary-100 shadow-md ${className}`}>
+      {/* Header Section */}
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center space-x-2">
+          <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
+            <Award className="h-4 w-4 text-white" />
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-industrial-800">
+              Explore Complete
+            </h3>
+            <h4 className="text-base font-bold text-primary-600">
+              {enhancedDisplayName} Portfolio
+            </h4>
+          </div>
         </div>
-        
+      </div>
+
+      {/* Description */}
+      <div className="mb-3">
+        <p className="text-industrial-600 text-sm">
+          {subcategory 
+            ? `Discover our full range of ${subcategory.toLowerCase()} and specialized equipment.`
+            : `Discover our full range of ${enhancedDisplayName} machinery and specialized equipment.`
+          }
+        </p>
+      </div>
+
+      {/* Action Button */}
+      <div className="flex justify-center">
         <a
           href={supplierUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-6 py-3 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg transform hover:scale-105 whitespace-nowrap"
+          className="inline-flex items-center px-4 py-2 bg-primary-600 text-white rounded-lg transition-all duration-300 font-semibold text-sm shadow-md transform hover:scale-105"
           title={`Visit official ${enhancedDisplayName} website`}
         >
           <span className="mr-2">{buttonText}</span>
@@ -57,16 +73,12 @@ const ViewMoreProducts = ({ supplierCode, subcategory = null, className = "" }) 
         </a>
       </div>
       
-      {/* Partnership information and additional context */}
-      <div className="mt-4 pt-4 border-t border-primary-200">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-xs text-primary-600">
-          <div className="flex items-center mb-2 sm:mb-0">
-            <Award className="h-3 w-3 mr-1" />
-            {manufacturer.partnership}
-          </div>
-          <div className="text-primary-500">
+      {/* Footer */}
+      <div className="mt-3 pt-3 border-t border-primary-200/50">
+        <div className="text-center">
+          <p className="text-xs text-primary-600">
             Official {enhancedDisplayName} Products & Specifications
-          </div>
+          </p>
         </div>
       </div>
     </div>

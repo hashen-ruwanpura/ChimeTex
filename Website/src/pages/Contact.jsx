@@ -145,8 +145,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-industrial-800 mb-1">Address</h4>
                     <p className="text-industrial-600">
-                      183/3, De Soyza Road,<br />
-                      Panadura, Sri Lanka
+                      226 / 17, Temple Road,<br />
+                      Hirana, Panadura, Sri Lanka
                     </p>
                   </div>
                 </div>
@@ -332,30 +332,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      {/* Map Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-industrial-800 mb-4">
-              Visit Our Office
-            </h2>
-            <p className="text-xl text-industrial-600">
-              Located in Panadura, our office is easily accessible and ready to serve your textile machinery needs.
-            </p>
-          </div>
-          
-          <div className="bg-industrial-200 rounded-xl h-96 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-16 w-16 text-industrial-400 mx-auto mb-4" />
-              <p className="text-industrial-600">
-                Interactive map would be integrated here<br />
-                (Google Maps, OpenStreetMap, etc.)
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Quick Actions */}
       <section className="py-16 bg-primary-600 text-white">

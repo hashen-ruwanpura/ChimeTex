@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { 
   ArrowRight, 
@@ -8,9 +8,199 @@ import {
   Zap, 
   Shield, 
   CheckCircle,
-  PlayCircle
+  PlayCircle,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react'
 import { companyStats } from '../data/index.js'
+
+// Interactive Product Slideshow Component
+const ProductSlideshow = () => {
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+
+  // Product data from official manufacturer websites
+  const productSlides = [
+    {
+      id: 'ssm',
+      manufacturer: 'SSM AG, Switzerland',
+      productName: 'XENO Air Covering Machine',
+      description: 'Swiss precision winding technology with advanced air covering systems for high-quality yarn processing.',
+      image: 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
+      category: 'Precision Winding'
+    },
+    {
+      id: 'ssm-2',
+      manufacturer: 'SSM AG, Switzerland',
+      productName: 'Draw Winding System',
+      description: 'Advanced draw winding technology for efficient yarn processing and superior package quality.',
+      image: 'https://www.ssm.ch/fileadmin/_processed_/0/8/csm_ssm-draw-winding_993cb665a5.jpg',
+      category: 'Yarn Processing'
+    },
+    {
+      id: 'brueckner',
+      manufacturer: 'Brückner GmbH, Germany',
+      productName: 'POWER-FRAME SFP-4 Stenter',
+      description: 'High-performance stenter frame technology for efficient textile finishing and heat-setting processes.',
+      image: 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
+      category: 'Stenter Technology'
+    },
+    {
+      id: 'brueckner-2',
+      manufacturer: 'Brückner GmbH, Germany',
+      productName: 'ECO-COAT System',
+      description: 'Advanced coating technology for sustainable and efficient textile coating applications.',
+      image: 'https://www.brueckner-textile.com/files/produkte/Beschichtungsanlagen/Eco_Coat.jpg',
+      category: 'Coating Systems'
+    },
+    {
+      id: 'benninger',
+      manufacturer: 'Benninger AG, Switzerland',
+      productName: 'JigMaster Dyeing System',
+      description: 'Premium jig dyeing technology for superior fabric quality and efficient discontinuous processing.',
+      image: 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
+      category: 'Dyeing Systems'
+    },
+    {
+      id: 'benninger-2',
+      manufacturer: 'Benninger AG, Switzerland',
+      productName: 'FabricMaster Jet Dyeing',
+      description: 'High-speed jet dyeing machine for efficient and gentle textile processing.',
+      image: 'https://benningergroup.com/fileadmin/_processed_/e/8/csm_FabricMaster_Headerbild_ef0757375e.png',
+      category: 'Textile Finishing'
+    },
+    {
+      id: 'zimmer',
+      manufacturer: 'Zimmer Austria',
+      productName: 'ROTASCREEN Printing System',
+      description: 'Advanced rotary screen printing technology for high-quality textile printing applications.',
+      image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+      category: 'Screen Printing'
+    },
+    {
+      id: 'comatex',
+      manufacturer: 'Comatex Italy',
+      productName: 'ISN-220 Inspection System',
+      description: 'Professional fabric inspection technology for quality control and textile verification.',
+      image: 'https://www.comatex.net/immagini/grande_ISN-220-Verificatrice-standard-per-tessuto-a-maglia-navetta-o-tessuto-non-tessuto_1280x640.jpg',
+      category: 'Quality Control'
+    }
+  ]
+
+  // Auto-advance slides
+  useEffect(() => {
+    if (!isAutoPlaying) return
+    
+    const interval = setInterval(() => {
+      setCurrentSlide(prev => (prev + 1) % productSlides.length)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [isAutoPlaying, productSlides.length])
+
+  const nextSlide = () => {
+    setCurrentSlide(prev => (prev + 1) % productSlides.length)
+    setIsAutoPlaying(false)
+  }
+
+  const prevSlide = () => {
+    setCurrentSlide(prev => (prev - 1 + productSlides.length) % productSlides.length)
+    setIsAutoPlaying(false)
+  }
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index)
+    setIsAutoPlaying(false)
+  }
+
+  const currentProduct = productSlides[currentSlide]
+
+  return (
+    <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-2xl group">
+      {/* Main Image */}
+      <div className="relative w-full h-full">
+        <img
+          src={currentProduct.image}
+          alt={currentProduct.productName}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+      
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+
+      {/* Content Overlay */}
+      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+        <div className="mb-2">
+          <span className="inline-block px-3 py-1 bg-primary-600/80 backdrop-blur-sm rounded-full text-xs font-semibold uppercase tracking-wide">
+            {currentProduct.category}
+          </span>
+        </div>
+        <h3 className="text-xl font-bold mb-2">{currentProduct.productName}</h3>
+        <p className="text-sm text-white/90 mb-2">{currentProduct.manufacturer}</p>
+        <p className="text-sm text-white/80 leading-relaxed mb-4">
+          {currentProduct.description}
+        </p>
+      </div>
+
+      {/* Slide Indicators */}
+      <div className="absolute bottom-4 right-6 flex space-x-2">
+        {productSlides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentSlide 
+                ? 'bg-white scale-125' 
+                : 'bg-white/50 hover:bg-white/75'
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Play/Pause Button */}
+      <button
+        onClick={() => setIsAutoPlaying(!isAutoPlaying)}
+        className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
+      >
+        {isAutoPlaying ? (
+          <div className="w-3 h-3 border-2 border-white rounded-sm">
+            <div className="w-0.5 h-full bg-white mx-0.5"></div>
+            <div className="w-0.5 h-full bg-white"></div>
+          </div>
+        ) : (
+          <PlayCircle className="w-5 h-5" />
+        )}
+      </button>
+
+      {/* Progress Bar */}
+      {isAutoPlaying && (
+        <div className="absolute top-0 left-0 w-full h-1 bg-white/20">
+          <div 
+            className="h-full bg-primary-400 transition-all duration-100 ease-linear"
+            style={{ 
+              width: `${((Date.now() % 4000) / 4000) * 100}%`,
+              animation: 'progress 4s linear infinite'
+            }}
+          />
+        </div>
+      )}
+    </div>
+  )
+}
 
 const Home = () => {
   const manufacturers = [
@@ -115,19 +305,7 @@ const Home = () => {
             </div>
             
             <div className="relative animate-fade-in-up lg:animate-delay-300">
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1565086447593-ea55eb58a0e1?w=600&h=400&fit=crop&crop=center"
-                  alt="Industrial textile machinery"
-                  className="w-full h-96 object-cover rounded-xl shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-900/30 to-transparent rounded-xl"></div>
-                <button className="absolute inset-0 flex items-center justify-center group">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm">
-                    <PlayCircle className="w-10 h-10 text-white" />
-                  </div>
-                </button>
-              </div>
+              <ProductSlideshow />
             </div>
           </div>
         </div>
@@ -224,31 +402,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-primary-50 to-blue-50 rounded-xl p-8 mb-8">
-              <h3 className="text-2xl font-bold text-industrial-800 mb-3">
-                Ready to Upgrade Your Production?
-              </h3>
-              <p className="text-industrial-600 mb-6 max-w-2xl mx-auto">
-                Partner with industry leaders. Our exclusive manufacturer relationships ensure you get the best technology, support, and value for your investment.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/manufacturers"
-                  className="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300 transform hover:scale-105"
-                >
-                  Explore Our Partners
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-                <Link
-                  to="/products"
-                  className="inline-flex items-center px-8 py-4 border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-600 hover:text-white transition-all duration-300"
-                >
-                  View All Products
-                </Link>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
