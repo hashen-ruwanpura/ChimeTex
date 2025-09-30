@@ -39,8 +39,16 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-primary-700 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-xl">CT</span>
+              <div className="mr-3">
+                <img 
+                  src="/images/logo1.jpeg" 
+                  alt="Chime Tex International Logo" 
+                  className="h-12 w-auto object-contain"
+                  style={{ 
+                    filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))',
+                    borderRadius: '2px'
+                  }}
+                />
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold text-industrial-800">Chime Tex International</h1>

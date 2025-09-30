@@ -19,8 +19,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center mr-3">
-                <span className="text-white font-bold text-lg">CT</span>
+              <div className="mr-3">
+                <img 
+                  src="/images/logo1.jpeg" 
+                  alt="Chime Tex International Logo" 
+                  className="h-10 w-auto object-contain"
+                  style={{ 
+                    filter: 'brightness(1.2) contrast(1.1)',
+                    borderRadius: '2px'
+                  }}
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">Chime Tex International</h3>
