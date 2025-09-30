@@ -4,10 +4,6 @@ import {
   MapPin, 
   Phone, 
   Mail, 
-  Facebook, 
-  Twitter, 
-  Linkedin, 
-  Instagram,
   ArrowRight 
 } from 'lucide-react'
 
@@ -21,7 +17,7 @@ const Footer = () => {
             <div className="flex items-center mb-4">
               <div className="mr-3">
                 <img 
-                  src="/images/logo1.jpeg" 
+                  src="/images/LogoUpdated.png" 
                   alt="Chime Tex International Logo" 
                   className="h-10 w-auto object-contain"
                   style={{ 
@@ -38,20 +34,6 @@ const Footer = () => {
             <p className="text-industrial-300 text-sm leading-relaxed mb-4">
               With 15+ years of excellence, we are exclusive agents for world-renowned manufacturers like SSM AG, Brückner GmbH, Benninger AG, Lafer SpA, Zimmer Austria, and Comatex Italy.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-industrial-400 hover:text-primary-400 transition-colors duration-200">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-industrial-400 hover:text-primary-400 transition-colors duration-200">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-industrial-400 hover:text-primary-400 transition-colors duration-200">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-industrial-400 hover:text-primary-400 transition-colors duration-200">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}

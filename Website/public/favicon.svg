@@ -2,5 +2,5 @@
 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- This is a simple SVG wrapper for the logo image -->
   <rect width="32" height="32" rx="4" fill="#FFFFFF"/>
-  <image href="/images/logo1.jpeg" x="2" y="2" width="28" height="28" preserveAspectRatio="xMidYMid slice"/>
+  <image href="/images/LogoUpdated.png" x="2" y="2" width="28" height="28" preserveAspectRatio="xMidYMid slice"/>
 </svg>

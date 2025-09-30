@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link to="/" className="flex-shrink-0 flex items-center">
               <div className="mr-3">
                 <img 
-                  src="/images/logo1.jpeg" 
+                  src="/images/LogoUpdated.png" 
                   alt="Chime Tex International Logo" 
                   className="h-12 w-auto object-contain"
                   style={{ 
