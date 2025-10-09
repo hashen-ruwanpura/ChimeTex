@@ -74,7 +74,7 @@ const About = () => {
                 About Chime Tex International
               </h1>
               <p className="text-xl text-industrial-200 leading-relaxed mb-8">
-                With close to one decade of excellence in textile machinery solutions, we are one of the leading and most trusted partners for world-class machinery and comprehensive technical support in Sri Lanka.
+                With over a decade of proven excellence in textile machinery solutions, we stand among Sri Lanka’s leading and most trusted partners, delivering world-class machinery and comprehensive technical support.
               </p>
               
               {/* Key highlights */}
@@ -119,21 +119,25 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-blue-600 rounded-xl opacity-20 blur-2xl transform scale-110"></div>
               
               {/* Logo container with enhanced styling */}
-              <div className="relative bg-white bg-opacity-95 backdrop-blur-sm rounded-xl shadow-2xl p-4 transform hover:scale-105 transition-all duration-500 hover:shadow-primary-500/25 border border-white border-opacity-20">
-                {/* Decorative corner elements */}
-                <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary-400 rounded-tl-lg"></div>
-                <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-primary-400 rounded-tr-lg"></div>
-                <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary-400 rounded-bl-lg"></div>
-                <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary-400 rounded-br-lg"></div>
+              <div className="relative mx-auto bg-gradient-to-br from-blue-50 via-sky-50 to-blue-100 rounded-xl shadow-xl border border-blue-200 p-4 w-full max-w-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 ease-in-out">
+                {/* Animation ring */}
+                <div className="absolute inset-2 rounded-lg border-2 border-blue-300 opacity-40 animate-pulse-slow"></div>
                 
+                {/* Logo image */}
                 <img
                   src="/images/LogoWithName.png"
-                  alt="Chime Tex International - Leading textile machinery solutions in Sri Lanka"
-                  className="w-full h-[450px] object-contain drop-shadow-lg scale-125"
+                  alt="Chime Tex International Logo with Company Name"
+                  className="h-[350px] w-full object-contain scale-110 transform transition-transform duration-300 ease-in-out group-hover:scale-115"
                 />
                 
-                {/* Subtle animation ring */}
-                <div className="absolute inset-2 border-2 border-primary-200 rounded-lg opacity-30 animate-pulse"></div>
+                {/* Corner decorations */}
+                <div className="absolute top-1 left-1 w-4 h-4 border-t-2 border-l-2 border-primary-400"></div>
+                <div className="absolute top-1 right-1 w-4 h-4 border-t-2 border-r-2 border-primary-400"></div>
+                <div className="absolute bottom-1 left-1 w-4 h-4 border-b-2 border-l-2 border-primary-400"></div>
+                <div className="absolute bottom-1 right-1 w-4 h-4 border-b-2 border-r-2 border-primary-400"></div>
+                
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-white/20 blur-md opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
               </div>
               
               {/* Floating elements around logo */}
@@ -192,13 +196,13 @@ const About = () => {
                   className="w-full h-48 object-cover rounded-lg shadow-lg mt-8"
                 />
                 <img
-                  src="https://www.ssm.ch/fileadmin/_processed_/0/8/csm_ssm-draw-winding_993cb665a5.jpg"
-                  alt="SSM Draw Winding System - Advanced yarn processing technology"
+                  src="https://www.ssm.ch/fileadmin/_processed_/4/f/csm_ssm-tg1-at-air-texturing-machine_517972ffed.jpg"
+                  alt="SSM TG1-AT Air Texturing Machine - Advanced yarn texturing technology"
                   className="w-full h-48 object-cover rounded-lg shadow-lg -mt-8"
                 />
                 <img
-                  src="https://www.comatex.net/immagini/grande_ISN-220-Verificatrice-standard-per-tessuto-a-maglia-navetta-o-tessuto-non-tessuto_1280x640.jpg"
-                  alt="Comatex ISN-220 Inspection System - Italian quality control technology"
+                  src="https://www.ssm.ch/fileadmin/_processed_/0/f/csm_ssm-neo-fw-precision-package-winder-99242_056a27a582.jpg"
+                  alt="SSM NEO-FW Precision Package Winder - State-of-the-art winding technology"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
               </div>
