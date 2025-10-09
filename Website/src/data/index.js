@@ -2846,6 +2846,289 @@ export const zimmerProducts = [
       'Outdoor signage',
       'Weather-resistant materials'
     ]
+  },
+  // Digital Printing Systems
+  {
+    id: 'zimmer-colaris-textile',
+    name: 'COLARIS Digital Textile Printer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Digital Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/textile-prints-COLARIS-24-2200_GBR-Lakeland.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/digital-textile-printing/',
+    description: 'COLARIS digital textile printer delivers sustainable, high-performance printing on woven, knitted, and nonwoven fabrics. Features FUJIFILM Dimatix Starfire™ printheads with permanent ink circulation for brilliant, cost-efficient textile prints.',
+    keyFeatures: [
+      'Up to 72 FUJIFILM Dimatix Starfire printheads',
+      'Open ink system (reactive, acid, disperse)',
+      'Working widths: 1,800 / 2,700 / 3,400 mm',
+      'Maximum 12 colors with native 400 dpi resolution',
+      'Up to 3,200 dpi maximum print resolution',
+      'Production capacity up to 860 m²/h',
+      'Eco-friendly with minimal waste',
+      'Flexible drying options: Hot air, IR, or superheated steam'
+    ],
+    specifications: {
+      'Fabric Types': 'Woven, knitted and nonwoven fabrics',
+      'Working Width': '1,800 / 2,700 / 3,400 mm',
+      'Maximum Colors': '12',
+      'Printheads': 'Up to 72 FUJIFILM Dimatix Starfire',
+      'Print Resolution': 'Up to 3,200 dpi',
+      'Production Capacity': 'Up to 860 m²/h',
+      'Operating Temperature': '90-180°C'
+    },
+    applications: [
+      'Home Textiles (Bedding, Curtains, Upholstery, Tableware)',
+      'Apparel & Fashion (Menswear, Ladieswear, Childwear)',
+      'Knits & Clothing',
+      'Underwear & Sleepwear',
+      'Technical Textiles',
+      'High-quality textile printing'
+    ]
+  },
+  {
+    id: 'zimmer-colaris-terry',
+    name: 'COLARIS Terry Products Printer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Digital Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/terry-products-COLARIS-druckschlitten_GBR-Lakeland.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/digital-terry-products-printing/',
+    description: 'Specialized digital printer for terry products with inline pre-treatment and wet-on-wet printing ensuring optimal ink penetration. Brilliant colors, top quality and economical digital printing for towels.',
+    keyFeatures: [
+      'Inline pre-treatment for optimal ink penetration',
+      'Wet-on-wet printing technology',
+      'Brilliant colors on terry fabrics',
+      'Up to 72 FUJIFILM Dimatix Starfire printheads',
+      'Deep penetration through pile structure',
+      'Economical and high-quality results',
+      'Suitable for towels, bathmats, bathrobes'
+    ],
+    specifications: {
+      'Fabric Type': 'Terry products and pile fabrics',
+      'Printing Technology': 'Wet-on-wet with inline pre-treatment',
+      'Printheads': 'Up to 72 FUJIFILM Dimatix Starfire',
+      'Ink Penetration': 'Deep through pile structure',
+      'Quality': 'Top quality brilliant colors'
+    },
+    applications: [
+      'Terry Towels',
+      'Bathmats',
+      'Bathrobes',
+      'Beach Towels',
+      'Luxury Bathroom Products'
+    ]
+  },
+  {
+    id: 'zimmer-colaris-technical',
+    name: 'COLARIS Technical Textiles Printer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Digital Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/technical-textiles-COLARIS_warenreinigung_NLD-C4CC.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/digital-technical-textile-printing/',
+    description: 'Modular digital printing system for technical textiles with 12 color groups and up to three dye classes. Adaptable to various materials, economical and precise for all 12 technical textile groups.',
+    keyFeatures: [
+      'Modular system for technical textiles',
+      '12 color groups capability',
+      'Up to three dye classes',
+      'Adaptable to various materials',
+      'Economical and precise printing',
+      'Suitable for all 12 technical textile groups',
+      'High-performance for demanding applications'
+    ],
+    specifications: {
+      'System Type': 'Modular digital printing',
+      'Color Groups': '12',
+      'Dye Classes': 'Up to 3',
+      'Material Adaptability': 'Various technical textiles',
+      'Applications': 'All 12 technical textile groups'
+    },
+    applications: [
+      'Buildtech', 'Clothtech', 'Hometech',
+      'Medtech', 'Mobiltech', 'Oekotech',
+      'Geotech', 'Indutech', 'Packtech',
+      'Protech', 'Sporttech', 'Agrotech'
+    ]
+  },
+  {
+    id: 'zimmer-colaris-military',
+    name: 'COLARIS Military Textiles Printer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Digital Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/military-textiles-COLARIS_trockner_NLD-C4CC.jpg',
+    price: 'Contact for pricing',
+    featured: false,
+    officialUrl: 'https://www.zimmer-austria.com/digital-military-printing/',
+    description: 'Designed for uniforms, camouflage nets and other military textiles. Digital printing covers large areas with perfect camouflage and IR signatures. Unlimited colors and robust quality for tough conditions.',
+    keyFeatures: [
+      'Perfect camouflage pattern printing',
+      'IR signature compliance',
+      'Unlimited color capability',
+      'Large area coverage',
+      'Robust quality for military standards',
+      'Tough condition durability',
+      'Specialized for defense industry'
+    ],
+    specifications: {
+      'Application': 'Military textiles and camouflage',
+      'Pattern Quality': 'Perfect camouflage with IR signatures',
+      'Color Range': 'Unlimited',
+      'Durability': 'Tough conditions compliance',
+      'Industry Standard': 'Military grade'
+    },
+    applications: [
+      'Military Uniforms',
+      'Camouflage Nets',
+      'Defense Textiles',
+      'Performance Fabrics',
+      'Armor Fabrics',
+      'Tactical Gear'
+    ]
+  },
+  {
+    id: 'zimmer-colaris-pile',
+    name: 'COLARIS Pile Fabrics Printer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Digital Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/pile-fabrics-COLARIS-druckschlitten_GBR-Lakeland.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/digital-pile-printing/',
+    description: 'Ideal for raschel and soft carpet qualities. Deep ink penetration through voluminous pile substrate creates brilliant prints and high resolution designs. Modular integration including third party components.',
+    keyFeatures: [
+      'Ideal for raschel and soft carpets',
+      'Deep ink penetration through pile',
+      'Brilliant prints with high resolution',
+      'Voluminous substrate handling',
+      'Modular integration capability',
+      'Third party component compatibility',
+      'Specialized for pile fabrics'
+    ],
+    specifications: {
+      'Fabric Types': 'Raschel, soft carpet, pile fabrics',
+      'Ink Penetration': 'Deep through voluminous pile',
+      'Print Quality': 'Brilliant high resolution',
+      'System': 'Modular with third party integration'
+    },
+    applications: [
+      'Raschel Carpets',
+      'Soft Carpets',
+      'Blankets',
+      'Plush Fabrics',
+      'Fleece',
+      'Pile Textiles'
+    ]
+  },
+  {
+    id: 'zimmer-colaris-chromojet-carpet',
+    name: 'COLARIS & CHROMOJET Carpet Printer',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Digital Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/tufted-carpets-pa-wo-CHROMOJET-druckschlitten_TUR-Erciyes.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/printer-for-tufted-carpets-pa-wo/',
+    description: 'Vibrant, high-resolution printing on tufted PA (polyamide) and wool carpets. Ideal for contract business due to high resilience and long-lasting performance. Available as wall-to-wall carpets, blanks, runners, mats or tiles.',
+    keyFeatures: [
+      'Vibrant high-resolution carpet printing',
+      'Suitable for PA (polyamide) and wool',
+      'High resilience and durability',
+      'Long-lasting performance',
+      'Multiple format options',
+      'Contract business quality',
+      'COLARIS & CHROMOJET technology'
+    ],
+    specifications: {
+      'Carpet Types': 'Tufted PA, wool, PES',
+      'Print Quality': 'Vibrant high-resolution',
+      'Durability': 'High resilience, long-lasting',
+      'Output Formats': 'Wall-to-wall, blanks, runners, mats, tiles'
+    },
+    applications: [
+      'Tufted Carpets (PA/Wool/PES)',
+      'Woven Pile Carpets',
+      'Raschel Soft Carpets',
+      'Needlefelt Carpets',
+      'Contract Business',
+      'Residential & Commercial Flooring'
+    ]
+  },
+  {
+    id: 'zimmer-thermocure',
+    name: 'THERMOCURE Curing & Fixation System',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Finishing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/THERMOCURE_fixiereinheit_GBR-Lakeland.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/thermocure/',
+    description: 'Advanced curing and fixation system for textile finishing. Ensures perfect color fixation and fabric treatment with precise temperature control and efficient energy use.',
+    keyFeatures: [
+      'Precise temperature control',
+      'Perfect color fixation',
+      'Energy-efficient operation',
+      'Compatible with various dye types',
+      'Integrated monitoring systems',
+      'Optimal fabric treatment',
+      'Reliable processing results'
+    ],
+    specifications: {
+      'System Type': 'Curing and fixation',
+      'Temperature Control': 'Precise digital control',
+      'Dye Compatibility': 'Various dye types',
+      'Energy Efficiency': 'Optimized consumption'
+    },
+    applications: [
+      'Pigment Fixation',
+      'Dye Curing',
+      'Textile Finishing',
+      'Color Fastness',
+      'Fabric Treatment'
+    ]
+  },
+  {
+    id: 'zimmer-modus',
+    name: 'MODUS Steaming & Fixation Unit',
+    manufacturer: 'zimmer',
+    category: 'zimmer',
+    subcategory: 'Finishing',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/MODUS_steamer_GBR-Lakeland.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.zimmer-austria.com/modus/',
+    description: 'State-of-the-art steaming and fixation unit for textile finishing. Provides optimal steam fixation for reactive, acid, and direct dyes with precise control and uniform treatment.',
+    keyFeatures: [
+      'Optimal steam fixation',
+      'Suitable for reactive, acid, direct dyes',
+      'Precise steam control',
+      'Uniform treatment across width',
+      'Energy-efficient steaming',
+      'Modular design',
+      'Easy maintenance'
+    ],
+    specifications: {
+      'System Type': 'Steaming and fixation',
+      'Dye Types': 'Reactive, acid, direct dyes',
+      'Steam Control': 'Precise uniform distribution',
+      'Design': 'Modular construction'
+    },
+    applications: [
+      'Reactive Dye Fixation',
+      'Acid Dye Processing',
+      'Direct Dye Treatment',
+      'Textile Steaming',
+      'Color Development'
+    ]
   }
 ]
 
