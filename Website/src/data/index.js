@@ -125,7 +125,7 @@ export const manufacturers = [
     shortName: 'Comatex',
     country: 'Italy',
     established: 1994,
-    logo: 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
+    logo: 'https://www.comatex.net/cloudpicture/at-240-s-600x400.i5695-kcKu39-w600-h400-l1-c1-x1-q90.jpg',
     website: 'https://www.comatex.net/en/',
     specialties: ['Knit Fabric Processing', 'Woven Fabric Processing', 'Non-woven Fabric Processing'],
     description: 'Leading Italian manufacturer specializing in precision mechanical and textile machinery with 30+ years of experience.',
