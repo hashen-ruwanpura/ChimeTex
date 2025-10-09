@@ -101,10 +101,10 @@ export const manufacturers = [
     shortName: 'Zimmer Austria',
     country: 'Austria',
     established: 1875,
-    logo: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+    logo: 'https://www.zimmer-austria.com/fileadmin/_processed_/0/a/csm_rotascreen_tg_tu_fce80e3e32.jpg',
     website: 'https://www.zimmer-austria.com/',
-    specialties: ['Carpet Manufacturing', 'Technical Textiles', 'Nonwovens'],
-    description: 'Austrian pioneer in carpet tufting technology and complete solutions for technical textile production.',
+    specialties: ['Digital Printing', 'Screen Printing', 'Carpet Coating & Finishing'],
+    description: 'Austrian leader in digital and screen printing systems for textiles and carpets, providing state-of-the-art solutions with CHROMOJET, COLARIS, and ROTASCREEN technologies.',
     partnership: 'Strategic Partner since 2021'
   },
   {
@@ -2257,22 +2257,21 @@ export const zimmerProducts = [
   // Rotary Screen Printing Machines
   {
     id: 'zimmer-rotascreen-tg',
-    name: 'ROTASCREEN.TG Closed Bearing System',
+    name: 'ROTASCREEN TG - Closed Bearing System',
     manufacturer: 'zimmer',
     category: 'zimmer',
     subcategory: 'Rotary Screen Printing',
-    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/7/7/csm_Rotasceen_TG_closed_3135335136.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/rotascreentg',
-    description: 'Advanced rotary screen printing machine with closed bearing system featuring compact construction and the famous ZIMMER MAGNET SYSTEM PLUS technology.',
+    officialUrl: 'https://www.zimmer-austria.com/rotascreen-tg-tu/',
+    description: 'Advanced rotary screen printing machine with closed bearing system featuring compact construction and the famous ZIMMER MAGNET SYSTEM PLUS technology. Maximum visibility with reliable, sustainable design.',
     keyFeatures: [
-      'Compact and solid construction',
-      'Closed bearing printhead type G with squeegee holder RH-ECO-G',
-      'Printing width: 165/185/225/250/285/330 cm',
+      'Compact and solid construction with G-Type closed bearing printhead',
+      'Printing width: 165/185/220/240/285/320/330 cm',
       'Up to 24 printing stations',
       'Individual width adjustment of both printing heads',
-      'ACR-5-control system for easy handling and short set-up time',
+      'Smart control panels for easy handling',
       'Automatic repeat adjustment from 64 to 102 cm',
       'Digital synchronisation guarantees high printing accuracy up to 120 m/min'
     ],
@@ -2282,7 +2281,7 @@ export const zimmerProducts = [
       'Printing Stations': 'Up to 24 stations',
       'Maximum Speed': '120 m/min',
       'Repeat Range': '64-102 cm automatic adjustment',
-      'Control System': 'ACR-5 with design memory'
+      'Fabric Types': 'Woven, knitted and nonwoven fabrics'
     },
     applications: [
       'Home Textiles',
@@ -2295,24 +2294,23 @@ export const zimmerProducts = [
   },
   {
     id: 'zimmer-rotascreen-tu',
-    name: 'ROTASCREEN.TU Open Bearing System',
+    name: 'ROTASCREEN TU - Open Bearing System',
     manufacturer: 'zimmer',
     category: 'zimmer',
     subcategory: 'Rotary Screen Printing',
-    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F2_800x600_ROTASCREEN_TU_2017_v1_0.jpg',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/c/8/csm_Rotasceen_TU_open_cf58085f76.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/rotascreentu',
-    description: 'High-performance rotary screen printing machine with open bearing system for fast, safe handling and set-up of screens during design changes.',
+    officialUrl: 'https://www.zimmer-austria.com/rotascreen-tg-tu/',
+    description: 'High-performance rotary screen printing machine with open bearing system for fast, safe handling and set-up of screens during design changes. Perfect for customers requiring high flexibility.',
     keyFeatures: [
       'Fast, safe handling and set-up of screens with color pipes',
-      'Open bearing printhead type U with squeegee holder RH-ECO-U',
-      'Printing width: 165/185/225/250/285/330 cm',
+      'Open bearing printhead type U for maximum flexibility',
+      'Printing width: 165/185/220/240/285/320/330 cm',
       'Up to 24 printing stations',
       'Individual width adjustment of both printing heads',
-      'ACR-5-control system with automatic repeat setting',
-      'Design memory and quick reproduction of re-orders',
-      'Digital synchronisation up to 120 m/min printing speed'
+      'Smart control panels with quick adjustments',
+      'Precision at speed: Digital synchronisation up to 120 m/min'
     ],
     specifications: {
       'System Type': 'Open bearing rotary screen printing',
@@ -2333,15 +2331,15 @@ export const zimmerProducts = [
   },
   {
     id: 'zimmer-rotascreen-rsdm-v',
-    name: 'ROTASCREEN.RSDM-V Advanced Open Bearing',
+    name: 'ROTASCREEN RSDM-V - Advanced Open Bearing',
     manufacturer: 'zimmer',
     category: 'zimmer',
     subcategory: 'Rotary Screen Printing',
-    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F3_800x600_ROTASCREEN_RSDM-V_2017_v1.jpg',
+    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/klagenfurt/machines/rotascreen/Rotasceen_high_quality_printing_maschine.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/rotascreenrsdm-v',
-    description: 'Most advanced rotary screen printing system with RSDM-V open screen bearing and digital operating panel for perfect repeat adjustment.',
+    officialUrl: 'https://www.zimmer-austria.com/rotascreen-rsdm-v/',
+    description: 'Most advanced rotary screen printing system with RSDM-V open screen bearing and digital operating panel for perfect repeat adjustment from 64-120 cm.',
     keyFeatures: [
       'RSDM-V open screen bearing printing head with digital panel',
       'Repeat navigator for perfect pre- and fine-adjustment 64-120 cm',
@@ -2406,40 +2404,42 @@ export const zimmerProducts = [
   // Flat Screen Printing Machines
   {
     id: 'zimmer-magnoprint',
-    name: 'MAGNOPRINT Flat Screen Printing Machine',
+    name: 'MAGNOPRINT - Flat Screen Printing Machine',
     manufacturer: 'zimmer',
     category: 'zimmer',
     subcategory: 'Flat Screen Printing',
-    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_Magnoprint_FlatScreen_2.jpg',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/b/f/csm_magnoprint_linie_e32f583b27.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/magnoprint',
-    description: 'The most versatile flat screen printing machine with MAGNET SYSTEM PLUS for finest printing quality, especially for centre printing and geometrical designs.',
+    officialUrl: 'https://www.zimmer-austria.com/magnoprint/',
+    description: 'The world\'s most versatile and fastest flat screen printing machine for all textile fabrics. Each printing station offers individually adjustable repeat length, speed, squeegee strokes, and magnetic power.',
     keyFeatures: [
-      'Original MAGNET SYSTEM PLUS technology',
-      'Finest printing quality for centre printing and geometrical designs',
-      'Repeat length, speed, and squeegee strokes individually adjustable',
-      'Magnetic power individually adjustable on each station',
-      'Available printing widths: 165/185/225/250/285/330 cm',
+      'Unmatched flexibility with ZIMMER MAGNET SYSTEM PLUS',
+      'Printing widths from 165 to 330 cm',
       'Up to 24 printing stations',
-      'Standard magnet bars SMP 70/55 or extra strong SMP 70/95',
-      'Repeat sizes up to 600 cm for large designs'
+      'Repeat length flexibly adjustable from 60 to 600 cm',
+      'Individual servo drive with stepless speed control per station',
+      'Magnetic Single Roll Rod or Twin Roll Rod System',
+      'Maximum speed: 30 meters per minute',
+      'Perfect for deeper color penetration and high production speeds'
     ],
     specifications: {
       'System Type': 'Flat screen printing with MAGNET SYSTEM PLUS',
       'Printing Width': '165-330 cm',
       'Printing Stations': 'Up to 24 stations',
-      'Maximum Repeat': 'Up to 600 cm',
-      'Magnet Bars': 'SMP 70/55 standard, SMP 70/95 extra strong',
-      'Production Capacity': '100-10,000 m optimal range'
+      'Maximum Speed': '30 m/min',
+      'Repeat Range': '60-600 cm',
+      'Printing Direction': 'Warp direction',
+      'Effective Printing Length': '8 m up to 60 m'
     },
     applications: [
+      'Home Textiles',
       'Towels',
       'Blankets',
-      'Flags & Banners',
-      'Home Textiles',
-      'Upholstery',
-      'Nonwovens'
+      'Apparel & Knits',
+      'Terry Products',
+      'Pile Fabrics',
+      'Military Textiles'
     ]
   },
   {
