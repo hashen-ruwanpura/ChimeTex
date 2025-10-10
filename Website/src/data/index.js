@@ -929,7 +929,7 @@ export const ssmProducts = [
     image: 'https://www.ssm.ch/fileadmin/_processed_/9/7/csm_ssm-xeno-yw-precitens-combi-winder_f48f1247fc.jpg',
     price: 'Contact for pricing',
     featured: false,
-    officialUrl: 'https://www.ssm.ch/products/winding-solutions/dye-packages-and-rewinding-machines#c48148',
+    officialUrl: 'https://www.ssm.ch/products/winding-solutions/dye-packages-and-rewinding-machines#c54104',
     description: 'Versatile machine for both muff preparation (CTM) and rewinding after dyeing (MTC) processes.',
     keyFeatures: [
       'Dual functionality (CTM/MTC)',
@@ -3558,7 +3558,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/at-240-s-600x400.i5695-kcKu39-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=3852',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/2-02-at-240-s',
     description: 'Fast speed slitting machine with opening triangle for tubular fabric, featuring fabric twisting system and manual needle drop control for preparation of fabric to dyeing in open width.',
     keyFeatures: [
       'Speed of cut and plait up to 120mt/min',
@@ -3597,7 +3597,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/at-280-600x400.i5696-kwVMpxe-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=3852',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/2-02-at-280',
     description: 'Automatic slitting machine with opening triangle for tubular fabric, featuring fabric rotating system and automatic needle drop control, complete with J-box for sewing and unwinding of rolls.',
     keyFeatures: [
       'Automatic slitting with opening triangle',
@@ -3632,7 +3632,7 @@ export const comatexProducts = [
     subcategory: 'Slitting & Plaiting',
     image: 'https://www.comatex.net/cloudpicture/sfh-240-600x400.i5701-kdcJCf0-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=5782',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/3-01-sfh-240',
     description: 'Roll plaiting machine with roll unwinder up to 80mt/min, suitable for integration with sewing rail or sewing trolley systems.',
     keyFeatures: [
       'Roll unwinder up to 80mt/min',
@@ -3667,7 +3667,7 @@ export const comatexProducts = [
     subcategory: 'Slitting & Plaiting',
     image: 'https://www.comatex.net/cloudpicture/sf-240-600x400.i5700-kC5lAVp-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=5782',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/3-01-sf-240',
     description: 'Tensionless roll plaiting machine with unwinding rollers up to 100 mt/min, featuring tensionless fabric transport ideal for knit and elastomeric fabrics.',
     keyFeatures: [
       'Unwinding rollers up to 100 mt/min',
@@ -3705,7 +3705,7 @@ export const comatexProducts = [
     subcategory: 'Slitting & Plaiting',
     image: 'https://www.comatex.net/cloudpicture/sfl-240-600x400.i5702-kxpxPr0-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=5782',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/3-01-sfl-240',
     description: 'Advanced tensionless plaiting machine with unwinding rollers up to 130 mt/min, featuring tensionless fabric transport and special "relax" plaiting type, ideal for knit and elastomeric fabrics.',
     keyFeatures: [
       'Unwinding rollers up to 130 mt/min',
@@ -3745,7 +3745,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/isn-4000-600-1.i5582-k6hydsv-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/inspection-machine/open-fabric/isn-220-standard-inspection-machine.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-03-isn',
     description: 'Inspection and winding machine for any type of fabric with wide lighted inspection table, automatic edge alignment, adjustable roll hardness and fabric tension. Can be interfaced with exit of stenter or other machines without stopping.',
     keyFeatures: [
       'Wide lighted inspection table for quality check',
@@ -3783,7 +3783,7 @@ export const comatexProducts = [
     subcategory: 'Inspection Machines',
     image: 'https://www.comatex.net/cloudpicture/isp-4000-2025-600.i5770-kcPpV9X-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/inspection-machine/open-fabric/isp-220-inspection-machine-with-rolling-back.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-03-isp',
     description: 'Advanced inspection machine for any type of fabric with winding backside to operator, featuring wide lighted inspection table, automatic edge alignment, adjustable roll hardness and fabric tension.',
     keyFeatures: [
       'Inspection for any type of fabric',
@@ -3821,7 +3821,7 @@ export const comatexProducts = [
     subcategory: 'Inspection Machines',
     image: 'https://www.comatex.net/cloudpicture/2023-05-11-14-26-12-600.i4051-kpC3c7M-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/inspection-machine/tensionless/ist-240-tensionless-inspection-machine-.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-02-ist',
     description: 'Specialized inspection machine for delicate fabrics with tensionless fabric transport system and precision fabric tension sensor for gentle handling without stress.',
     keyFeatures: [
       'Designed specifically for delicate fabrics',
@@ -3860,7 +3860,7 @@ export const comatexProducts = [
     subcategory: 'Inspection Machines',
     image: 'https://www.comatex.net/cloudpicture/ism-4000-600.i3548-kL5ssSv-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/inspection-machine/tubular-fabric/ism-120-tubular-inspection-machine-with-mirrors.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-05-ism',
     description: 'Specialized inspection machine for tubular fabrics, supplied with 3 tube lamps of different widths for internal fabric lighting, spreading and alignment. Features 2 lateral mirrors at 45° for complete fabric quality inspection all around.',
     keyFeatures: [
       'Designed specifically for tubular fabrics',
@@ -3901,7 +3901,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/imb-a-render-1-4000-600-2.i4458-kkgGcQy-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/packing-rollplait/packing-for-rolls/imb-a-roll-packing-machine-wrapping-system.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/6-02-imb-a',
     description: 'Advanced packing machine for rolls, pushing the roll on vertical plastic foil. Suggested for middle-high production volumes, can be supplied with conveyor line up to 12 inspection machines.',
     keyFeatures: [
       'Packing machine for rolls with vertical plastic foil',
@@ -3943,7 +3943,7 @@ export const comatexProducts = [
     subcategory: 'Packing Roll/Plait',
     image: 'https://www.comatex.net/cloudpicture/imb-sa-4000-600.i4424-kZRl7S-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/packing-rollplait/packing-for-rolls/imb-sa-roll-packing-winding-system.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/6-01-imb-sa-singola',
     description: 'Very tight shrink packing by plastic winding system with possibility to increase roll protection by wrapping multiple times. Suggested for medium productions or with automatic roll cut after inspection machine.',
     keyFeatures: [
       'Very tight shrink packing by plastic winding system',
@@ -3985,7 +3985,7 @@ export const comatexProducts = [
     subcategory: 'Packing Roll/Plait',
     image: 'https://www.comatex.net/cloudpicture/a1004090001-anteprima.i6019-kTAERmu-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/packing-rollplait/packing-for-plaited-fabric/imb-pk-packing-machine-for-plaited-fabric-box-and-packs.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/6-02-imb-pk',
     description: 'Specialized packing machine for plaited fabrics, packs, boxes and mattresses. Features packing by pushing the pack on vertical plastic foil with pressure of plaited fabric before packing. Can be supplied with conveyor line up to 12 inspection machines.',
     keyFeatures: [
       'Packing machine for plaited fabrics, packs, box and mattress',
@@ -4023,7 +4023,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/isn-imbsa-4000-600.i3553-ko5GLxt-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/packing-rollplait/inspection-with-roll-packing/inspack-compact-inspection-with-packing-compact.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-01-isn-imb-sa',
     description: 'Compact inspection machine with packing and rolling in front to the operator. Features automatic roll cut, wrapping with plastic, weight measurement and full packing in only 53cm! Possible to apply label by hand before and after packing, saving auto-labeller costs.',
     keyFeatures: [
       'Inspection machine with packing and rolling in front to operator',
@@ -4060,7 +4060,7 @@ export const comatexProducts = [
     subcategory: 'Inspection with Packing',
     image: 'https://www.comatex.net/cloudpicture/a1003330001-b-copia-anteprima.i5983-k9mf7oM-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/packing-rollplait/inspection-with-roll-packing/inspack-line-inspection-packing-and-labelling-line.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-01-isp-imb-sa',
     description: 'Complete inspection line with fabric winding and packaging backside to the operator. Features automatic roll cut, weight measurement, wrapping by plastic and labelling. Suggested for high production volumes.',
     keyFeatures: [
       'Inspection with fabric winding and packaging backside to operator',
@@ -4097,7 +4097,7 @@ export const comatexProducts = [
     subcategory: 'Inspection with Packing',
     image: 'https://www.comatex.net/cloudpicture/isp-imb-sa-2023-white-copia.i2734-k0EeQnY-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/packing-rollplait/inspection-with-roll-packing/inspack-line-zero-tensionless-inspection-packing-and-labelling.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-01-isx-imb-sa',
     description: 'Advanced tensionless + relax inspection machine with fabric winding and packaging backside to the operator. Features automatic roll cut, weight, wrapping by plastic and labelling. Suggested for high productions of elastomeric fabrics.',
     keyFeatures: [
       'Tensionless + relax inspection machine',
