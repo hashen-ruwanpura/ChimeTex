@@ -3558,7 +3558,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/at-240-s-600x400.i5695-kcKu39-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/rope-opener/at-240-s-semi-automatic-slitting-machine-for-tubular.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=3852',
     description: 'Fast speed slitting machine with opening triangle for tubular fabric, featuring fabric twisting system and manual needle drop control for preparation of fabric to dyeing in open width.',
     keyFeatures: [
       'Speed of cut and plait up to 120mt/min',
@@ -3597,7 +3597,7 @@ export const comatexProducts = [
     image: 'https://www.comatex.net/cloudpicture/at-280-600x400.i5696-kwVMpxe-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/rope-opener/at-280-automatic-slitting-machine-for-tubular.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=3852',
     description: 'Automatic slitting machine with opening triangle for tubular fabric, featuring fabric rotating system and automatic needle drop control, complete with J-box for sewing and unwinding of rolls.',
     keyFeatures: [
       'Automatic slitting with opening triangle',
@@ -3632,7 +3632,7 @@ export const comatexProducts = [
     subcategory: 'Slitting & Plaiting',
     image: 'https://www.comatex.net/cloudpicture/sfh-240-600x400.i5701-kdcJCf0-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/plaiting-machine/sfh-240-roll-plaiting-machine.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=5782',
     description: 'Roll plaiting machine with roll unwinder up to 80mt/min, suitable for integration with sewing rail or sewing trolley systems.',
     keyFeatures: [
       'Roll unwinder up to 80mt/min',
@@ -3667,7 +3667,7 @@ export const comatexProducts = [
     subcategory: 'Slitting & Plaiting',
     image: 'https://www.comatex.net/cloudpicture/sf-240-600x400.i5700-kC5lAVp-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/plaiting-machine/sf-240-roll-plaiting-machine-tensionless.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=5782',
     description: 'Tensionless roll plaiting machine with unwinding rollers up to 100 mt/min, featuring tensionless fabric transport ideal for knit and elastomeric fabrics.',
     keyFeatures: [
       'Unwinding rollers up to 100 mt/min',
@@ -3705,7 +3705,7 @@ export const comatexProducts = [
     subcategory: 'Slitting & Plaiting',
     image: 'https://www.comatex.net/cloudpicture/sfl-240-600x400.i5702-kxpxPr0-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/slitting-plaiting/plaiting-machine/sfl-240-roll-plaiting-machine-tensionless-with-fabric-relax.php',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue?category=5782',
     description: 'Advanced tensionless plaiting machine with unwinding rollers up to 130 mt/min, featuring tensionless fabric transport and special "relax" plaiting type, ideal for knit and elastomeric fabrics.',
     keyFeatures: [
       'Unwinding rollers up to 130 mt/min',
