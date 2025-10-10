@@ -30,11 +30,12 @@ export const supplierProductUrls = {
   zimmer: {
     main: 'https://www.zimmer-austria.com/',
     categories: {
-      'Rotary Screen Printing': 'https://www.zimmer-klagenfurt.com/machines/rotary-screen-printing',
-      'Flat Screen Printing': 'https://www.zimmer-klagenfurt.com/machines/flat-screen-printing',
-      'Coating Machines': 'https://www.zimmer-klagenfurt.com/machines/coating-machines',
-      'Dryers': 'https://www.zimmer-klagenfurt.com/machines/dryers',
-      'Coating Lines': 'https://www.zimmer-klagenfurt.com/machines/coating-lines'
+      'Digital Printing': 'https://www.zimmer-austria.com/technology/digital-printing/',
+      'Screen Printing': 'https://www.zimmer-austria.com/technology/screen-printing/',
+      'Carpet Coating & Finishing': 'https://www.zimmer-austria.com/technology/carpet-coating-finishing/',
+      'Coating Machines': 'https://www.zimmer-austria.com/technology/coating-machines/',
+      'Coating Lines': 'https://www.zimmer-austria.com/technology/coating-lines/',
+      'Finishing Systems': 'https://www.zimmer-austria.com/technology/finishing/'
     }
   },
   benninger: {
@@ -101,10 +102,10 @@ export const manufacturers = [
     shortName: 'Zimmer Austria',
     country: 'Austria',
     established: 1875,
-    logo: 'https://www.zimmer-austria.com/fileadmin/_processed_/0/a/csm_rotascreen_tg_tu_fce80e3e32.jpg',
+    logo: 'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
     website: 'https://www.zimmer-austria.com/',
-    specialties: ['Digital Printing', 'Screen Printing', 'Carpet Coating & Finishing'],
-    description: 'Austrian leader in digital and screen printing systems for textiles and carpets, providing state-of-the-art solutions with CHROMOJET, COLARIS, and ROTASCREEN technologies.',
+    specialties: ['Digital Printing', 'Screen Printing', 'Carpet Coating & Finishing', 'Coating Systems'],
+    description: 'Austrian leader in digital and screen printing systems for textiles and carpets, providing state-of-the-art solutions with COLARIS, CHROMOJET, ROTASCREEN, MAGNOROLL, THERMOCURE, and MODUS technologies.',
     partnership: 'Strategic Partner since 2021'
   },
   {
@@ -1377,10 +1378,10 @@ export const featuredProducts = [
     name: 'ZIMMER MAGNOROLL Multipurpose Coating',
     manufacturer: 'zimmer',
     category: 'zimmer',
-    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld1_800x600_MagnorollKnife.jpg',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/1/a/csm_magnoroll_60b9b229bc.jpg',
     price: 'Contact for pricing',
     featured: true,
-    description: 'High-quality multipurpose coating machine with the world-famous ZIMMER MAGNET SYSTEM PLUS guaranteeing 100% uniform application.',
+    description: 'Premium multipurpose coating machine with unique modular layout, featuring the world-famous ZIMMER MAGNET SYSTEM PLUS for 100% uniform application.',
     keyFeatures: [
       'ZIMMER MAGNET SYSTEM PLUS technology',
       'Magnetic Low-Add-On or Direct Roll coating',
@@ -1392,16 +1393,17 @@ export const featuredProducts = [
     specifications: {
       'System Type': 'Multipurpose coating with MAGNET SYSTEM PLUS',
       'Working Width': '500-5600 mm',
-      'Coating Technologies': 'Low-Add-On, Direct Roll, Screen, Knife, Jet',
+      'Coating Technologies': 'Low-Add-On, Direct Roll, Screen, Knife, Slot, Jet',
       'Application Types': 'Liquids, pastes, lacquers, foams',
-      'Precision': '100% uniform application guarantee',
-      'Technical Groups': 'All 12 technical textile groups'
+      'Precision': '100% uniform application',
+      'Applications': 'All technical textile groups'
     },
     applications: [
       'Technical textiles',
       'Industrial coatings',
       'Automotive applications',
-      'All technical textile groups'
+      'Home textiles',
+      'Specialty coatings'
     ]
   },
   {
@@ -2331,39 +2333,43 @@ export const zimmerProducts = [
   },
   {
     id: 'zimmer-rotascreen-rsdm-v',
-    name: 'ROTASCREEN RSDM-V - Advanced Open Bearing',
+    name: 'ROTASCREEN RSDM V - Rotary Screen Printer',
     manufacturer: 'zimmer',
     category: 'zimmer',
-    subcategory: 'Rotary Screen Printing',
-    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/klagenfurt/machines/rotascreen/Rotasceen_high_quality_printing_maschine.jpg',
+    subcategory: 'Screen Printing',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
     price: 'Contact for pricing',
     featured: true,
     officialUrl: 'https://www.zimmer-austria.com/rotascreen-rsdm-v/',
-    description: 'Most advanced rotary screen printing system with RSDM-V open screen bearing and digital operating panel for perfect repeat adjustment from 64-120 cm.',
+    description: 'The V-Type print head with open bearing system, pneumatic color pipe holder, and digital panel enables quick, safe screen and color changes. Original ZIMMER MAGNET SYSTEM PLUS guarantees uniform, high-quality color application.',
     keyFeatures: [
-      'RSDM-V open screen bearing printing head with digital panel',
-      'Repeat navigator for perfect pre- and fine-adjustment 64-120 cm',
-      'Touchscreen operating panel supports any language',
-      'Color pipe holder with pneumatic fixation',
-      'Fast and safe set-up of screen with color pipe',
-      'Printing width: 165/185/225/250/285/330 cm',
+      'V-Type open bearing print head',
+      'Pneumatic color pipe holder for fast setup',
+      'Digital synchronization up to 120 m/min',
+      'Available widths: 165-330 cm',
       'Up to 24 printing stations',
-      'Digital synchronisation guarantees high accuracy up to 120 m/min'
+      'Repeat size: 64-120 cm adjustable',
+      'Compact, reliable, easy handling',
+      'ZIMMER MAGNET SYSTEM PLUS'
     ],
     specifications: {
-      'System Type': 'RSDM-V open bearing with digital control',
-      'Printing Width': '165-330 cm',
-      'Repeat Range': '64-120 cm with navigator',
-      'Control Interface': 'Touchscreen multilingual',
-      'Pneumatic System': 'Color pipe holder fixation',
-      'Maximum Speed': '120 m/min'
+      'Working Widths': '165, 185, 220, 240, 285, 320, 330 cm',
+      'Printing Stations': 'Up to 24',
+      'Repeat Size': '64-120 cm adjustable',
+      'Printing Speed': 'Up to 120 m/min',
+      'Color Pipes': 'Kombiroll magnet roll squeegee, Variocolor options',
+      'Dryer': 'Various layouts for all fabric types'
     },
     applications: [
-      'High-precision printing',
-      'Technical Textiles',
       'Home Textiles',
-      'Fashion',
-      'Industrial Applications'
+      'Apparel, Knits & Clothing',
+      'Terry Products',
+      'Pile Fabrics',
+      'Technical Textiles',
+      'Military Textiles',
+      'Nonwoven Products',
+      'Paper Solutions',
+      'Wall Covering'
     ]
   },
   {
@@ -2483,35 +2489,39 @@ export const zimmerProducts = [
     name: 'MAGNOROLL Multipurpose Coating Machine',
     manufacturer: 'zimmer',
     category: 'zimmer',
-    subcategory: 'Coating Machines',
-    image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld1_800x600_MagnorollKnife.jpg',
+    subcategory: 'Coating Systems',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/1/a/csm_magnoroll_60b9b229bc.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-klagenfurt.com/en/content/magnoroll',
-    description: 'High-quality multipurpose coating machine with the world-famous ZIMMER MAGNET SYSTEM PLUS guaranteeing 100% uniform application across all technical textile groups.',
+    officialUrl: 'https://www.zimmer-austria.com/magnoroll/',
+    description: 'Premium multipurpose coating machines with unique modular layout. One machine handles multiple coating techniques — from single-color printing to pastes or foams. ZIMMER MAGNET SYSTEM PLUS ensures 100% uniform application.',
     keyFeatures: [
-      'ZIMMER MAGNET SYSTEM PLUS for 100% uniform application',
-      'Magnetic Low-Add-On or Magnetic Direct Roll coating',
-      'Single or Double Screen Coating with magnet roll rods',
+      'Unique modular layout',
+      'ZIMMER MAGNET SYSTEM PLUS',
       'MAGNOKNIFE Over-Roll or Over-Air coating',
-      'MAGNOJET closed system for paste or foam application',
-      'VARIOPRESS open system for stable foams',
-      'Working widths: 500-5600 mm',
-      'Reversible high precision knife holder with dual blades'
+      'Screen coating with magnet roll rods/blades',
+      'Magnet roll coating & lacquering',
+      'MAGNOJET slot foam/paste coating',
+      'VARIOPRESS foam application system',
+      'Working widths: 500-4800 mm'
     ],
     specifications: {
-      'System Type': 'Multipurpose coating with MAGNET SYSTEM PLUS',
-      'Working Width': '500-5600 mm',
-      'Coating Technologies': 'Low-Add-On, Direct Roll, Screen, Knife, Jet',
+      'Working Width': '500-4800 mm',
+      'Coating Technologies': 'Knife, Screen, Magnet Roll, Slot, Special Designs',
       'Application Types': 'Liquids, pastes, lacquers, foams',
-      'Precision': '100% uniform application guarantee'
+      'Precision': '100% uniform application',
+      'Repeat Sizes': '640-1020 mm (special sizes on request)'
     },
     applications: [
-      'All 12 technical textile groups',
-      'Agrotech, Buildtech, Clothtech',
-      'Medtech, Mobiltech, Oekotech',
-      'Geotech, Hometech, Indutech',
-      'Packtech, Protech, Sporttech'
+      'Home Textiles',
+      'Apparel, Knits & Clothing',
+      'Pile Fabrics',
+      'Technical Textiles',
+      'Military Textiles',
+      'Nonwoven Products',
+      'Glass Fibre',
+      'Paper & Foil Solutions',
+      'Wall Covering'
     ]
   },
   {
@@ -2858,33 +2868,32 @@ export const zimmerProducts = [
     price: 'Contact for pricing',
     featured: true,
     officialUrl: 'https://www.zimmer-austria.com/digital-textile-printing/',
-    description: 'COLARIS digital textile printer delivers sustainable, high-performance printing on woven, knitted, and nonwoven fabrics. Features FUJIFILM Dimatix Starfire™ printheads with permanent ink circulation for brilliant, cost-efficient textile prints.',
+    description: 'COLARIS digital printer delivers sustainable, high-performance printing on woven, knitted, and nonwoven fabrics. Features FUJIFILM Dimatix Starfire™ printheads with permanent ink circulation for brilliant, cost-efficient results.',
     keyFeatures: [
       'Up to 72 FUJIFILM Dimatix Starfire printheads',
       'Open ink system (reactive, acid, disperse)',
       'Working widths: 1,800 / 2,700 / 3,400 mm',
-      'Maximum 12 colors with native 400 dpi resolution',
-      'Up to 3,200 dpi maximum print resolution',
+      'Maximum 12 colors with 400 dpi native resolution',
+      'Up to 3,200 dpi maximum resolution',
       'Production capacity up to 860 m²/h',
-      'Eco-friendly with minimal waste',
-      'Flexible drying options: Hot air, IR, or superheated steam'
+      'Eco-smart with minimal waste',
+      'Hot air, IR, or SHS Suprafix drying'
     ],
     specifications: {
       'Fabric Types': 'Woven, knitted and nonwoven fabrics',
-      'Working Width': '1,800 / 2,700 / 3,400 mm',
+      'Working Widths': '1,800, 2,700 & 3,400 mm',
       'Maximum Colors': '12',
       'Printheads': 'Up to 72 FUJIFILM Dimatix Starfire',
-      'Print Resolution': 'Up to 3,200 dpi',
+      'Print Resolution': '400 dpi native, up to 3,200 dpi max',
       'Production Capacity': 'Up to 860 m²/h',
       'Operating Temperature': '90-180°C'
     },
     applications: [
-      'Home Textiles (Bedding, Curtains, Upholstery, Tableware)',
-      'Apparel & Fashion (Menswear, Ladieswear, Childwear)',
-      'Knits & Clothing',
+      'Bedding, Curtains, Upholstery, Tableware',
+      'Menswear, Ladieswear, Childwear',
       'Underwear & Sleepwear',
-      'Technical Textiles',
-      'High-quality textile printing'
+      'Home Textiles',
+      'Apparel, Knits & Clothing'
     ]
   },
   {
@@ -3064,51 +3073,84 @@ export const zimmerProducts = [
   },
   {
     id: 'zimmer-thermocure',
-    name: 'THERMOCURE Curing & Fixation System',
+    name: 'THERMOCURE HC High Capacity Hot Air Dryer',
     manufacturer: 'zimmer',
     category: 'zimmer',
-    subcategory: 'Finishing',
-    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/THERMOCURE_fixiereinheit_GBR-Lakeland.jpg',
+    subcategory: 'Finishing Systems',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/5/e/csm_thermocure-hc-dryer-2_4951b6159f.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-austria.com/thermocure/',
-    description: 'Advanced curing and fixation system for textile finishing. Ensures perfect color fixation and fabric treatment with precise temperature control and efficient energy use.',
+    officialUrl: 'https://www.zimmer-austria.com/thermocure-high-capacity-hot-air-dryer/',
+    description: 'The Compact HC hot air dryer features modular construction for maximum efficiency. Designed to dry all types of printed and wet textiles, papers, nonwovens, and plastic foils. Flexible integration with any machine.',
     keyFeatures: [
-      'Precise temperature control',
-      'Perfect color fixation',
-      'Energy-efficient operation',
-      'Compatible with various dye types',
-      'Integrated monitoring systems',
-      'Optimal fabric treatment',
-      'Reliable processing results'
+      'Modular, efficient and powerful design',
+      'Working widths: 100 to 350 cm',
+      'Heating options: Steam, thermal oil, hot water, direct gas',
+      'Fabric passages: 3 (standard), 1-7 (optional)',
+      'Operating temperature: 90-200°C',
+      'Production speed: 4-120 m/min',
+      'Teflon-coated conveyor belt or lay-on-air system',
+      'Compatible with any brand of printing/coating machine'
     ],
     specifications: {
-      'System Type': 'Curing and fixation',
-      'Temperature Control': 'Precise digital control',
-      'Dye Compatibility': 'Various dye types',
-      'Energy Efficiency': 'Optimized consumption'
+      'Working Widths': '100 to 350 cm',
+      'Heating Medium': 'Steam, thermal oil, hot water, direct gas burner',
+      'Fabric Passages': '3 (standard), 1, 2, 5 or 7 (optional)',
+      'Operating Temperature': '90°C to 200°C',
+      'Production Speed': '4 m/min to 120 m/min',
+      'Web Guiding': 'Teflon-coated belt or contact-free lay-on-air'
     },
     applications: [
-      'Pigment Fixation',
-      'Dye Curing',
-      'Textile Finishing',
-      'Color Fastness',
-      'Fabric Treatment'
+      'Carpet Solutions',
+      'Home Textiles',
+      'Apparel, Knits & Clothing',
+      'Terry Products',
+      'Pile Fabrics',
+      'Technical Textiles',
+      'Military Textiles',
+      'Nonwoven Products',
+      'Glass Fibre',
+      'Paper & Foil Solutions',
+      'Wall Covering'
     ]
   },
   {
     id: 'zimmer-modus',
-    name: 'MODUS Steaming & Fixation Unit',
+    name: 'MODUS.E Energy Efficient Loop Steamer',
     manufacturer: 'zimmer',
     category: 'zimmer',
-    subcategory: 'Finishing',
-    image: 'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/MODUS_steamer_GBR-Lakeland.jpg',
+    subcategory: 'Finishing Systems',
+    image: 'https://www.zimmer-austria.com/fileadmin/_processed_/5/0/csm_modus-e_9059fa80b2.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.zimmer-austria.com/modus/',
-    description: 'State-of-the-art steaming and fixation unit for textile finishing. Provides optimal steam fixation for reactive, acid, and direct dyes with precise control and uniform treatment.',
+    officialUrl: 'https://www.zimmer-austria.com/modus-e/',
+    description: 'The ZIMMER AUSTRIA loop steamer MODUS.E is engineered for color fixation on both traditional screen printed fabrics and digitally printed textiles. Modular design ensures excellent color yield, high efficiency, and reduced energy consumption.',
     keyFeatures: [
-      'Optimal steam fixation',
+      'Intelligent energy usage',
+      'Maximum color brilliance',
+      'Excellent finishing results',
+      'Modular design for customization',
+      'Energy-efficient operation',
+      'Suitable for screen and digital prints',
+      'High color yield',
+      'Next-generation steaming technology'
+    ],
+    specifications: {
+      'System Type': 'Loop steamer for color fixation',
+      'Fabric Types': 'Screen printed and digitally printed textiles',
+      'Energy Efficiency': 'Optimized consumption',
+      'Design': 'Modular concept',
+      'Color Performance': 'Excellent color yield and brilliance'
+    },
+    applications: [
+      'Home Textiles',
+      'Apparel, Knits & Clothing',
+      'Terry Products',
+      'Pile Fabrics',
+      'Military Textiles',
+      'Nonwoven Products'
+    ]
+  },
       'Suitable for reactive, acid, direct dyes',
       'Precise steam control',
       'Uniform treatment across width',
