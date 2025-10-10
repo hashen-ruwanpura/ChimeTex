@@ -3548,191 +3548,122 @@ export const benningerProducts = [
 
 // Complete Comatex Product Portfolio with Official Links
 export const comatexProducts = [
-  // Slitting & Plaiting Machines
+  // Tubular Knit Slitting Machines
   {
-    id: 'comatex-at240s',
-    name: 'AT 240 S - Semi-Automatic Slitting Machine for Tubular',
+    id: 'comatex-atx',
+    name: 'ATX - Tubular Slitting Machine with Roll Exit',
     manufacturer: 'comatex',
     category: 'comatex',
     subcategory: 'Slitting & Plaiting',
-    image: 'https://www.comatex.net/cloudpicture/at-240-s-600x400.i5695-kcKu39-w402-h268-l1-c1-x1-q90.jpg',
+    image: 'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/2-02-at-240-s',
-    description: 'Fast speed slitting machine with opening triangle for tubular fabric, featuring fabric twisting system and manual needle drop control for preparation of fabric to dyeing in open width.',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-05-atx',
+    description: 'Advanced tubular raw fabric slitting machine with continuous cutting on the bend line and winding in roll after accurate inspection and edges decurling. Features open width inspection for quality control.',
     keyFeatures: [
-      'Speed of cut and plait up to 120mt/min',
-      'For knit tubular fabric in roll or plait',
-      'Exit in free plait with roller continuous movement forward backward',
-      'Low noise machine with transmission by belts',
-      'Fabric twisting basket to adjust cutting point',
-      'Fabric slitting with big electric cutting blade',
-      'Stainless steel opening triangle',
-      'American plaiting type exit for improved fabric quantity and relaxing'
+      'Continuous cutting on bend line',
+      'Open width inspection integrated',
+      'Edges decurling system',
+      'Winding in roll exit',
+      'Accurate inspection capability',
+      'Tubular fabric processing',
+      'Quality control during slitting',
+      'Professional edge treatment'
     ],
     specifications: {
-      'Type': 'Semi-automatic slitting machine for tubular fabric',
-      'Speed': 'Up to 120 mt/min',
-      'Fabric Types': 'Knit tubular fabric in roll or plait',
-      'Frame': 'Painted carbon steel or stainless steel',
-      'Cutting System': 'Big electric cutting blade',
-      'Opening Triangle': 'Stainless steel',
-      'Transmission': 'Belt drive for low noise',
-      'Exit Type': 'Free plait with continuous roller movement'
+      'Type': 'Tubular slitting machine with roll exit',
+      'Cutting Method': 'Continuous cutting on bend line',
+      'Inspection': 'Open width inspection',
+      'Edge Treatment': 'Edges decurling system',
+      'Exit Type': 'Winding in roll',
+      'Fabric Type': 'Tubular raw fabric',
+      'Quality Control': 'Integrated accurate inspection'
     },
     applications: [
       'Tubular fabric slitting',
-      'Fabric preparation for dyeing in open width',
-      'Knit tubular fabric processing',
-      'American plaiting type processing',
-      'Industrial fabric cutting operations'
+      'Raw fabric processing',
+      'Open width inspection',
+      'Roll winding operations',
+      'Bend line cutting',
+      'Edge quality control'
     ]
   },
   {
-    id: 'comatex-at280',
-    name: 'AT 280 - Automatic Slitting Machine for Tubular',
+    id: 'comatex-atxf',
+    name: 'ATX F - Tubular Slitting Machine with Plait Exit',
     manufacturer: 'comatex',
     category: 'comatex',
     subcategory: 'Slitting & Plaiting',
-    image: 'https://www.comatex.net/cloudpicture/at-280-600x400.i5696-kwVMpxe-w402-h268-l1-c1-x1-q90.jpg',
+    image: 'https://www.comatex.net/cloudpicture/2023-07-21-14-33-47-1200.i3985-kiHtYOA-w402-h268-l1-c1-x1-q90.jpg',
     price: 'Contact for pricing',
     featured: true,
-    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/2-02-at-280',
-    description: 'Automatic slitting machine with opening triangle for tubular fabric, featuring fabric rotating system and automatic needle drop control, complete with J-box for sewing and unwinding of rolls.',
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/7-05-at-x-f',
+    description: 'Versatile tubular raw fabric slitting machine with continuous cutting on the bend line. Features option for winding in roll or exit in plait after accurate inspection and edges decurling.',
     keyFeatures: [
-      'Automatic slitting with opening triangle',
-      'Fabric rotating system for precise positioning',
-      'Automatic needle drop control',
-      'Complete J-box for sewing and unwinding rolls',
-      'Fully automated operation',
-      'Advanced control systems for consistent quality'
+      'Continuous cutting on bend line',
+      'Open width inspection integrated',
+      'Edges decurling system',
+      'Dual exit options: roll or plait',
+      'Accurate inspection capability',
+      'Flexible output configuration',
+      'Tubular fabric processing',
+      'Professional edge treatment'
     ],
     specifications: {
-      'Type': 'Automatic slitting machine for tubular fabric',
-      'Working Width': '280 cm',
-      'Operation Mode': 'Fully automatic',
-      'Control System': 'Automatic needle drop control',
-      'Additional Equipment': 'J-box for sewing and unwinding',
-      'Fabric System': 'Rotating system for positioning',
-      'Opening Triangle': 'Integrated for tubular processing'
+      'Type': 'Tubular slitting machine with plait exit',
+      'Cutting Method': 'Continuous cutting on bend line',
+      'Inspection': 'Open width inspection',
+      'Edge Treatment': 'Edges decurling system',
+      'Exit Options': 'Winding in roll or exit in plait',
+      'Fabric Type': 'Tubular raw fabric',
+      'Flexibility': 'Dual output configuration'
+    },
+    applications: [
+      'Tubular fabric slitting',
+      'Raw fabric processing with plaiting',
+      'Open width inspection',
+      'Flexible roll or plait exit',
+      'Bend line cutting',
+      'Versatile fabric handling'
+    ]
+  },
+  {
+    id: 'comatex-atpro',
+    name: 'AT PRO - Automatic Tubular Slitting with Sensor',
+    manufacturer: 'comatex',
+    category: 'comatex',
+    subcategory: 'Slitting & Plaiting',
+    image: 'https://www.comatex.net/cloudpicture/at-pro-600.i3133-kAq9tjY-w402-h268-l1-c1-x1-q90.jpg',
+    price: 'Contact for pricing',
+    featured: true,
+    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/2-02-at-pro-telecamera',
+    description: 'Advanced tubular raw fabric slitting and opening machine with automatic drop needle sensor movement. Highly customizable with many types of entry and exit in plait options for maximum versatility.',
+    keyFeatures: [
+      'Automatic drop needle sensor movement',
+      'Continuous cutting with sensor technology',
+      'Highly customizable configuration',
+      'Multiple entry types available',
+      'Various exit in plait options',
+      'Tubular fabric slitting and opening',
+      'Advanced sensor control',
+      'Flexible machine setup'
+    ],
+    specifications: {
+      'Type': 'Automatic tubular slitting machine with sensor',
+      'Sensor System': 'Automatic drop needle sensor movement',
+      'Cutting Method': 'Continuous cutting with sensor',
+      'Customization': 'Many types of entry and exit',
+      'Exit Type': 'Plait',
+      'Fabric Type': 'Tubular raw fabric',
+      'Automation': 'Sensor-controlled operation'
     },
     applications: [
       'Automatic tubular fabric slitting',
-      'High-volume tubular processing',
-      'Automated fabric preparation',
-      'Industrial sewing operations',
-      'Continuous production lines'
-    ]
-  },
-  {
-    id: 'comatex-sfh240',
-    name: 'SFH 240 - Roll Plaiting Machine',
-    manufacturer: 'comatex',
-    category: 'comatex',
-    subcategory: 'Slitting & Plaiting',
-    image: 'https://www.comatex.net/cloudpicture/sfh-240-600x400.i5701-kdcJCf0-w402-h268-l1-c1-x1-q90.jpg',
-    price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/3-01-sfh-240',
-    description: 'Roll plaiting machine with roll unwinder up to 80mt/min, suitable for integration with sewing rail or sewing trolley systems.',
-    keyFeatures: [
-      'Roll unwinder up to 80mt/min',
-      'Suitable with sewing rail or sewing trolley',
-      'Designed for knit and woven fabrics',
-      'Integrated unwinding and plaiting system',
-      'Compatible with various sewing systems',
-      'Reliable mechanical construction'
-    ],
-    specifications: {
-      'Type': 'Roll plaiting machine with unwinder',
-      'Speed': 'Up to 80 mt/min',
-      'Working Width': '240 cm',
-      'Fabric Types': 'Knit and woven fabrics',
-      'Integration': 'Compatible with sewing rail or trolley',
-      'Unwinding System': 'Integrated roll unwinder',
-      'Operation': 'Continuous plaiting process'
-    },
-    applications: [
-      'Roll plaiting operations',
-      'Fabric preparation with unwinding',
-      'Integration with sewing systems',
-      'Knit and woven fabric processing',
-      'Production line automation'
-    ]
-  },
-  {
-    id: 'comatex-sf240',
-    name: 'SF 240 - Roll Plaiting Machine Tensionless',
-    manufacturer: 'comatex',
-    category: 'comatex',
-    subcategory: 'Slitting & Plaiting',
-    image: 'https://www.comatex.net/cloudpicture/sf-240-600x400.i5700-kC5lAVp-w402-h268-l1-c1-x1-q90.jpg',
-    price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/3-01-sf-240',
-    description: 'Tensionless roll plaiting machine with unwinding rollers up to 100 mt/min, featuring tensionless fabric transport ideal for knit and elastomeric fabrics.',
-    keyFeatures: [
-      'Unwinding rollers up to 100 mt/min',
-      'Tensionless fabric transport system',
-      'Ideal for knit and elastomeric fabrics',
-      'Structure with integral protection of mechanical and electronic organs',
-      'Elevated silence by belt transmission even at maximum speeds',
-      'Cradles for unwinding rolls up to ø 800 mm',
-      'Carpet with 14 covered cylinders',
-      'High speed operation up to 100 Mt/min'
-    ],
-    specifications: {
-      'Type': 'Tensionless roll plaiting machine',
-      'Speed': 'Up to 100 mt/min',
-      'Working Width': '240 cm',
-      'Roll Diameter': 'Up to ø 800 mm',
-      'Fabric Types': 'Knit and elastomeric fabrics',
-      'Cylinders': '14 covered cylinders',
-      'Transmission': 'Belt drive for silent operation',
-      'Protection': 'Integral mechanical and electronic protection'
-    },
-    applications: [
-      'Knit fabric plaiting',
-      'Elastomeric fabric processing',
-      'Tensionless fabric handling',
-      'Preparation for dyeing processes',
-      'High-speed plaiting operations'
-    ]
-  },
-  {
-    id: 'comatex-sfl240',
-    name: 'SFL 240 - Roll Plaiting Machine Tensionless with Fabric Relax',
-    manufacturer: 'comatex',
-    category: 'comatex',
-    subcategory: 'Slitting & Plaiting',
-    image: 'https://www.comatex.net/cloudpicture/sfl-240-600x400.i5702-kxpxPr0-w402-h268-l1-c1-x1-q90.jpg',
-    price: 'Contact for pricing',
-    officialUrl: 'https://www.comatex.net/en/product-catalogue/machinery/3-01-sfl-240',
-    description: 'Advanced tensionless plaiting machine with unwinding rollers up to 130 mt/min, featuring tensionless fabric transport and special "relax" plaiting type, ideal for knit and elastomeric fabrics.',
-    keyFeatures: [
-      'Unwinding rollers up to 130 mt/min',
-      'Tensionless fabric transport system',
-      'Special "relax" plaiting type',
-      'Ideal for knit and elastomeric fabrics',
-      'Structure with integral protection of mechanical and electronic organs',
-      'Elevated silence by belt transmission at maximum speeds',
-      'Advanced fabric relaxation technology',
-      'Optimized for wear and cotton fabrics'
-    ],
-    specifications: {
-      'Type': 'Tensionless roll plaiting machine with fabric relax',
-      'Speed': 'Up to 130 mt/min',
-      'Working Width': '240 cm',
-      'Plaiting Type': 'Relax plaiting',
-      'Fabric Types': 'Knit, elastomeric, wear, and cotton fabrics',
-      'Transport': 'Tensionless fabric transport',
-      'Protection': 'Integral mechanical and electronic protection',
-      'Transmission': 'Belt drive for silent operation'
-    },
-    applications: [
-      'Fabric preparation for dyeing',
-      'Knit and elastomeric fabric processing',
-      'Cotton and wear fabric handling',
-      'Tensionless fabric relaxation',
-      'High-speed plaiting with relax function'
+      'Sensor-controlled cutting',
+      'Customized fabric processing',
+      'Opening and slitting operations',
+      'Plaiting exit processing',
+      'Advanced automation applications'
     ]
   },
   // Inspection Machines
