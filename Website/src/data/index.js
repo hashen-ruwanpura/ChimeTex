@@ -3150,27 +3150,6 @@ export const zimmerProducts = [
       'Military Textiles',
       'Nonwoven Products'
     ]
-  },
-      'Suitable for reactive, acid, direct dyes',
-      'Precise steam control',
-      'Uniform treatment across width',
-      'Energy-efficient steaming',
-      'Modular design',
-      'Easy maintenance'
-    ],
-    specifications: {
-      'System Type': 'Steaming and fixation',
-      'Dye Types': 'Reactive, acid, direct dyes',
-      'Steam Control': 'Precise uniform distribution',
-      'Design': 'Modular construction'
-    },
-    applications: [
-      'Reactive Dye Fixation',
-      'Acid Dye Processing',
-      'Direct Dye Treatment',
-      'Textile Steaming',
-      'Color Development'
-    ]
   }
 ]
 
