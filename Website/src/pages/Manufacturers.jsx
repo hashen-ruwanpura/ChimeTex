@@ -27,9 +27,9 @@ const Manufacturers = () => {
       'ssm': 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
       'brueckner': 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
       'lafer': 'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/efadac9b-2bef-4aaa-935a-7845952fd2a3/Lafer+Ultrasoft-L+brush+sueding+machine+0GSX04024.png',
-      'zimmer': 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+      'zimmer': 'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
       'benninger': 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
-      'comatex': 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg'
+      'comatex': 'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg'
     }
     return heroImages[manufacturerId] || `https://images.unsplash.com/photo-1565086447593-ea55eb58a0e1?w=800&h=400&fit=crop&auto=format`
   }
@@ -125,8 +125,8 @@ const Manufacturers = () => {
       ],
       'zimmer': [
         'https://www.zimmer-austria.com/fileadmin/_processed_/7/7/csm_Rotasceen_TG_closed_3135335136.jpg',
-        'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
-        'https://www.zimmer-austria.com/fileadmin/_processed_/8/b/csm_magnoroll_production_5db96c3b8e.jpg'
+        'https://www.zimmer-austria.com/fileadmin/_processed_/1/a/csm_magnoroll_60b9b229bc.jpg',
+        'https://www.zimmer-austria.com/fileadmin/userdaten/bilder/kufstein/maschinen/textile-prints-COLARIS-24-2200_GBR-Lakeland.jpg'
       ],
       'benninger': [
         'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
