@@ -124,9 +124,9 @@ const Manufacturers = () => {
         'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/ee24b66e-0662-4eb3-9735-720e9912be87/Lafer+KA+2+felt+compactor.layout+drawing'
       ],
       'zimmer': [
-        'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
-        'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_Magnoprint_FlatScreen_2.jpg',
-        'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/Feld1_800x600_MagnorollKnife.jpg'
+        'https://www.zimmer-austria.com/fileadmin/_processed_/7/7/csm_Rotasceen_TG_closed_3135335136.jpg',
+        'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
+        'https://www.zimmer-austria.com/fileadmin/_processed_/8/b/csm_magnoroll_production_5db96c3b8e.jpg'
       ],
       'benninger': [
         'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
@@ -134,9 +134,9 @@ const Manufacturers = () => {
         'https://benningergroup.com/fileadmin/_processed_/6/5/csm_Hero_Ben_Bleach_4473b7e27a.png'
       ],
       'comatex': [
-        'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
-        'https://www.comatex.net/immagini/grande_ISN-220-Verificatrice-standard-per-tessuto-a-maglia-navetta-o-tessuto-non-tessuto_1280x640.jpg',
-        'https://www.comatex.net/immagini/grande_AVV-240-SP-Avvolgitore-150mtmin-per-juta-poliestere-e-nonwoven-per-navetta-e-tessuto-non-tessuto_1280x640.jpg'
+        'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg',
+        'https://www.comatex.net/cloudpicture/isn-4000-600-1.i5582-k6hydsv-w402-h268-l1-c1-q90.jpg',
+        'https://www.comatex.net/cloudpicture/2023-07-21-14-33-47-1200.i3985-kiHtYOA-w402-h268-l1-c1-x1-q90.jpg'
       ]
     }
     return imageMap[manufacturerId] || []

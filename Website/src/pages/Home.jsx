@@ -72,18 +72,18 @@ const ProductSlideshow = () => {
     {
       id: 'zimmer',
       manufacturer: 'Zimmer Austria',
-      productName: 'ROTASCREEN Printing System',
-      description: 'Advanced rotary screen printing technology for high-quality textile printing applications.',
-      image: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
-      category: 'Screen Printing'
+      productName: 'ROTASCREEN TG - Closed Bearing System',
+      description: 'Advanced rotary screen printing machine with closed bearing system featuring compact construction and ZIMMER MAGNET SYSTEM PLUS technology. Up to 24 printing stations with speeds up to 120 m/min.',
+      image: 'https://www.zimmer-austria.com/fileadmin/_processed_/7/7/csm_Rotasceen_TG_closed_3135335136.jpg',
+      category: 'Rotary Screen Printing'
     },
     {
       id: 'comatex',
       manufacturer: 'Comatex Italy',
-      productName: 'ISN-220 Inspection System',
-      description: 'Professional fabric inspection technology for quality control and textile verification.',
-      image: 'https://www.comatex.net/immagini/grande_ISN-220-Verificatrice-standard-per-tessuto-a-maglia-navetta-o-tessuto-non-tessuto_1280x640.jpg',
-      category: 'Quality Control'
+      productName: 'ATX - Tubular Slitting Machine',
+      description: 'Advanced tubular raw fabric slitting machine with continuous cutting on bend line, open width inspection, and edges decurling system with roll exit.',
+      image: 'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg',
+      category: 'Slitting & Plaiting'
     }
   ]
 
