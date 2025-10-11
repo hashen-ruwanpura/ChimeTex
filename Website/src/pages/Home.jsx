@@ -230,13 +230,13 @@ const Home = () => {
     },
     {
       name: 'Zimmer Austria',
-      logo: 'https://www.zimmer-klagenfurt.com/sites/default/files/Machines%20Klagenfurt/F1_800x600_ROTASCREEN_TG206_v1.jpg',
+      logo: 'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
       speciality: 'Screen Printing & Coating Technology',
       description: 'Austrian pioneer in rotary screen printing, flat screen printing, and coating solutions for textile production.'
     },
     {
       name: 'Comatex Italy',
-      logo: 'https://www.comatex.net/immagini/grande_1_AT-240-S-Semi-automatic-slitting-machine-for-tubularfor-knit_1280x640.jpg',
+      logo: 'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg',
       speciality: 'Quality Control & Inspection',
       description: 'Italian specialists in fabric inspection, slitting, plaiting and packing solutions with 30+ years of experience.'
     }
