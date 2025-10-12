@@ -10,7 +10,8 @@ import {
   CheckCircle,
   PlayCircle,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  ExternalLink
 } from 'lucide-react'
 import { companyStats } from '../data/index.js'
 
@@ -208,37 +209,43 @@ const Home = () => {
       name: 'SSM AG, Switzerland',
       logo: 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
       speciality: 'Precision Winding & Assembly Solutions',
-      description: 'Swiss precision in winding technology with over 100 years of innovation. World leader in yarn processing solutions.'
+      description: 'Swiss precision in winding technology with over 100 years of innovation. World leader in yarn processing solutions.',
+      website: 'https://www.ssm.ch/'
     },
     {
       name: 'Brückner GmbH, Germany',
       logo: 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
       speciality: 'Stenter & Coating Technology',
-      description: 'German engineering excellence in high-performance stenter frames and advanced coating systems for textile finishing.'
+      description: 'German engineering excellence in high-performance stenter frames and advanced coating systems for textile finishing.',
+      website: 'https://www.brueckner-textile.com/en/'
     },
     {
       name: 'Benninger AG, Switzerland',
       logo: 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
       speciality: 'Dyeing & Finishing Excellence',
-      description: 'Swiss company with 160+ years of experience. World\'s leading partner in textile finishing and tire cord production.'
+      description: 'Swiss company with 160+ years of experience. World\'s leading partner in textile finishing and tire cord production.',
+      website: 'https://benningergroup.com/en/'
     },
     {
       name: 'Lafer SpA, Italy',
       logo: 'https://images.squarespace-cdn.com/content/v1/5ecb7db54800825652f63cf4/efadac9b-2bef-4aaa-935a-7845952fd2a3/Lafer+Ultrasoft-L+brush+sueding+machine+0GSX04024.png',
       speciality: 'Textile Finishing Solutions',
-      description: 'Italian excellence in sueding, raising, shearing, compacting, and liquid ammonia mercerizing technologies.'
+      description: 'Italian excellence in sueding, raising, shearing, compacting, and liquid ammonia mercerizing technologies.',
+      website: 'https://www.laferspa.com/'
     },
     {
       name: 'Zimmer Austria',
       logo: 'https://www.zimmer-austria.com/fileadmin/_processed_/0/3/csm_rotascreen_rsdm_production-2_0ecfafb808.jpg',
       speciality: 'Screen Printing & Coating Technology',
-      description: 'Austrian pioneer in rotary screen printing, flat screen printing, and coating solutions for textile production.'
+      description: 'Austrian pioneer in rotary screen printing, flat screen printing, and coating solutions for textile production.',
+      website: 'https://www.zimmer-austria.com/'
     },
     {
       name: 'Comatex Italy',
       logo: 'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg',
       speciality: 'Quality Control & Inspection',
-      description: 'Italian specialists in fabric inspection, slitting, plaiting and packing solutions with 30+ years of experience.'
+      description: 'Italian specialists in fabric inspection, slitting, plaiting and packing solutions with 30+ years of experience.',
+      website: 'https://www.comatex.net/en/'
     }
   ]
 
@@ -377,9 +384,12 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {manufacturers.map((manufacturer, index) => (
-              <div
+              <a
                 key={index}
-                className="bg-white border border-industrial-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up group"
+                href={manufacturer.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white border border-industrial-200 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fade-in-up group cursor-pointer"
                 style={{animationDelay: `${index * 100}ms`}}
               >
                 <div className="h-24 bg-gradient-to-br from-industrial-50 to-industrial-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
@@ -389,16 +399,22 @@ const Home = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-industrial-800 mb-2 group-hover:text-primary-600 transition-colors duration-300">
-                  {manufacturer.name}
-                </h3>
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="text-lg font-semibold text-industrial-800 group-hover:text-primary-600 transition-colors duration-300 flex-1">
+                    {manufacturer.name}
+                  </h3>
+                  <ExternalLink className="w-4 h-4 text-industrial-400 group-hover:text-primary-600 transition-colors duration-300 opacity-0 group-hover:opacity-100 ml-2 mt-1" />
+                </div>
                 <p className="text-primary-600 text-sm font-medium mb-3 uppercase tracking-wide">
                   {manufacturer.speciality}
                 </p>
                 <p className="text-industrial-600 text-sm leading-relaxed">
                   {manufacturer.description}
                 </p>
-              </div>
+                <div className="mt-4 text-xs text-industrial-500 group-hover:text-primary-600 transition-colors duration-300 opacity-0 group-hover:opacity-100">
+                  Visit Official Website →
+                </div>
+              </a>
             ))}
           </div>
 
