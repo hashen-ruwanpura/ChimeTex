@@ -173,7 +173,7 @@ const About = () => {
                 </p>
                 <p>
                   Under the leadership of our Director, Mr. Charuka Ruwanpura, we have built strong and exclusive
-                  partnerships with high end worlds renowned manufacturers like SSM AG, Switzerland, Brückner GmbH, Germany, Benninger AG, Switzerland, Lafer SpA, Italy, and Zimmer Austria, Comatex Italy etc 
+                  partnerships with high end worlds renowned manufacturers like SSM AG, Switzerland, Brückner GmbH, Germany, Benninger AG, Switzerland, Lafer SpA, Italy, and Zimmer Austria, Comatex Italy etc.
                   These relationships enable us to offer latest technology, cutting-edge solutions that drive efficiency, quality, and profitability for our clients.
                 </p>
                 <p>
