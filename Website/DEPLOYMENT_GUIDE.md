@@ -48,6 +48,23 @@ git push origin main
 
 ## Phase 3: DNS Configuration
 
+### Important Note: Single Page Application (SPA) Routing Fix
+This project now includes a fix for the GitHub Pages SPA routing issue:
+- **404.html**: Redirects all non-existent routes back to index.html
+- **index.html**: Contains script to handle the redirected routes properly
+- This ensures that refreshing pages like `/about`, `/products`, etc. works correctly on GitHub Pages
+
+Without this fix, refreshing any page other than the home page would show a 404 error because GitHub Pages doesn't understand client-side routing.
+
+### How it works:
+1. User visits `/about` directly or refreshes the page
+2. GitHub Pages can't find `/about.html`, so it serves `404.html`
+3. `404.html` redirects to `/?/about` (converting the path to a query parameter)
+4. `index.html` loads with the redirect script that converts `/?/about` back to `/about`
+5. React Router then handles the routing normally
+
+---
+
 ### 1. GitHub Pages Custom Domain
 1. In your GitHub repo settings → Pages
 2. Add custom domain: `chimetex.com`
