@@ -28,7 +28,8 @@ const ProductSlideshow = () => {
       productName: 'XENO Air Covering Machine',
       description: 'Swiss precision winding technology with advanced air covering systems for high-quality yarn processing.',
       image: 'https://www.ssm.ch/fileadmin/_processed_/e/0/csm_ssm-xeno-ac-air-covering-machine-98400_8fc5b247b5.jpg',
-      category: 'Precision Winding'
+      category: 'Precision Winding',
+      productLink: '/products?category=ssm&search=xeno'
     },
     {
       id: 'ssm-2',
@@ -36,7 +37,8 @@ const ProductSlideshow = () => {
       productName: 'Draw Winding System',
       description: 'Advanced draw winding technology for efficient yarn processing and superior package quality.',
       image: 'https://www.ssm.ch/fileadmin/_processed_/0/8/csm_ssm-draw-winding_993cb665a5.jpg',
-      category: 'Yarn Processing'
+      category: 'Yarn Processing',
+      productLink: '/products?category=ssm&search=winding'
     },
     {
       id: 'brueckner',
@@ -44,7 +46,8 @@ const ProductSlideshow = () => {
       productName: 'POWER-FRAME SFP-4 Stenter',
       description: 'High-performance stenter frame technology for efficient textile finishing and heat-setting processes.',
       image: 'https://www.brueckner-textile.com/files/produkte/Spannrahmen/Stenter_SFP-4.jpg',
-      category: 'Stenter Technology'
+      category: 'Stenter Technology',
+      productLink: '/products?category=brueckner&search=stenter'
     },
     {
       id: 'brueckner-2',
@@ -52,7 +55,8 @@ const ProductSlideshow = () => {
       productName: 'ECO-COAT System',
       description: 'Advanced coating technology for sustainable and efficient textile coating applications.',
       image: 'https://www.brueckner-textile.com/files/produkte/Beschichtungsanlagen/Eco_Coat.jpg',
-      category: 'Coating Systems'
+      category: 'Coating Systems',
+      productLink: '/products?category=brueckner&search=coating'
     },
     {
       id: 'benninger',
@@ -60,7 +64,8 @@ const ProductSlideshow = () => {
       productName: 'JigMaster Dyeing System',
       description: 'Premium jig dyeing technology for superior fabric quality and efficient discontinuous processing.',
       image: 'https://benningergroup.com/fileadmin/_processed_/6/1/csm_JigMaster_Headerbild-2_a2b5f2313b.png',
-      category: 'Dyeing Systems'
+      category: 'Dyeing Systems',
+      productLink: '/products?category=benninger&search=dyeing'
     },
     {
       id: 'benninger-2',
@@ -68,7 +73,8 @@ const ProductSlideshow = () => {
       productName: 'FabricMaster Jet Dyeing',
       description: 'High-speed jet dyeing machine for efficient and gentle textile processing.',
       image: 'https://benningergroup.com/fileadmin/_processed_/e/8/csm_FabricMaster_Headerbild_ef0757375e.png',
-      category: 'Textile Finishing'
+      category: 'Textile Finishing',
+      productLink: '/products?category=benninger&search=jet'
     },
     {
       id: 'zimmer',
@@ -76,7 +82,8 @@ const ProductSlideshow = () => {
       productName: 'ROTASCREEN TG - Closed Bearing System',
       description: 'Advanced rotary screen printing machine with closed bearing system featuring compact construction and ZIMMER MAGNET SYSTEM PLUS technology. Up to 24 printing stations with speeds up to 120 m/min.',
       image: 'https://www.zimmer-austria.com/fileadmin/_processed_/7/7/csm_Rotasceen_TG_closed_3135335136.jpg',
-      category: 'Rotary Screen Printing'
+      category: 'Rotary Screen Printing',
+      productLink: '/products?category=zimmer&search=rotascreen'
     },
     {
       id: 'comatex',
@@ -84,7 +91,8 @@ const ProductSlideshow = () => {
       productName: 'ATX - Tubular Slitting Machine',
       description: 'Advanced tubular raw fabric slitting machine with continuous cutting on bend line, open width inspection, and edges decurling system with roll exit.',
       image: 'https://www.comatex.net/cloudpicture/2023-05-12-13-40-59-600.i3984-kCxCe4I-w402-h268-l1-c1-x1-q90.jpg',
-      category: 'Slitting & Plaiting'
+      category: 'Slitting & Plaiting',
+      productLink: '/products?category=comatex&search=atx'
     }
   ]
 
@@ -117,89 +125,115 @@ const ProductSlideshow = () => {
   const currentProduct = productSlides[currentSlide]
 
   return (
-    <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-2xl group">
-      {/* Main Image */}
-      <div className="relative w-full h-full">
-        <img
-          src={currentProduct.image}
-          alt={currentProduct.productName}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-      </div>
-
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
-
-      {/* Content Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-        <div className="mb-2">
-          <span className="inline-block px-3 py-1 bg-primary-600/80 backdrop-blur-sm rounded-full text-xs font-semibold uppercase tracking-wide">
-            {currentProduct.category}
-          </span>
-        </div>
-        <h3 className="text-xl font-bold mb-2">{currentProduct.productName}</h3>
-        <p className="text-sm text-white/90 mb-2">{currentProduct.manufacturer}</p>
-        <p className="text-sm text-white/80 leading-relaxed mb-4">
-          {currentProduct.description}
-        </p>
-      </div>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-4 right-6 flex space-x-2">
-        {productSlides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? 'bg-white scale-125' 
-                : 'bg-white/50 hover:bg-white/75'
-            }`}
+    <Link to={currentProduct.productLink} className="block">
+      <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-2xl group cursor-pointer">
+        {/* Main Image */}
+        <div className="relative w-full h-full">
+          <img
+            src={currentProduct.image}
+            alt={currentProduct.productName}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
-        ))}
-      </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        </div>
 
-      {/* Play/Pause Button */}
-      <button
-        onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-        className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100"
-      >
-        {isAutoPlaying ? (
-          <div className="w-3 h-3 border-2 border-white rounded-sm">
-            <div className="w-0.5 h-full bg-white mx-0.5"></div>
-            <div className="w-0.5 h-full bg-white"></div>
+        {/* Navigation Arrows */}
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            prevSlide();
+          }}
+          className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100 z-10"
+        >
+          <ChevronLeft className="w-6 h-6" />
+        </button>
+        
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            nextSlide();
+          }}
+          className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100 z-10"
+        >
+          <ChevronRight className="w-6 h-6" />
+        </button>
+
+        {/* Content Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+          <div className="mb-2">
+            <span className="inline-block px-3 py-1 bg-primary-600/80 backdrop-blur-sm rounded-full text-xs font-semibold uppercase tracking-wide">
+              {currentProduct.category}
+            </span>
           </div>
-        ) : (
-          <PlayCircle className="w-5 h-5" />
-        )}
-      </button>
-
-      {/* Progress Bar */}
-      {isAutoPlaying && (
-        <div className="absolute top-0 left-0 w-full h-1 bg-white/20">
-          <div 
-            className="h-full bg-primary-400 transition-all duration-100 ease-linear"
-            style={{ 
-              width: `${((Date.now() % 4000) / 4000) * 100}%`,
-              animation: 'progress 4s linear infinite'
-            }}
-          />
+          <h3 className="text-xl font-bold mb-2 group-hover:text-blue-200 transition-colors duration-300">{currentProduct.productName}</h3>
+          <p className="text-sm text-white/90 mb-2">{currentProduct.manufacturer}</p>
+          <p className="text-sm text-white/80 leading-relaxed mb-4">
+            {currentProduct.description}
+          </p>
+          <div className="flex items-center text-xs text-blue-200 opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <ArrowRight className="w-4 h-4 mr-1" />
+            View Product Details
+          </div>
         </div>
-      )}
-    </div>
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-4 right-6 flex space-x-2">
+          {productSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={(e) => {
+                e.preventDefault();
+                goToSlide(index);
+              }}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentSlide 
+                  ? 'bg-white scale-125' 
+                  : 'bg-white/50 hover:bg-white/75'
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Play/Pause Button */}
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setIsAutoPlaying(!isAutoPlaying);
+          }}
+          className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-all duration-300 opacity-0 group-hover:opacity-100 z-10"
+        >
+          {isAutoPlaying ? (
+            <div className="w-3 h-3 border-2 border-white rounded-sm">
+              <div className="w-0.5 h-full bg-white mx-0.5"></div>
+              <div className="w-0.5 h-full bg-white"></div>
+            </div>
+          ) : (
+            <PlayCircle className="w-5 h-5" />
+          )}
+        </button>
+
+        {/* Progress Bar */}
+        {isAutoPlaying && (
+          <div className="absolute top-0 left-0 w-full h-1 bg-white/20">
+            <div 
+              className="h-full bg-primary-400 transition-all duration-100 ease-linear"
+              style={{ 
+                width: `${((Date.now() % 4000) / 4000) * 100}%`,
+                animation: 'progress 4s linear infinite'
+              }}
+            />
+          </div>
+        )}
+
+        {/* Click overlay hint */}
+        <div className="absolute top-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
+          <div className="flex items-center space-x-2 text-white text-xs bg-black/30 backdrop-blur-sm rounded-full px-3 py-1">
+            <ExternalLink className="w-3 h-3" />
+            <span>Click to view details</span>
+          </div>
+        </div>
+      </div>
+    </Link>
   )
 }
 
