@@ -44,15 +44,10 @@ const Contact = () => {
     setIsSubmitting(true)
     
     try {
-      // EmailJS configuration from environment variables
-      const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID
-      const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID  
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-
-      // Validate configuration
-      if (!serviceID || !templateID || !publicKey) {
-        throw new Error('EmailJS configuration is missing. Please check your .env file.')
-      }
+      // EmailJS configuration - using direct values for production deployment
+      const serviceID = 'service_e5o8afe'
+      const templateID = 'template_swv81pa'
+      const publicKey = 'h7Q1UNYxMdB6yzNCc'
 
       // Prepare template parameters
       const templateParams = {
