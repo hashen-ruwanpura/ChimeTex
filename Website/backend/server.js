@@ -93,8 +93,8 @@ app.post('/api/contact', async (req, res) => {
 
     // Send email to Chime Tex
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'your-email@gmail.com',
-      to: 'charuka.chimetex@gmail.com',
+      from: process.env.EMAIL_USER || 'charukar@chimetex.com',
+      to: 'charukar@chimetex.com',
       subject: emailSubject,
       html: emailBody,
       replyTo: email
@@ -102,7 +102,7 @@ app.post('/api/contact', async (req, res) => {
 
     try {
       await transporter.sendMail(mailOptions)
-      console.log('Email sent successfully to charuka.chimetex@gmail.com')
+      console.log('Email sent successfully to charukar@chimetex.com')
 
     } catch (emailError) {
       console.error('Email sending failed:', emailError)

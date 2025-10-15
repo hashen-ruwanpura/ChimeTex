@@ -160,7 +160,7 @@ const Terms = () => {
                 <h3 className="text-lg font-semibold text-industrial-800 mb-3">Chime Tex International (Pvt) Ltd.</h3>
                 <div className="space-y-2">
                   <p className="text-industrial-600">
-                    <strong>Email:</strong> charuka.chimetex@gmail.com
+                    <strong>Email:</strong> charukar@chimetex.com
                   </p>
                   <p className="text-industrial-600">
                     <strong>Location:</strong> Colombo, Sri Lanka

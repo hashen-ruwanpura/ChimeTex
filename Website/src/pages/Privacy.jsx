@@ -201,7 +201,7 @@ const Privacy = () => {
                 <div className="space-y-2">
                   <div className="flex items-center">
                     <Mail className="h-5 w-5 text-primary-600 mr-3" />
-                    <span className="text-industrial-600">charuka.chimetex@gmail.com</span>
+                    <span className="text-industrial-600">charukar@chimetex.com</span>
                   </div>
                   <div className="flex items-start">
                     <Phone className="h-5 w-5 text-primary-600 mr-3 mt-0.5" />

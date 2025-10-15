@@ -49,6 +49,11 @@ const Contact = () => {
       const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID  
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
+      // Validate configuration
+      if (!serviceID || !templateID || !publicKey) {
+        throw new Error('EmailJS configuration is missing. Please check your .env file.')
+      }
+
       // Prepare template parameters
       const templateParams = {
         from_name: formData.name,
@@ -58,7 +63,7 @@ const Contact = () => {
         inquiry_type: formData.inquiryType,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'charuka.chimetex@gmail.com',
+        to_email: 'charukar@chimetex.com',
         reply_to: formData.email
       }
 
@@ -78,7 +83,7 @@ const Contact = () => {
       
     } catch (error) {
       console.error('Email sending error:', error)
-      alert('An error occurred while sending your message. Please try again or contact us directly at charuka.chimetex@gmail.com')
+      alert('An error occurred while sending your message. Please try again or contact us directly at charukar@chimetex.com')
     } finally {
       setIsSubmitting(false)
     }
@@ -168,8 +173,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-industrial-800 mb-1">Email</h4>
-                    <p className="text-industrial-600">charuka.chimetex@gmail.com</p>
-                    <p className="text-industrial-600">info.chimetex@gmail.com</p>
+                    <p className="text-industrial-600">charukar@chimetex.com</p>
+                    <p className="text-industrial-600">info@chimetex.com</p>
                   </div>
                 </div>
               </div>
@@ -371,16 +376,16 @@ const Contact = () => {
               </p>
               <div className="space-y-2">
                 <a
-                  href="mailto:charuka.chimetex@gmail.com"
+                  href="mailto:charukar@chimetex.com"
                   className="block px-4 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 text-sm"
                 >
-                  charuka.chimetex@gmail.com
+                  charukar@chimetex.com
                 </a>
                 <a
-                  href="mailto:info.chimetex@gmail.com"
+                  href="mailto:info@chimetex.com"
                   className="block px-4 py-3 bg-white text-primary-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 text-sm"
                 >
-                  info.chimetex@gmail.com
+                  info@chimetex.com
                 </a>
               </div>
             </div>
