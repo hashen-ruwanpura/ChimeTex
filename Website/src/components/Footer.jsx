@@ -142,11 +142,16 @@ const Footer = () => {
                 </div>
               </div>
               
-              <div className="flex items-center">
-                <Mail className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <a href="mailto:charukar@chimetex.com" className="text-industrial-300 text-sm hover:text-white transition-colors duration-200">
-                  charukar@chimetex.com
-                </a>
+              <div className="flex items-start">
+                <Mail className="h-5 w-5 text-primary-400 mr-3 mt-0.5 flex-shrink-0" />
+                <div className="space-y-1">
+                  <a href="mailto:info@chimetex.com" className="block text-industrial-300 text-sm hover:text-white transition-colors duration-200">
+                    info@chimetex.com
+                  </a>
+                  <a href="mailto:charukar@chimetex.com" className="block text-industrial-300 text-sm hover:text-white transition-colors duration-200">
+                    charukar@chimetex.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
